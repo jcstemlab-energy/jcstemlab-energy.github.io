@@ -34,46 +34,12 @@
             <div class="container">
                 <div class="slideshow-container">
                     <div class="mySlides">
-                        <img src="assets/slides/thanksgiving2025.jpg" style="width:100%">
-                        <div class="slide-title">Thanksgiving Gathering</div>
-                        <div class="slide-subtitle">JC STEM Lab Thanksgiving gathering @2025.11.27</div>
-                    </div>
-                    <div class="mySlides video-slide">
-                        <video src="assets/JCLab-OpenCeremony.mp4" style="width:100%" autoplay muted class="clickable-video" data-video-src="assets/JCLab-OpenCeremony.mp4"></video>
-                        <div class="slide-title">JC STEM Labs Inauguration Ceremony</div>
-                        <div class="slide-subtitle">Welcome to our state-of-the-art laboratory! @2025.7.8 <small style="font-size: 0.8em; opacity: 0.9;">Click video to watch with sound</small></div>
+                        <img src="assets/slides/Prof-1.jpg" style="width:100%">
+                        <div class="slide-title">Prof. ZY Dong is giving talk</div>
                     </div>
                     <div class="mySlides">
-                        <img src="assets/slides/jclab-luncheon.png" style="width:100%">
-                        <div class="slide-title">JC STEM Circle Luncheon</div>
-                        <div class="slide-subtitle">Prof. Fang and Prof. Chen attended the JC STEM Circle Luncheon!!! @2025.3.20</div>
-                    </div>
-                    <div class="mySlides">
-                        <img src="assets/slides/ACM-Fang.png" style="width:100%">
-                        <div class="slide-title">Congratulations to Prof Fang!!!</div>
-                        <!-- <div class="slide-subtitle">Prof Yuguang Michael FANG elected to an ACM Fellow of Class 2022</div> -->
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="assets/slides/group4.jpg" style="width:100%">
-                        <div class="slide-title">Team Banquet</div>
-                        <div class="slide-subtitle">2024 Thanksgiving Dinner @2024.11.29</div>
-                    </div>
-                    <div class="mySlides">
-                        <img src="assets/slides/group3.jpg" style="width:100%">
-                        <div class="slide-title">Close to Nature</div>
-                        <div class="slide-subtitle">Hiking between the Mountains and the Sea of Hong Kong @2024.3.9</div>
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="assets/slides/group2.jpg" style="width:100%">
-                        <div class="slide-title">Team Building</div>
-                        <div class="slide-subtitle">2023 Thanksgiving Dinner @2023.11.23</div>
-                    </div>
-                    <div class="mySlides">
-                        <img src="assets/slides/group1.png" style="width:100%">
-                        <div class="slide-title">First Meeting</div>
-                        <div class="slide-subtitle">Our First Onsite Meeting at CityUHK @2023.9.9</div>
+                        <img src="assets/slides/Prof-2.jpg" style="width:100%">
+                        <div class="slide-title">Prof. ZY Dong in Hong Kong</div>
                     </div>
                 
 
@@ -86,12 +52,6 @@
                 <div class="dots-container">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
                 </div>
             </div>
         </section>
@@ -109,13 +69,9 @@
             <div class="container">
                 <h2 class="section-title">About</h2>
                 <div class="about-content">
-                    <p>The <b>JC STEM Lab of Smart City</b> is led by <a href="https://www.cs.cityu.edu.hk/~yugufang/">Prof. Yuguang "Michael" Fang</a>. It was founded in January 2023 on a fund from Hong Kong Jockey Club Charities Trust. It is currently the home to graduate students, postdoctoral researchers, and visiting scholars.
-                        </p><br>
-                    
-
-                    <p>The Lab focuses on the cutting-edge research in Smart Cities, Internet of Things, Wireless Communications and Networking, Machine Learning, Computer Vision, Privacy and Security, Health Monitoring, and more, exploring how to leverage mobile things to help things, leading to cost-effective and sustainable solutions to building smarter cities.</p>
-                    
-                    
+                    <p>Led by <a href="https://www.cityu.edu.hk/stfprofile/zydong.htm">Professor DONG Zhaoyang</a>, the <b>JC STEM Lab of Future Energy System</b> was established in November 2024 with generous support from the Hong Kong Jockey Club Charities Trust. The Lab serves as a dynamic hub for graduate students, postdoctoral researchers, and visiting scholars. <br><br>
+                        
+                    Its research is centered on Power Systems and Smart Grids, with key areas of focus including System Stability & Reliability, System Planning & Operations, Microgrid / Smart Grid Development, Load Modeling, Integration of Wind/PV/BESS & GPS, Electric Vehicles & Virtual Power Plants (VPP), and Energy Market dynamics. The laboratory has delivered research outputs for multiple government departments and enterprises, and is dedicated to making significant contributions to urban energy conservation, cost reduction, and efficiency enhancement.</p>
                 </div>
             </div>
         </section>
@@ -150,7 +106,21 @@
                         Object.entries(data).forEach(([category, subcategories]) => {
                             // Select appropriate icon for main category
                             let icon = 'fas fa-flask';
-                            if (category === "Connected and Autonomous Driving (CAD)") {
+                            if (category === "System Stability & Reliability") {
+                                icon = 'fas fa-shield-alt';
+                            } else if (category === "System Planning & Operations") {
+                                icon = 'fas fa-project-diagram';
+                            } else if (category === "Microgrid / Smart Grid") {
+                                icon = 'fas fa-bolt';
+                            } else if (category === "Load Modeling") {
+                                icon = 'fas fa-chart-line';
+                            } else if (category === "Wind/PV/BESS & GPS") {
+                                icon = 'fas fa-wind';
+                            } else if (category === "Electric Vehicles & VPP") {
+                                icon = 'fas fa-charging-station';
+                            } else if (category === "Energy Market") {
+                                icon = 'fas fa-chart-bar';
+                            } else if (category === "Connected and Autonomous Driving (CAD)") {
                                 icon = 'fas fa-car';
                             } else if (category === "Integrated Design of Smart City and Low Altitude Economy (LAE)") {
                                 icon = 'fas fa-helicopter';
@@ -571,7 +541,7 @@
             <div class="container">
                 <h2 class="section-title">Our Team</h2>
                 <div class="about-content">
-                    <p>Our lab is led by <a href="https://www.cs.cityu.edu.hk/~yugufang/"><b>Prof. Yuguang "Michael" Fang</b>, Chair Professor of Internet of Things, Fellow of ACM & IEEE & AAAS, </a> and consists of talented researchers and PhD students working on cutting-edge research in IoT, wireless communications, and smart city technologies.</p>
+                    <p>Our lab is led by <a href="https://www.cityu.edu.hk/stfprofile/zydong.htm"><b>Professor DONG Zhaoyang</b></a> and consists of talented researchers and PhD students working on cutting-edge research in power systems, smart grids, renewable energy integration, and energy market dynamics.</p>
                     
                     <p>Our team includes:</p>
                     <ul style="margin-left: 20px; margin-bottom: 20px;">
