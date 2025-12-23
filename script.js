@@ -286,6 +286,19 @@ function loadProfileInfo() {
                 }
                 
                 anchor.innerHTML = iconHtml;
+                
+                // Add text content if available (e.g., for office)
+                if (link.text) {
+                    const textSpan = document.createElement('span');
+                    textSpan.textContent = ' ' + link.text;
+                    anchor.appendChild(textSpan);
+                } else if (link.type === 'office' && data.office) {
+                    const textSpan = document.createElement('span');
+                    textSpan.textContent = ' ' + data.office;
+                    anchor.appendChild(textSpan);
+                }
+                // Note: phone number is not displayed, only icon
+                
                 linkContainer.appendChild(anchor);
                 contactInfo.appendChild(linkContainer);
             });

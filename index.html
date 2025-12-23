@@ -19,7 +19,6 @@
                 <li><a href="#research">Research</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#latest-news">News</a></li>
-                <li><a href="#seminar">Seminars</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <!-- <li><a href="#location">Contact</a></li> -->
             </ul>
@@ -34,12 +33,12 @@
             <div class="container">
                 <div class="slideshow-container">
                     <div class="mySlides">
-                        <img src="assets/slides/Prof-1.jpg" style="width:100%">
-                        <div class="slide-title">Prof. ZY Dong is giving talk</div>
-                    </div>
-                    <div class="mySlides">
                         <img src="assets/slides/Prof-2.jpg" style="width:100%">
                         <div class="slide-title">Prof. ZY Dong in Hong Kong</div>
+                    </div>
+                    <div class="mySlides">
+                        <img src="assets/slides/Prof-1.jpg" style="width:100%">
+                        <div class="slide-title">Prof. ZY Dong is giving talk</div>
                     </div>
                 
 
@@ -187,16 +186,14 @@
 
             .research-area {
                 position: relative;
-                background: linear-gradient(145deg, #ffffff 0%, #fef7f7 50%, #ffffff 100%);
+                background: var(--card-bg);
                 border-radius: 24px;
                 padding: 0;
-                border: 2px solid rgba(189, 56, 75, 0.1);
+                border: 1px solid var(--card-border);
                 transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
                 cursor: pointer;
                 overflow: hidden;
-                box-shadow:
-                    0 10px 30px rgba(189, 56, 75, 0.1),
-                    0 4px 12px rgba(0, 0, 0, 0.05);
+                box-shadow: var(--shadow-md);
                 transform: translateZ(0);
             }
 
@@ -208,7 +205,7 @@
                 right: -50px;
                 width: 150px;
                 height: 150px;
-                background: radial-gradient(circle, rgba(189, 56, 75, 0.08) 0%, transparent 70%);
+                background: var(--card-accent);
                 border-radius: 50%;
                 pointer-events: none;
                 transition: transform 0.4s ease;
@@ -221,16 +218,14 @@
 
             .research-area:hover {
                 transform: translateY(-12px) rotate(1deg);
-                box-shadow:
-                    0 20px 50px rgba(189, 56, 75, 0.15),
-                    0 10px 25px rgba(0, 0, 0, 0.1);
-                border-color: rgba(189, 56, 75, 0.25);
+                box-shadow: var(--shadow-lg);
+                border-color: rgba(var(--primary-rgb), 0.22);
             }
 
             .research-area-header {
                 padding: 28px 25px 20px 25px;
                 background: linear-gradient(145deg, #ffffff 0%, #f9fafb 100%);
-                border-bottom: 1px solid rgba(189, 56, 75, 0.06);
+                border-bottom: 1px solid rgba(var(--primary-rgb), 0.08);
                 position: relative;
                 overflow: hidden;
             }
@@ -242,7 +237,7 @@
                 right: -20px;
                 width: 60px;
                 height: 60px;
-                background: linear-gradient(135deg, rgba(189, 56, 75, 0.1) 0%, rgba(231, 76, 60, 0.1) 100%);
+                background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.10) 0%, rgba(var(--primary-2-rgb), 0.12) 100%);
                 border-radius: 50%;
                 transform: translateY(-50%);
                 transition: all 0.4s ease;
@@ -256,13 +251,13 @@
 
             .research-area i {
                 font-size: 2.2rem;
-                background: linear-gradient(135deg, var(--primary-color) 0%, #E74C3C 100%);
+                background: var(--button-gradient);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 margin-bottom: 16px;
                 display: block;
-                text-shadow: 0 4px 12px rgba(189, 56, 75, 0.15);
+                text-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.14);
                 transition: all 0.3s ease;
                 position: relative;
                 z-index: 1;
@@ -270,16 +265,13 @@
 
             .research-area:hover i {
                 transform: scale(1.1) rotate(5deg);
-                filter: drop-shadow(0 6px 16px rgba(189, 56, 75, 0.25));
+                filter: drop-shadow(0 6px 16px rgba(var(--primary-rgb), 0.22));
             }
 
             .research-area h3 {
                 font-size: 1.3rem;
                 font-weight: 800;
-                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+                color: var(--primary-ink);
                 margin: 0;
                 line-height: 1.25;
                 letter-spacing: -0.5px;
@@ -290,15 +282,12 @@
 
             .research-area:hover h3 {
                 transform: translateX(3px);
-                background: linear-gradient(135deg, var(--primary-color) 0%, #E74C3C 100%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+                color: var(--primary-color);
             }
 
             .research-area-body {
                 padding: 20px 25px 25px 25px;
-                background: linear-gradient(155deg, #fafbfc 0%, #ffffff 100%);
+                background: linear-gradient(155deg, var(--surface) 0%, rgba(15, 23, 42, 0.02) 60%, var(--surface) 100%);
                 position: relative;
             }
 
@@ -313,7 +302,7 @@
             .research-area .research-list li {
                 position: relative;
                 padding: 8px 0 8px 20px;
-                color: #5a6c7d;
+                color: var(--muted);
                 font-size: 0.92rem;
                 line-height: 1.4;
                 margin-bottom: 6px;
@@ -338,7 +327,7 @@
             }
 
             .research-area .research-list li strong {
-                color: #34495e;
+                color: var(--text);
                 font-weight: 700;
                 display: block;
                 margin-bottom: 2px;
@@ -355,7 +344,7 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: linear-gradient(135deg, var(--primary-color) 0%, #c0392b 50%, #9b59b6 100%);
+                background: var(--button-gradient);
                 color: white;
                 padding: 16px 20px;
                 text-align: center;
@@ -568,175 +557,10 @@
             </div>
         </section>
 
-        <section id="seminar" class="section">
-            <div class="container">
-                <h2 class="section-title">Seminars & Talks</h2>
-                <div class="seminars-list">
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">Jul. 29, 2025</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=aibo">6G Empowered Intelligent High-Speed Railway</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Bo Ai @ BJTU, China</p>
-                            <p class="seminar-description">This talk presents an in-depth analysis of the requirements for future intelligent HSR systems and examines how emerging 6G technologies can address these challenges.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=aibo"><img src="data/seminar/aibo/featured.jpg" alt="Seminar by Prof. Bo Ai"></a>
-                        </div>
-                    </div>
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">Mar. 27, 2025</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=weigao">Towards Prevalence of On-Device AI with Full Runtime Adaptability</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Wei Gao @ Pittsburgh, USA</p>
-                            <p class="seminar-description">This talk explores adaptable on-device AI for real-time inference and training in resource-limited settings, with applications in healthcare and embodied AI.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=weigao"><img src="data/seminar/weigao/featured.jpg" alt="Seminar by Prof. Wei Gao"></a>
-                        </div>
-                    </div>
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">Dec. 17, 2024</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=Dusit">Toward Scalable Generative AI via Mixture of Experts in Mobile Edge Networks</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Dusit Niyato @ NTU, Singapore</p>
-                            <p class="seminar-description">This talk explores scalable generative AI through mixture of experts in mobile edge networks, addressing challenges in resource utilization when deployed on local user devices.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=Dusit"><img src="data/seminar/Dusit/featured.jpg" alt="Seminar by Prof. Dusit Niyato"></a>
-                        </div>
-                    </div>
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">Dec. 3, 2024</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=davidAtienza">Accelerator-Centric Edge AI Architectures for Low-Power and Personalized Wearables</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. David Atienza @ EPFL, Switzerland</p>
-                            <p class="seminar-description">A talk on edge AI architectures for wearable systems, focusing on integrating different families of accelerators for energy-efficient computing.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=davidAtienza"><img src="data/seminar/davidAtienza/featured.png" alt="Seminar by Prof. David Atienza"></a>
-                        </div>
-                    </div>
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">May 13, 2024</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=24-05-13-LiuJianqing">Quantum Communications, Applications and Challenges</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Jianqing Liu @ NCSU, USA</p>
-                            <p class="seminar-description">An exploration of quantum communications principles, applications such as quantum key distribution, and the technical challenges in the field.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=24-05-13-LiuJianqing"><img src="data/seminar/24-05-13-LiuJianqing/featured.jpg" alt="Seminar by Prof. Jianqing Liu"></a>
-                        </div>
-                    </div>
-                    
-
-                    
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">Oct. 9, 2023</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=haibozhou">A Decoupled Radio Access Networks Architecture for 6G</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Haibo Zhou @ NJU, China</p>
-                            <p class="seminar-description">This talk introduces a fully-decoupled radio access network architecture for 6G that enhances spectrum utilization and improves user experience.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=haibozhou"><img src="data/seminar/haibozhou/featured.jpg" alt="Seminar by Prof. Haibo Zhou"></a>
-                        </div>
-                    </div>
-                    
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">Oct. 9, 2023</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=nancheng">RingSFL: An Adaptive Split Federated Learning Towards Taming Client Heterogeneity</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Nan Cheng @ Xidian, China</p>
-                            <p class="seminar-description">A presentation on a novel distributed learning scheme that integrates federated learning with a model split mechanism to adapt to client heterogeneity.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=nancheng"><img src="data/seminar/nancheng/featured.jpg" alt="Seminar by Prof. Nan Cheng"></a>
-                        </div>
-                    </div>
-                    
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">Oct. 7, 2023</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=weihuazhuang">Stochastic Cumulative DNN Inference for Intelligent IoT Applications</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Weihua Zhuang @ Waterloo, Canada</p>
-                            <p class="seminar-description">A discussion on when to offload DNN inference computation from IoT devices to the edge and how to incorporate multiple inference results to improve accuracy.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=weihuazhuang"><img src="data/seminar/weihuazhuang/featured.jpg" alt="Seminar by Prof. Weihua Zhuang"></a>
-                        </div>
-                    </div>
-                    
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">May 3, 2023</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=PhoneLin">Data-Driven Anomaly Detection & Prediction for IoT</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Phone Lin @ NTU, Taiwan</p>
-                            <p class="seminar-description">This talk illustrates technologies and solutions for anomaly detection/prediction in IoT systems, along with prototypes and applications.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=PhoneLin"><img src="data/seminar/PhoneLin/featured.jpg" alt="Seminar by Prof. Phone Lin"></a>
-                        </div>
-                    </div>
-                    
-                    <div class="seminar-item">
-                        <div class="seminar-date">
-                            <span class="date">May 3, 2023</span>
-                        </div>
-                        <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=chih-wei-huang">Enhancing Resource Management and Remote 3D Rendering for Future Wireless Networks</a></h3>
-                            <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
-                            <p class="speaker-name">Prof. Chih-Wei Huang @ NCU, Taiwan</p>
-                            <p class="seminar-description">This talk examines recent advancements in wireless networks for supporting complex applications like MIMO systems and mixed reality experiences.</p>
-                        </div>
-                        <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=chih-wei-huang"><img src="data/seminar/chih-wei-huang/featured.jpg" alt="Seminar by Prof. Chih-Wei Huang"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="view-all-seminars">
-                    <a href="#" class="btn btn-primary"><i class="fas fa-microphone"></i> View All Seminars</a>
-                </div> -->
-            </div>
-        </section>
-
         <section id="publications" class="section">
             <div class="container">
                 <h2 class="section-title">Publications</h2>
-                <p>Check Prof. Fang's <a href="https://scholars.cityu.edu.hk/en/persons/yuguang-fang(b2d78936-ab0a-4186-9f64-0f468013de23)/publications.html" target="_blank">CityU Scholars</a> to obtain the full list of publications.</p>
-                <div id="publications-container">
-                    <!-- Publications will be dynamically loaded here by year -->
-                </div>
-                
-                <div class="view-all-news text-center mt-4">
-                    <a href="pages/publications.html" class="btn btn-primary" target="_self"><i class="fas fa-book"></i> View All Publications</a>
-                </div>
+                <p>Check Prof. Dong's <a href="https://scholar.google.com/citations?user=7FORgWsAAAAJ&hl=en" target="_blank">Google Scholar</a> to obtain the full list of publications.</p>
             </div>
         </section>
 
@@ -751,130 +575,10 @@
             </div>
             <br><br><br><br>
             <div style="width: 15%; height: auto; margin: auto;">
-                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=5ARm8_nN_s8xJvlRADyN_VZA0ugAYp45tSMSw9xW0Uc"></script>
+                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=HpSbav9lXBG3sLnfRtwdw0R3n9GyHPV-KBoGVoMnwsE"></script>
             </div>
         </section>
 
-        <script>
-            // Create year containers dynamically when publications are loaded
-            document.addEventListener('DOMContentLoaded', function() {
-                fetch('data/publications.json')
-                    .then(response => response.json())
-                    .then(publications => {
-                        // Filter publications for current year only
-                        const currentYear = new Date().getFullYear().toString();
-                        const currentYearPublications = publications.filter(pub => pub.year === currentYear);
-
-                        // Create container for current year only
-                        const container = document.getElementById('publications-container');
-                        if (currentYearPublications.length > 0) {
-                            const yearSection = document.createElement('div');
-                            yearSection.innerHTML = `
-                                <h3 class="year-divider">Accepted Papers in ${currentYear}</h3>
-                                <div class="publications-list" id="publications-${currentYear}"></div>
-                            `;
-                            container.appendChild(yearSection);
-
-                            // Render the publications
-                            const publicationsList = document.getElementById(`publications-${currentYear}`);
-                            renderPublications(currentYearPublications, publicationsList);
-                        } else {
-                            container.innerHTML = '<p class="no-publications">No publications available for the current year.</p>';
-                        }
-                    })
-                    .catch(error => console.error('Error:', error));
-            });
-
-            function renderPublications(publications, container) {
-                // Counter for auto-numbering publications
-                let counter = 1;
-
-                publications.forEach(pub => {
-                    const pubElement = document.createElement('div');
-                    const classes = ['publication', pub.type];
-                    if (pub.isFirstAuthor) classes.push('first-author');
-                    pubElement.className = classes.join(' ');
-                    pubElement.dataset.year = pub.year || "2024";
-
-                    // Create venue/type label for left side
-                    const venueElement = document.createElement('div');
-                    venueElement.className = 'pub-venue-label';
-
-                    // Determine what text to show in the left column
-                    let venueText = '';
-                    if (pub.type === 'preprint') {
-                        venueText = 'Preprint';
-                    } else if (pub.venue) {
-                        // Extract short venue name from the venue string or tags
-                        const venueTag = pub.tags.find(tag => tag.class === 'venue-tag');
-                        venueText = venueTag ? venueTag.text : pub.venue.split(',')[0].split(' ').pop();
-                    }
-
-                    // Create publication number
-                    const numberElement = document.createElement('span');
-                    numberElement.className = 'pub-number';
-                    numberElement.textContent = counter++;
-
-                    venueElement.appendChild(numberElement);
-
-                    // Add venue text below the number
-                    const venueTextElement = document.createElement('span');
-                    venueTextElement.className = 'venue-text';
-                    // Allow explicit line breaks from data (e.g., "GLOBECOM'25<br>Best Paper Award")
-                    venueTextElement.innerHTML = venueText;
-                    venueElement.appendChild(venueTextElement);
-
-                    // Create publication content container
-                    const contentElement = document.createElement('div');
-                    contentElement.className = 'pub-content';
-
-                    // Add title
-                    const titleElement = document.createElement('h3');
-                    titleElement.textContent = pub.title;
-                    contentElement.appendChild(titleElement);
-
-                    // Add authors
-                    const authorsElement = document.createElement('p');
-                    authorsElement.className = 'authors';
-                    authorsElement.innerHTML = pub.authors;
-                    contentElement.appendChild(authorsElement);
-
-                    // Add full venue if it exists (for accepted papers)
-                    if (pub.venue) {
-                        const fullVenueElement = document.createElement('p');
-                        fullVenueElement.className = 'venue';
-                        fullVenueElement.textContent = pub.venue;
-                        contentElement.appendChild(fullVenueElement);
-                    }
-
-                    // Add tags
-                    if (pub.tags && pub.tags.length > 0) {
-                        const tagsElement = document.createElement('div');
-                        tagsElement.className = 'pub-tags';
-
-                        pub.tags.forEach(tag => {
-                            const tagElement = document.createElement('a');
-                            tagElement.className = `tag ${tag.class}`;
-                            tagElement.textContent = tag.text;
-                            if (tag.link) {
-                                tagElement.href = tag.link;
-                                tagElement.target = '_blank';
-                            }
-                            tagsElement.appendChild(tagElement);
-                        });
-
-                        contentElement.appendChild(tagsElement);
-                    }
-
-                    // Assemble the publication element
-                    pubElement.appendChild(venueElement);
-                    pubElement.appendChild(contentElement);
-
-                    // Add to container
-                    container.appendChild(pubElement);
-                });
-            }
-        </script>
 
         <!-- <section id="location" class="section">
             <div class="container">

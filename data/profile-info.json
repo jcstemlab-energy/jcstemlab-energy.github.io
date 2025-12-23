@@ -1,35 +1,25 @@
 {
   "name": "JC STEM Lab of Future Energy Systems",
-  "subtitle": "<span class=\"chinese-lab-name\">賽馬會未來能源系統創科實驗室</span><br>Department of Electronic Engineering<br>City University of Hong Kong",
+  "subtitle": "<span class=\"chinese-lab-name\">賽馬會未來能源系統創科實驗室</span><br>Department of Electrical Engineering<br>City University of Hong Kong",
+  "email": "eehead@cityu.edu.hk",
+  "phone": "34427838",
+  "office": "G6309 YEUNG",
   "socialLinks": [
     {
       "type": "email",
-      "url": "mailto:my.Fang@cityu.edu.hk",
+      "url": "mailto:eehead@cityu.edu.hk",
       "icon": "<i class=\"fas fa-envelope\"></i>"
     },
     {
+      "type": "phone",
+      "url": "tel:+852-34427838",
+      "icon": "<i class=\"fas fa-phone\"></i>"
+    },
+    {
       "type": "googleScholar",
-      "url": "https://scholar.google.com/citations?user=dJgRKmwAAAAJ",
+      "url": "https://scholar.google.com/citations?user=7FORgWsAAAAJ&hl=en",
       "icon": "<i class=\"fas fa-graduation-cap\"></i>",
-      "target": "_blank"
-    },
-    {
-      "type": "location",
-      "url": "https://www.google.com/maps/place/City+University+of+Hong+Kong+(CityU)/@22.3370342,114.1701451,881m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3404073400f3ef35:0xeb61704ffb0ba959!8m2!3d22.3370342!4d114.17272!16zL20vMDI0azFs?entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D",
-      "icon": "<i class=\"fas fa-map-marker-alt\"></i>",
-      "target": "_blank"
-    },
-    {
-      "type": "website",
-      "url": "https://www.cs.cityu.edu.hk/~yugufang/",
-      "icon": "<i class=\"fas fa-globe\"></i>",
-      "target": "_blank"
-    },
-    {
-      "type": "oldwebsite",
-      "url": "https://winet.cs.cityu.edu.hk/",
-      "icon": "<i class=\"fas fa-history\"></i>",
       "target": "_blank"
     }
   ]
-} 
+}

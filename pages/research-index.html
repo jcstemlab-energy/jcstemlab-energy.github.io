@@ -117,30 +117,27 @@
         }
         
         /* Color variations for different cards */
-        .card-cad { border-left-color: #3498db; }
-        .card-cad i { color: #3498db; }
-        .card-cad a { background: #3498db; }
-        .card-cad a:hover { background: #2980b9; }
-        
-        .card-health { border-left-color: #e74c3c; }
-        .card-health i { color: #e74c3c; }
-        .card-health a { background: #e74c3c; }
-        .card-health a:hover { background: #c0392b; }
-        
-        .card-smart-city { border-left-color: #9b59b6; }
-        .card-smart-city i { color: #9b59b6; }
-        .card-smart-city a { background: #9b59b6; }
-        .card-smart-city a:hover { background: #8e44ad; }
-        
-        .card-wireless { border-left-color: #27ae60; }
-        .card-wireless i { color: #27ae60; }
-        .card-wireless a { background: #27ae60; }
-        .card-wireless a:hover { background: #229954; }
-        
-        .card-ai { border-left-color: #f39c12; }
-        .card-ai i { color: #f39c12; }
-        .card-ai a { background: #f39c12; }
-        .card-ai a:hover { background: #e67e22; }
+        /* Unified academic theme: keep a single brand accent */
+        .card-cad,
+        .card-health,
+        .card-smart-city,
+        .card-wireless,
+        .card-ai { border-left-color: var(--primary-color); }
+        .card-cad i,
+        .card-health i,
+        .card-smart-city i,
+        .card-wireless i,
+        .card-ai i { color: var(--primary-color); }
+        .card-cad a,
+        .card-health a,
+        .card-smart-city a,
+        .card-wireless a,
+        .card-ai a { background: var(--primary-color); }
+        .card-cad a:hover,
+        .card-health a:hover,
+        .card-smart-city a:hover,
+        .card-wireless a:hover,
+        .card-ai a:hover { background: var(--primary-2, #3B82F6); }
     </style>
 </head>
 <body>

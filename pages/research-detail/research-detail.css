@@ -2,15 +2,16 @@
 
 /* CSS Variables for consistent theming */
 :root {
-    --primary-color: #bd384b;
-    --secondary-color: #2c3e50;
-    --text-color: #333;
-    --bg-color: #fff;
+    /* Keep consistent with sitewide modern academic blue theme */
+    --primary-color: #1D4ED8;
+    --secondary-color: #0B1F3A;
+    --text-color: #0F172A;
+    --bg-color: #ffffff;
     --font-family: 'Inter', sans-serif;
     --border-radius: 8px;
     --transition: 0.3s ease;
-    --light-gray: #f8f9fa;
-    --border-color: #e9ecef;
+    --light-gray: #F5F8FF;
+    --border-color: rgba(15, 23, 42, 0.12);
 }
 
 /* Global styles */
@@ -35,7 +36,7 @@ body {
 
 /* Header Styles */
 .research-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%);
     color: white;
     padding: 60px 0;
     position: relative;
@@ -217,44 +218,44 @@ body {
 
 /* Special styling for different research areas */
 .cad-theme {
-    --theme-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --theme-gradient: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%);
 }
 
 .health-theme {
-    --theme-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --theme-gradient: linear-gradient(135deg, #1D4ED8 0%, #60A5FA 100%);
 }
 
 .smart-city-theme {
-    --theme-gradient: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    --theme-gradient: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%);
 }
 
 .wireless-theme {
-    --theme-gradient: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    --theme-gradient: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%);
 }
 
 .ai-security-theme {
-    --theme-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    --theme-gradient: linear-gradient(135deg, #1D4ED8 0%, #60A5FA 100%);
 }
 
 /* Apply theme gradients to headers */
 .cad-theme .research-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--theme-gradient);
 }
 
 .health-theme .research-header {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: var(--theme-gradient);
 }
 
 .smart-city-theme .research-header {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: var(--theme-gradient);
 }
 
 .wireless-theme .research-header {
-    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    background: var(--theme-gradient);
 }
 
 .ai-security-theme .research-header {
-    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    background: var(--theme-gradient);
 }
 
 /* Responsive Design */

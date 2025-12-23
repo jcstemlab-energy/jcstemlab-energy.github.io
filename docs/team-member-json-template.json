@@ -1,0 +1,64 @@
+{
+  "id": "phd24-zhangsan",
+  "title": "Mr. ZHANG, San",
+  "role": [
+    {
+      "text": "PhD Student",
+      "highlighted": true
+    },
+    {
+      "text": "Department of Electrical Engineering, City University of Hong Kong",
+      "highlighted": false
+    }
+  ],
+  "avatar": "data/people/PhD24_ZhangSan/avatar.jpg",
+  "socialLinks": [
+    {
+      "type": "envelope",
+      "url": "mailto:zhangsan@cityu.edu.hk",
+      "icon": "fas fa-envelope",
+      "title": "Email"
+    },
+    {
+      "type": "google-scholar",
+      "url": "https://scholar.google.com/citations?user=xxxxx",
+      "icon": "fas fa-graduation-cap",
+      "title": "Google Scholar"
+    },
+    {
+      "type": "house-user",
+      "url": "https://www.example.com",
+      "icon": "fas fa-globe",
+      "title": "Homepage"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/username",
+      "icon": "fab fa-github",
+      "title": "GitHub"
+    }
+  ],
+  "interests": [
+    "Power Systems",
+    "Smart Grid",
+    "Renewable Energy Integration",
+    "Load Modeling",
+    "Energy Market"
+  ],
+  "biography": "Zhang San is a PhD student in the Department of Electrical Engineering at City University of Hong Kong, supervised by Prof. DONG Zhaoyang. His research focuses on power system stability and smart grid technologies. He received his Master's degree from Tsinghua University in 2022.\n\nIf you are interested in collaborating or have any questions, please feel free to contact me.",
+  "education": [
+    {
+      "degree": "MEng in Electrical Engineering",
+      "institution": "Tsinghua University, Beijing, China",
+      "year": "2020 - 2022"
+    },
+    {
+      "degree": "BEng in Electrical Engineering",
+      "institution": "Peking University, Beijing, China",
+      "year": "2016 - 2020"
+    }
+  ],
+  "detailPage": "data/people/PhD24_ZhangSan/index.html",
+  "last_name": "zhangsan"
+}
+
