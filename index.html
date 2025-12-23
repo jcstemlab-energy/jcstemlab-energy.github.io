@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,90 +10,130 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-   
 
-    <nav>
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="#about" class="active">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#latest-news">News</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <!-- <li><a href="#location">Contact</a></li> -->
-            </ul>
-            <div class="nav-logo">
-                <img src="assets/logo.png" alt="JC STEM Lab Logo">
+<body>
+
+
+    <nav id="main-nav">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="#about" class="logo-link">
+                    <img src="assets/logo.png" alt="JC STEM Lab Logo" class="nav-logo-img">
+                    <span class="logo-text">JC STEM Lab</span>
+                </a>
             </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#latest-news">News</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
     <main>
-        <section id="slideshow" class="section full-width-section">
-            <div class="container">
-                <div class="slideshow-container">
-                    <div class="mySlides">
-                        <img src="assets/slides/Prof-2.jpg" style="width:100%">
-                        <div class="slide-title">Prof. ZY Dong in Hong Kong</div>
+        <section id="hero">
+            <div class="hero-slides">
+                <div class="hero-slide active">
+                    <div class="slide-bg" style="background-image: url('assets/slides/Prof-2.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">JC STEM Lab of Future Energy System</h1>
+                            <p class="hero-subtitle">Leading innovation in power systems and smart grids for a
+                                sustainable future.</p>
+                            <div class="hero-actions">
+                                <a href="#about" class="btn btn-primary">Learn More</a>
+                                <a href="#research" class="btn btn-outline">Our Research</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mySlides">
-                        <img src="assets/slides/Prof-1.jpg" style="width:100%">
-                        <div class="slide-title">Prof. ZY Dong is giving talk</div>
+                </div>
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('assets/slides/Prof-1.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">Shaping the Future of Smart Cities</h1>
+                            <p class="hero-subtitle">Advanced research in System Stability, Reliability, and Energy
+                                Market dynamics.</p>
+                            <div class="hero-actions">
+                                <a href="#team" class="btn btn-primary">Meet Our Team</a>
+                                <a href="#publications" class="btn btn-outline">Publications</a>
+                            </div>
+                        </div>
                     </div>
-                
-
-                    <!-- 前后导航按钮 -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
+            </div>
 
-                <!-- 导航点 -->
-                <div class="dots-container">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
+            <div class="hero-controls">
+                <button class="hero-prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+                <div class="hero-dots">
+                    <span class="hero-dot active" onclick="currentSlide(1)"></span>
+                    <span class="hero-dot" onclick="currentSlide(2)"></span>
                 </div>
+                <button class="hero-next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></button>
             </div>
         </section>
-        <header>
-            <div class="container">
-                <div class="header-content">
-                    <div class="profile-info">
-                        <!-- Profile info will be loaded from JSON -->
-                    </div>
-                </div>
-            </div>
-        </header>
 
         <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">About</h2>
-                <div class="about-content">
-                    <p>Led by <a href="https://www.cityu.edu.hk/stfprofile/zydong.htm">Professor DONG Zhaoyang</a>, the <b>JC STEM Lab of Future Energy System</b> was established in November 2024 with generous support from the Hong Kong Jockey Club Charities Trust. The Lab serves as a dynamic hub for graduate students, postdoctoral researchers, and visiting scholars. <br><br>
-                        
-                    Its research is centered on Power Systems and Smart Grids, with key areas of focus including System Stability & Reliability, System Planning & Operations, Microgrid / Smart Grid Development, Load Modeling, Integration of Wind/PV/BESS & GPS, Electric Vehicles & Virtual Power Plants (VPP), and Energy Market dynamics. The laboratory has delivered research outputs for multiple government departments and enterprises, and is dedicated to making significant contributions to urban energy conservation, cost reduction, and efficiency enhancement.</p>
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Established in 2024</h2>
+                    <p class="about-lead">Led by <a href="https://www.cityu.edu.hk/stfprofile/zydong.htm">Professor DONG
+                            Zhaoyang</a>, the <b>JC STEM Lab of Future Energy System</b> serves as a dynamic hub for
+                        cutting-edge energy research.</p>
+                    <p>Established with generous support from the Hong Kong Jockey Club Charities Trust, our laboratory
+                        is dedicated to making significant contributions to urban energy conservation, cost reduction,
+                        and efficiency enhancement.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-count">10+</span>
+                            <span class="highlight-label">Active Projects</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-count">30+</span>
+                            <span class="highlight-label">Researchers</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-count">HK$XX</span>
+                            <span class="highlight-label">Funding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/slides/Prof-2.jpg" alt="Lab Research" class="img-responsive rounded shadow">
+                    <div class="image-accent"></div>
                 </div>
             </div>
         </section>
 
-        <section id="research" class="section">
+        <section id="research" class="section bg-light">
             <div class="container">
-                <h2 class="section-title">Research Thrusts</h2>
-                <div class="research-areas" id="research-areas-container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Research Thrusts</h2>
+                    <p class="section-subtitle">Our interdisciplinary research focuses on the next generation of smart
+                        city energy solutions.</p>
+                </div>
+                <div class="research-grid" id="research-areas-container">
                     <!-- Research areas will be dynamically loaded from research.json -->
                 </div>
             </div>
         </section>
 
         <script>
-            // Load research data from JSON
-            document.addEventListener('DOMContentLoaded', function() {
+            // Load research data from JSON with modern card design
+            document.addEventListener('DOMContentLoaded', function () {
                 fetch('data/research.json')
                     .then(response => response.json())
                     .then(data => {
                         const container = document.getElementById('research-areas-container');
-                        
-                        // Define page mapping for each research category
                         const pageMapping = {
                             "Connected and Autonomous Driving (CAD)": "pages/research-detail/research-connected-autonomous-driving.html",
                             "Health, Safety, and Human Sensing": "pages/research-detail/research-health-safety-sensing.html",
@@ -100,538 +141,124 @@
                             "Wireless Communication and Networking": "pages/research-detail/research-wireless-communication-networking.html",
                             "Artificial Intelligence Security and Data Privacy": "pages/research-detail/research-ai-security-data-privacy.html"
                         };
-                        
-                        // Process each main research category (一级方向)
+
+                        const iconMap = {
+                            "System Stability & Reliability": "fas fa-shield-virus",
+                            "System Planning & Operations": "fas fa-network-wired",
+                            "Microgrid / Smart Grid": "fas fa-bolt",
+                            "Load Modeling": "fas fa-chart-area",
+                            "Wind/PV/BESS & GPS": "fas fa-solar-panel",
+                            "Electric Vehicles & VPP": "fas fa-car-battery",
+                            "Energy Market": "fas fa-exchange-alt"
+                        };
+
                         Object.entries(data).forEach(([category, subcategories]) => {
-                            // Select appropriate icon for main category
-                            let icon = 'fas fa-flask';
-                            if (category === "System Stability & Reliability") {
-                                icon = 'fas fa-shield-alt';
-                            } else if (category === "System Planning & Operations") {
-                                icon = 'fas fa-project-diagram';
-                            } else if (category === "Microgrid / Smart Grid") {
-                                icon = 'fas fa-bolt';
-                            } else if (category === "Load Modeling") {
-                                icon = 'fas fa-chart-line';
-                            } else if (category === "Wind/PV/BESS & GPS") {
-                                icon = 'fas fa-wind';
-                            } else if (category === "Electric Vehicles & VPP") {
-                                icon = 'fas fa-charging-station';
-                            } else if (category === "Energy Market") {
-                                icon = 'fas fa-chart-bar';
-                            } else if (category === "Connected and Autonomous Driving (CAD)") {
-                                icon = 'fas fa-car';
-                            } else if (category === "Integrated Design of Smart City and Low Altitude Economy (LAE)") {
-                                icon = 'fas fa-helicopter';
-                            } else if (category.includes("Transportation") || category.includes("Vehicle")) {
-                                icon = 'fas fa-car';
-                            } else if (category.includes("Health")) {
-                                icon = 'fas fa-heartbeat';
-                            } else if (category.includes("Communication") || category.includes("Wireless")) {
-                                icon = 'fas fa-signal';
-                            } else if (category.includes("Security") || category.includes("Privacy")) {
-                                icon = 'fas fa-user-secret';
-                            } else if (category.includes("Maritime")) {
-                                icon = 'fas fa-ship';
-                            } else if (category.includes("Smart City")) {
-                                icon = 'fas fa-city';
-                            }
-                            
-                            const researchArea = document.createElement('div');
-                            researchArea.className = 'research-area';
-                            researchArea.setAttribute('data-category', encodeURIComponent(category));
-                            
-                            researchArea.innerHTML = `
-                                <div class="research-area-header">
-                                    <i class="${icon}"></i>
-                                    <h3>${category}</h3>
-                                </div>
-                                <div class="research-area-body">
-                                    <ul class="research-list">
-                                        ${Object.keys(subcategories).map(subcategory => `<li><strong>${subcategory}</strong></li>`).join('')}
+                            const icon = iconMap[category] || 'fas fa-flask';
+                            const card = document.createElement('div');
+                            card.className = 'research-card';
+
+                            card.innerHTML = `
+                                <div class="card-icon"><i class="${icon}"></i></div>
+                                <div class="card-content">
+                                    <h3 class="card-title">${category}</h3>
+                                    <ul class="card-list">
+                                        ${Object.keys(subcategories).slice(0, 3).map(sub => `<li>${sub}</li>`).join('')}
                                     </ul>
                                 </div>
-                                <div class="research-overlay">
-                                    <span>View Details</span>
+                                <div class="card-footer">
+                                    <span class="btn-text">View Details <i class="fas fa-arrow-right"></i></span>
                                 </div>
                             `;
-                            
-                            container.appendChild(researchArea);
-                            
-                            // Add click event to navigate to static page
-                            researchArea.addEventListener('click', function() {
-                                const targetPage = pageMapping[category];
-                                if (targetPage) {
-                                    window.location.href = targetPage;
-                                } else {
-                                    // Fallback to old dynamic page if mapping not found
-                                localStorage.setItem('selectedResearchCategory', this.dataset.category);
-                                window.location.href = 'pages/research-details.html';
+
+                            card.addEventListener('click', () => {
+                                const target = pageMapping[category];
+                                if (target) window.location.href = target;
+                                else {
+                                    localStorage.setItem('selectedResearchCategory', encodeURIComponent(category));
+                                    window.location.href = 'pages/research-details.html';
                                 }
                             });
+                            container.appendChild(card);
                         });
                     })
-                    .catch(error => console.error('Error loading research data:', error));
+                    .catch(err => console.error('Error loading research:', err));
             });
         </script>
-        
-        <style>
-            .research-areas {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-                gap: 25px;
-                margin-top: 30px;
-                padding: 0 20px;
-            }
-
-            .research-area {
-                position: relative;
-                background: var(--card-bg);
-                border-radius: 24px;
-                padding: 0;
-                border: 1px solid var(--card-border);
-                transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-                cursor: pointer;
-                overflow: hidden;
-                box-shadow: var(--shadow-md);
-                transform: translateZ(0);
-            }
-
-            /* 添加装饰性背景图案 */
-            .research-area::after {
-                content: '';
-                position: absolute;
-                top: -50px;
-                right: -50px;
-                width: 150px;
-                height: 150px;
-                background: var(--card-accent);
-                border-radius: 50%;
-                pointer-events: none;
-                transition: transform 0.4s ease;
-                z-index: 0;
-            }
-
-            .research-area:hover::after {
-                transform: scale(1.2);
-            }
-
-            .research-area:hover {
-                transform: translateY(-12px) rotate(1deg);
-                box-shadow: var(--shadow-lg);
-                border-color: rgba(var(--primary-rgb), 0.22);
-            }
-
-            .research-area-header {
-                padding: 28px 25px 20px 25px;
-                background: linear-gradient(145deg, #ffffff 0%, #f9fafb 100%);
-                border-bottom: 1px solid rgba(var(--primary-rgb), 0.08);
-                position: relative;
-                overflow: hidden;
-            }
-
-            .research-area-header::before {
-                content: '';
-                position: absolute;
-                top: 50%;
-                right: -20px;
-                width: 60px;
-                height: 60px;
-                background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.10) 0%, rgba(var(--primary-2-rgb), 0.12) 100%);
-                border-radius: 50%;
-                transform: translateY(-50%);
-                transition: all 0.4s ease;
-                opacity: 0.3;
-            }
-
-            .research-area:hover .research-area-header::before {
-                right: -10px;
-                opacity: 0.6;
-            }
-
-            .research-area i {
-                font-size: 2.2rem;
-                background: var(--button-gradient);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                margin-bottom: 16px;
-                display: block;
-                text-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.14);
-                transition: all 0.3s ease;
-                position: relative;
-                z-index: 1;
-            }
-
-            .research-area:hover i {
-                transform: scale(1.1) rotate(5deg);
-                filter: drop-shadow(0 6px 16px rgba(var(--primary-rgb), 0.22));
-            }
-
-            .research-area h3 {
-                font-size: 1.3rem;
-                font-weight: 800;
-                color: var(--primary-ink);
-                margin: 0;
-                line-height: 1.25;
-                letter-spacing: -0.5px;
-                position: relative;
-                z-index: 1;
-                transition: all 0.3s ease;
-            }
-
-            .research-area:hover h3 {
-                transform: translateX(3px);
-                color: var(--primary-color);
-            }
-
-            .research-area-body {
-                padding: 20px 25px 25px 25px;
-                background: linear-gradient(155deg, var(--surface) 0%, rgba(15, 23, 42, 0.02) 60%, var(--surface) 100%);
-                position: relative;
-            }
-
-            .research-area .research-list {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                position: relative;
-                z-index: 1;
-            }
-
-            .research-area .research-list li {
-                position: relative;
-                padding: 8px 0 8px 20px;
-                color: var(--muted);
-                font-size: 0.92rem;
-                line-height: 1.4;
-                margin-bottom: 6px;
-            }
-
-            .research-area .research-list li::before {
-                content: "●";
-                position: absolute;
-                left: 0;
-                color: var(--primary-color);
-                font-weight: 700;
-                font-size: 0.9rem;
-                opacity: 0.8;
-            }
-
-            .research-area .research-list li {
-                transition: transform 0.2s ease, color 0.2s ease;
-            }
-
-            .research-area:hover .research-list li {
-                transform: translateX(3px);
-            }
-
-            .research-area .research-list li strong {
-                color: var(--text);
-                font-weight: 700;
-                display: block;
-                margin-bottom: 2px;
-                font-size: 0.95rem;
-                transition: color 0.3s ease;
-            }
-
-            .research-area:hover .research-list li strong {
-                color: var(--primary-color);
-            }
-
-            .research-overlay {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                background: var(--button-gradient);
-                color: white;
-                padding: 16px 20px;
-                text-align: center;
-                opacity: 0;
-                transform: translateY(100%);
-                transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-                font-weight: 700;
-                font-size: 0.85rem;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                backdrop-filter: blur(10px);
-                border-top: 1px solid rgba(255, 255, 255, 0.2);
-            }
-
-            .research-area:hover .research-overlay {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            .research-overlay span {
-                position: relative;
-                z-index: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 8px;
-            }
-
-            .research-overlay::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
-                pointer-events: none;
-            }
-
-            .research-area:hover .research-overlay span::after {
-                content: '→';
-                margin-left: 4px;
-                transition: transform 0.3s ease;
-            }
-
-            .research-overlay:hover span::after {
-                transform: translateX(4px);
-            }
-
-            /* Enhanced card animation on load */
-            @keyframes cardFadeIn {
-                from {
-                    opacity: 0;
-                    transform: translateY(40px) scale(0.95);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0) scale(1);
-                }
-            }
-
-            @keyframes slideInLeft {
-                from {
-                    opacity: 0;
-                    transform: translateX(-30px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
-            }
-
-            @keyframes slideInRight {
-                from {
-                    opacity: 0;
-                    transform: translateX(30px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateX(0);
-                }
-            }
-
-            .research-area {
-                animation: cardFadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-            }
-
-            .research-area:nth-child(1) {
-                animation-delay: 0.1s;
-                animation-name: slideInLeft;
-            }
-            .research-area:nth-child(2) {
-                animation-delay: 0.2s;
-                animation-name: slideInRight;
-            }
-            .research-area:nth-child(3) {
-                animation-delay: 0.3s;
-                animation-name: slideInLeft;
-            }
-            .research-area:nth-child(4) {
-                animation-delay: 0.4s;
-                animation-name: slideInRight;
-            }
-            .research-area:nth-child(5) {
-                animation-delay: 0.5s;
-                animation-name: slideInLeft;
-            }
-
-            /* Enhanced responsive design */
-            @media (max-width: 768px) {
-                .research-areas {
-                    grid-template-columns: 1fr;
-                    gap: 20px;
-                    padding: 0 15px;
-                }
-
-                .research-area {
-                    border-radius: 20px;
-                }
-
-                .research-area-header {
-                    padding: 24px 22px 18px 22px;
-                }
-
-                .research-area-body {
-                    padding: 18px 22px 22px 22px;
-                }
-
-                .research-area h3 {
-                    font-size: 1.25rem;
-                }
-
-                .research-area i {
-                    font-size: 2rem;
-                    margin-bottom: 14px;
-                }
-
-                .research-area .research-list li {
-                    padding: 7px 0 7px 20px;
-                    font-size: 0.9rem;
-                    margin-bottom: 5px;
-                }
-            }
-
-            @media (max-width: 480px) {
-                .research-areas {
-                    padding: 0 12px;
-                    gap: 18px;
-                }
-
-                .research-area {
-                    border-radius: 20px;
-                    margin: 0 3px;
-                }
-
-                .research-area-header {
-                    padding: 20px 18px 16px 18px;
-                }
-
-                .research-area-body {
-                    padding: 16px 18px 20px 18px;
-                }
-
-                .research-area h3 {
-                    font-size: 1.15rem;
-                    line-height: 1.3;
-                }
-
-                .research-area i {
-                    font-size: 1.8rem;
-                    margin-bottom: 12px;
-                }
-
-                .research-area .research-list li {
-                    padding: 6px 0 6px 20px;
-                    font-size: 0.85rem;
-                    margin-bottom: 4px;
-                }
-            }
-        </style>
 
         <section id="team" class="section">
-            <div class="container">
-                <h2 class="section-title">Our Team</h2>
-                <div class="about-content">
-                    <p>Our lab is led by <a href="https://www.cityu.edu.hk/stfprofile/zydong.htm"><b>Professor DONG Zhaoyang</b></a> and consists of talented researchers and PhD students working on cutting-edge research in power systems, smart grids, renewable energy integration, and energy market dynamics.</p>
-                    
-                    <p>Our team includes:</p>
-                    <ul style="margin-left: 20px; margin-bottom: 20px;">
-                        <li>Faculty Members</li>
-                        <li>Graduate Students and Visiting Researchers</li>
-                        <li>Former Lab Members</li>
+            <div class="container team-preview">
+                <div class="team-info">
+                    <h2 class="section-title">Our Team</h2>
+                    <p class="about-lead">A diverse group of researchers dedicated to advancing energy systems.</p>
+                    <p>Our lab consists of over 30 talented members, including faculty, postdoctoral researchers, and
+                        graduate students, all working at the forefront of power systems and smart grid technology.</p>
+                    <ul class="team-categories">
+                        <li><i class="fas fa-user-tie"></i> Faculty Members</li>
+                        <li><i class="fas fa-user-graduate"></i> Graduate Students</li>
+                        <li><i class="fas fa-users"></i> Visiting Scholars</li>
                     </ul>
-                </div>
-                <div class="view-all-members">
                     <a href="pages/team.html" class="btn btn-primary"><i class="fas fa-users"></i> Meet Our Team</a>
+                </div>
+                <div class="team-visual">
+                    <div class="team-group-photo shadow rounded">
+                        <img src="assets/slides/Prof-1.jpg" alt="Team" class="img-responsive">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="latest-news" class="section">
+        <section id="latest-news" class="section bg-light">
             <div class="container">
-                <h2 class="section-title">Latest News</h2>
-                <div id="news-container" class="news-list">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Updates</h2>
+                    <p class="section-subtitle">Stay up to date with the latest laboratory achievements and events.</p>
+                </div>
+                <div id="news-container" class="news-modern-list">
                     <!-- News items will be dynamically loaded here from news.json -->
                 </div>
-                <div class="view-all-news">
-                    <a href="pages/all-news.html" class="btn btn-primary" target="_self"><i class="fas fa-list"></i> View All News</a>
+                <div class="view-all-news text-center mt-4">
+                    <a href="pages/all-news.html" class="btn btn-outline-dark">View All News</a>
                 </div>
             </div>
         </section>
 
         <section id="publications" class="section">
-            <div class="container">
+            <div class="container publication-summary text-center">
                 <h2 class="section-title">Publications</h2>
-                <p>Check Prof. Dong's <a href="https://scholar.google.com/citations?user=7FORgWsAAAAJ&hl=en" target="_blank">Google Scholar</a> to obtain the full list of publications.</p>
+                <div class="pub-brief">
+                    <p>Check Prof. Dong's <a href="https://scholar.google.com/citations?user=7FORgWsAAAAJ&hl=en"
+                            target="_blank">Google Scholar</a> to obtain the full list of publications.</p>
+                </div>
             </div>
         </section>
-
-        
 
         <section id="funding" class="section">
-            <div class="container">
-                <div style="text-align: center;">Funded by</div>
-                <div style="display: flex; justify-content: center; align-items: center;">
-                  <img src="assets/JC.png" width="30%">
+            <div class="container text-center">
+                <p class="funding-label">Generously Funded by</p>
+                <div class="funding-logos">
+                    <img src="assets/JC.png" alt="Hong Kong Jockey Club" class="funding-logo">
                 </div>
-            </div>
-            <br><br><br><br>
-            <div style="width: 15%; height: auto; margin: auto;">
-                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=HpSbav9lXBG3sLnfRtwdw0R3n9GyHPV-KBoGVoMnwsE"></script>
             </div>
         </section>
 
-
-        <!-- <section id="location" class="section">
+        <section id="visitors" class="section">
             <div class="container">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <div class="contact-icons">
-                            <div class="contact-icon-circle">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="contact-text">
-                            <p><i class="fas fa-envelope" style="color: var(--primary-color); margin-right: 8px;"></i><a href="mailto:my.Fang@cityu.edu.hk">my.Fang@cityu.edu.hk</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icons">
-                            <div class="contact-icon-circle">
-                                <i class="fas fa-globe"></i>
-                            </div>
-                        </div>
-                        <div class="contact-text">
-                            <p><i class="fas fa-user-tie" style="color: var(--primary-color); margin-right: 8px;"></i><a href="https://www.cs.cityu.edu.hk/~yugufang/" target="_blank">Prof. Fang's Homepage</a></p>
-                            <p><i class="fas fa-history" style="color: var(--primary-color); margin-right: 8px;"></i><a href="https://winet.cs.cityu.edu.hk/" target="_blank">Old Lab Homepage</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-icons">
-                            <div class="contact-icon-circle">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                        </div>
-                        <div class="contact-text">
-                            <p><i class="fas fa-map-pin" style="color: var(--primary-color); margin-right: 8px;"></i>83 Tat Chee Ave, Kowloon Tong</p>
-                            <p><i class="fas fa-university" style="color: var(--primary-color); margin-right: 8px;"></i>City University of Hong Kong</p>
-                            <p><i class="fas fa-flag" style="color: var(--primary-color); margin-right: 8px;"></i>Hong Kong SAR, China</p>
-                        </div>
-                    </div>
-                    <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.8299903032237!2d114.17060671538794!3d22.33702048530892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340406afe8d0499d%3A0x1ad5f886553cef1e!2sCity%20University%20of%20Hong%20Kong!5e0!3m2!1sen!2sus!4v1649242800000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                <div class="globe-container shadow rounded">
+                    <script type="text/javascript" id="clstr_globe"
+                        src="//clustrmaps.com/globe.js?d=HpSbav9lXBG3sLnfRtwdw0R3n9GyHPV-KBoGVoMnwsE"></script>
                 </div>
             </div>
-            <br><br><br><br>
-                
-            
-        </section> -->
-        
+        </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="copyright-year"></span> JC STEM Lab of Smart City. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Logo" class="footer-logo">
+                <h3>JC STEM Lab</h3>
+            </div>
+            <p class="copyright">&copy; <span id="copyright-year"></span> JC STEM Lab of Future Energy System. All
+                rights reserved.</p>
         </div>
     </footer>
 
@@ -643,47 +270,47 @@
     <script>
         // 增强平滑滚动效果
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     // 计算导航栏高度，以便滚动到正确位置
                     const navHeight = document.querySelector('nav').offsetHeight;
-                    
+
                     // 获取目标元素的位置
                     const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-                    
+
                     // 滚动到目标位置，减去导航栏高度和小偏移量来优化显示
                     window.scrollTo({
                         top: targetPosition - navHeight - 20,
                         behavior: 'smooth'
                     });
-                    
+
                     // 更新URL中的锚点(可选)
                     history.pushState(null, null, targetId);
                 }
             });
         });
-        
+
         // Mobile navigation horizontal scroll handling
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Make all links open in a new tab
-        document.querySelectorAll('a').forEach(link => {
-            // Skip navigation links that are meant for scrolling within the page
-            // Also skip the "View All News" link
-            const href = link.getAttribute('href');
-            if (href && (href.startsWith('#') || href === 'pages/all-news.html' || link.textContent.trim() === 'View All News')) {
-                // For these specific links, ensure they open in the same tab
-                link.setAttribute('target', '_self');
-            } else {
-                link.setAttribute('target', '_blank');
-                link.setAttribute('rel', 'noopener noreferrer');
-            }
-        });
-            
+            document.querySelectorAll('a').forEach(link => {
+                // Skip navigation links that are meant for scrolling within the page
+                // Also skip the "View All News" link
+                const href = link.getAttribute('href');
+                if (href && (href.startsWith('#') || href === 'pages/all-news.html' || link.textContent.trim() === 'View All News')) {
+                    // For these specific links, ensure they open in the same tab
+                    link.setAttribute('target', '_self');
+                } else {
+                    link.setAttribute('target', '_blank');
+                    link.setAttribute('rel', 'noopener noreferrer');
+                }
+            });
+
             const navLinks = document.querySelector('.nav-links');
             if (navLinks) {
                 // Check if scrollable
@@ -691,11 +318,11 @@
                     const isScrollable = navLinks.scrollWidth > navLinks.clientWidth;
                     document.querySelector('nav .container').classList.toggle('has-scroll', isScrollable);
                 };
-                
+
                 // Check on load and resize
                 checkScrollable();
                 window.addEventListener('resize', checkScrollable);
-                
+
                 // Scroll to active link
                 const activeLink = navLinks.querySelector('a.active');
                 if (activeLink) {
@@ -712,4 +339,5 @@
         });
     </script>
 </body>
-</html> 
+
+</html>
