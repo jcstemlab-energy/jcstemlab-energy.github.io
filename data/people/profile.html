@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Profile</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .profile-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .profile-header {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
+        .profile-avatar {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: none;
+        }
+        .profile-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        .profile-info h1 {
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+        .profile-role {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .profile-affiliations {
+            margin-bottom: 15px;
+        }
+        .profile-affiliations a {
+            color: #1565C0;
+            text-decoration: none;
+        }
+        .profile-affiliations a:hover {
+            text-decoration: underline;
+        }
+        .profile-contacts {
+            display: flex;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        .profile-contacts a {
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.1) 0%, rgba(189, 56, 75, 0.15) 100%);
+            width: auto;
+            min-width: 48px;
+            height: 36px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .profile-contacts a i {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+        }
+        .profile-contacts a:hover {
+            background-color: rgba(189, 56, 75, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-section {
+            margin-bottom: 30px;
+        }
+        .profile-section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid rgba(189, 56, 75, 0.1);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .profile-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .interest-tag {
+            background-color: rgba(189, 56, 75, 0.1);
+            color: var(--primary-color);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .education-list {
+            margin-top: 15px;
+        }
+        .education-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 3px solid rgba(189, 56, 75, 0.2);
+        }
+        .education-item h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .education-item p {
+            margin: 0;
+            color: #666;
+            font-size: 14px;
+        }
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            flex-direction: column;
+        }
+        .loading-spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Override for highlighted role colors */
+        .profile-role b[style*="color:#1565C0"] {
+            color: var(--primary-color) !important;
+        }
+        .back-link {
+            display: block;
+            margin: 30px auto 0 auto;
+            color: var(--primary-color);
+            text-decoration: none;
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.1) 0%, rgba(189, 56, 75, 0.15) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 24px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .back-link i {
+            margin-right: 8px;
+        }
+        .back-link:hover {
+            text-decoration: none;
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.2) 0%, rgba(189, 56, 75, 0.25) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(189, 56, 75, 0.2);
+        }
+        .error-message {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        /* 中文楷体字体样式 */
+        .chinese-text {
+            font-family: "楷体", "KaiTi", "STKaiti", "华文楷体", serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-info">
+                    <!-- Profile info will be loaded from JSON -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../pages/team.html">Team</a></li>
+                <li><a href="#" class="active" id="member-nav-name">Team Member</a></li>
+            </ul>
+            <div class="nav-logo">
+                <img src="../../assets/logo.png" alt="JC STEM Lab Logo">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="loading-container" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Loading profile information...</p>
+        </div>
+        <div class="profile-container" id="profile-content" style="display: none;">
+            <!-- Content will be loaded dynamically -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="copyright-year"></span> JC STEM Lab of Smart City. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/profile-loader.js"></script>
+    <script>
+        // Set copyright year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        
+        // Mobile navigation horizontal scroll handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks) {
+                // Check if scrollable
+                const checkScrollable = () => {
+                    const isScrollable = navLinks.scrollWidth > navLinks.clientWidth;
+                    document.querySelector('nav .container').classList.toggle('has-scroll', isScrollable);
+                };
+                
+                // Check on load and resize
+                checkScrollable();
+                window.addEventListener('resize', checkScrollable);
+                
+                // Scroll to active link
+                const activeLink = navLinks.querySelector('a.active');
+                if (activeLink) {
+                    const activeLi = activeLink.closest('li');
+                    if (activeLi) {
+                        setTimeout(() => {
+                            // Center the active link
+                            const scrollPos = activeLi.offsetLeft - (navLinks.clientWidth / 2) + (activeLi.offsetWidth / 2);
+                            navLinks.scrollLeft = Math.max(0, scrollPos);
+                        }, 100);
+                    }
+                }
+            }
+        });
+        
+        // 包裹中文字符为chinese-text
+        function processChinese(text) {
+            if (!text) return text;
+            return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
+        }
+
+        // Load profile info from JSON
+        fetch('../../data/profile-info.json')
+            .then(response => response.json())
+            .then(data => {
+                const profileInfo = document.querySelector('.header-content .profile-info');
+                
+                // Create and set name
+                const name = document.createElement('h1');
+                name.innerHTML = data.name;
+                profileInfo.appendChild(name);
+                
+                // Create and set subtitle
+                const subtitle = document.createElement('p');
+                subtitle.className = 'subtitle';
+                subtitle.innerHTML = processChinese(data.subtitle);
+                profileInfo.appendChild(subtitle);
+                
+                // Create contact info container
+                const contactInfo = document.createElement('div');
+                contactInfo.className = 'contact-info';
+                
+                // Add social links
+                data.socialLinks.forEach(link => {
+                    const a = document.createElement('a');
+                    a.href = link.url.startsWith('assets/') ? '../../' + link.url : link.url;
+                    a.innerHTML = link.icon;
+                    if (link.target) {
+                        a.target = link.target;
+                    }
+                    contactInfo.appendChild(a);
+                });
+                
+                profileInfo.appendChild(contactInfo);
+            })
+            .catch(error => console.error('Error loading profile info:', error));
+    </script>
+</body>
+</html> 

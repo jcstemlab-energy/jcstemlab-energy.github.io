@@ -1,0 +1,559 @@
+[
+  {
+    "title": "Removing Box-Free Watermarks for Image-to-Image Models via Query-Based Reverse Engineering",
+    "authors": "Haonan An, Guang Hua, Hangcheng Cao, Zhengru Fang, Guowen Xu, Susanto Rahardja, Yuguang Fang",
+    "venue": "The 40th AAAI Conference on Artificial Intelligence",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "AAAI'26",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2507.18034"
+      }
+    ]
+  },
+  {
+    "title": "Sub-Symbol Backscatter Using CCK Signal in WiFi",
+    "authors": "Longzhi Yuan, Hangcheng Cao, Wei Gong, Yuguang Fang",
+    "venue": "IEEE/ACM Transactions on Networking",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "ToN",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/abstract/document/11215687"
+      }
+    ]
+  },
+  {
+    "title": "Circular Holographic MIMO Beamforming for Integrated Data and Energy Multicast Systems",
+    "authors": "Qingxiao Huang, Yizhe Zhao, Jie Hu, Kun Yang, Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2507.05057"
+      }
+    ]
+  },
+  
+  {
+    "title": "Neptune-X: Active X-to-Maritime Generation for Universal Maritime Object Detection",
+    "authors": "Yu Guo, Shengfeng He, Yuxu Lu, Haonan An, Yihang Tao, Huilin Zhu, Jingxian Liu, Yuguang Fang",
+    "venue": "The 39th Annual Conference on Neural Information Processing Systems, San Diego, USA, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "NeurIPS'25 Spotlight",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2509.20745"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/gy65896/Neptune-X"
+      },
+      {
+        "text": "Project",
+        "class": "code-tag",
+        "link": "https://gy65896.github.io/projects/NeurIPS2025_Neptune-X"
+      }
+    ]
+  },
+  {
+    "title": "Distribution-Aligned Decoding for Efficient LLM Task Adaptation",
+    "authors": "Senkang Hu, Xudong Han, Jinqi Jiang, Yihang Tao, Zihan Fang, Yong Dai, Sam Tak Wu Kwong, Yuguang Fang",
+    "venue": "The 39th Annual Conference on Neural Information Processing Systems, San Diego, USA, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "NeurIPS'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2509.15888"
+      }
+    ]
+  },
+  {
+    "title": "The Fluorescent Veil: A Stealthy and Effective Physical Adversarial Patch Against Traffic Sign Recognition",
+    "authors": "Shuai Yuan, Xingshuo Han, Hongwei Li, Guowen Xu, Wenbo Jiang, Tao Ni, Qingchuan Zhao, Yuguang Fang",
+    "venue": "The 39th Annual Conference on Neural Information Processing Systems, San Diego, USA, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "NeurIPS'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2409.12394"
+      },
+      {
+        "text": "Demo",
+        "class": "code-tag",
+        "link": "https://sites.google.com/view/fipatch-attack/home"
+      }
+    ]
+  },
+  {
+    "title": "Leverage the Duty Ratio of Frequency-Shift Wave to Design a Novel Amplitude Modulation for Backscatter Communications",
+    "authors": "Longzhi Yuan, Hangcheng Cao, Yanan Ma, Wei Gong, Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/abstract/document/11141553"
+      }
+    ]
+  },
+  {
+    "title": "Task-Aware Parameter-Efficient Fine-Tuning of Large Pre-Trained Models at the Edge",
+    "authors": "Senkang Hu, Yanan Ma, Yihang Tao, Zhengru Fang, Zihan Fang, Yiqin Deng, Sam Kwong, Yuguang Fang",
+    "venue": "IEEE Global Communications Conference, Taipei, Taiwan, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "GLOBECOM'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2504.03718"
+      }
+    ]
+  },
+  {
+    "title": "UAV-enabled Computing Power Networks: Task Completion Probability Analysis",
+    "authors": "Yiqin Deng, Zhengru Fang, Senkang Hu, Yanan Ma, Haixia Zhang, and Yuguang Fang",
+    "venue": "IEEE Global Communications Conference, Taipei, Taiwan, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "GLOBECOM'25 Best Paper Award",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "#"
+      }
+    ]
+  },
+
+  {
+    "title": "Task-Oriented Communications for Visual Navigation with Edge-Aerial Collaboration",
+    "authors": "Zhengru Fang, Zhenghao Liu, Jingjing Wang, Senkang Hu, Yu Guo, Yiqin Deng, and Yuguang Fang",
+    "venue": "IEEE Global Communications Conference, Taipei, Taiwan, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "GLOBECOM'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2504.18317"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/fangzr/TOC-Edge-Aerial"
+      }
+    ]
+  }, 
+  {
+    "title": "R-ACP: Real-Time Adaptive Collaborative Perception Leveraging Robust Task-Oriented Communications",
+    "authors": "Zhengru Fang, Jingjing Wang, Yanan Ma, Yihang Tao, Xianhao Chen, Yuguang Fang",
+    "venue": "IEEE Journal on Selected Areas in Communications",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "JSAC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2410.04168"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/fangzr/R-ACP/"
+      }
+    ]
+  },
+  {
+    "title": "AgentsCoMerge: Large Language Model Empowered Collaborative Decision Making for Multi-Lane Merging",
+    "authors": "Senkang Hu, Zhengru Fang, Zihan Fang, Yiqin Deng, Xianhao Chen, Yuguang Fang, Sam Kwong",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10976336"
+      }
+    ]
+  },
+  {
+    "title": "Collaborative Perception for Connected and Autonomous Driving: Challenges, Possible Solutions and Opportunities",
+    "authors": "Senkang Hu, Zhengru Fang, Yiqin Deng, Xianhao Chen, Yuguang Fang",
+    "venue": "IEEE Wireless Communications Magazine",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "WCM",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2401.01544"
+      }
+    ]
+  },
+  {
+    "title": "Decoder Gradient Shield: Provable and High-Fidelity Prevention of Gradient-Based Box-Free Watermark Removal",
+    "authors": "Haonan An, Guang Hua, Zhengru Fang, Guowen Xu, Susanto Rahardja, and Yuguang Fang",
+    "venue": "Conference on Computer Vision and Pattern Recognition (CVPR), 2025",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "CVPR'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2502.20924"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/haonanAN309/CVPR-2025-Official-Implementation-Decoder-Gradient-Shield"
+      }
+    ]
+  },
+  {
+    "title": "Directed-CP: Directed Collaborative Perception for Connected and Autonomous Vehicles via Proactive Attention",
+    "authors": "Yihang Tao, Senkang Hu, Zhengru Fang, Yuguang Fang",
+    "year": "2025",
+    "venue": "The 2025 IEEE International Conference on Robotics & Automation, 19-23 May, Atlanta, USA",
+    "tags": [
+      {
+        "text": "ICRA'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2409.08840"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/yihangtao/Directed-CP"
+      }
+    ]
+  },
+  {
+    "title": "Native WiFi Backscatter",
+    "authors": "Longzhi Yuan, Wei Gong, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE/ACM Transactions on Networking",
+    "tags": [
+      {
+        "text": "ToN",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10558798"
+      }
+    ]
+  },
+  {
+    "title": "CP-Guard: Malicious Agent Detection and Defense in Collaborative Bird's Eye View Perception",
+    "authors": "Senkang Hu<sup>*</sup>, Yihang Tao<sup>*</sup>, Guowen Xu, Yiqin Deng, Xianhao Chen, Yuguang Fang, Sam Kwong",
+    "year": "2024",
+    "venue": "The 39th Annual AAAI Conference on Artificial Intelligence, Philadelphia, Pennsylvania, USA, February 2025",
+    "tags": [
+      {
+        "text": "AAAI'25 Oral",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://doi.org/10.1609/aaai.v39i22.34486"
+      }
+    ]
+  },
+  {
+    "title": "Toward Full-scene Domain Generalization in Multi-agent Collaborative Bird's Eye View Segmentation for Connected and Autonomous Driving",
+    "authors": "Senkang Hu, Zhengru Fang, Yiqin Deng, Xianhao Chen, Yuguang Fang, and Sam Kwong",
+    "year": "2024",
+    "venue": "IEEE Transactions on Intelligent Transportation Systems",
+    "tags": [
+      {
+        "text": "TITS",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/abstract/document/10779389"
+      }
+    ]
+  },
+  {
+    "title": "Prioritized Information Bottleneck Theoretic Framework with Distributed Online Learning for Edge Video Analytics",
+    "authors": "Zhengru Fang, Senkang Hu, Jingjing Wang, Yiqin Deng, Xianhao Chen, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE/ACM Transactions on Networking",
+    "tags": [
+      {
+        "text": "ToN",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2409.00146"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/fangzr/PIB-Prioritized-Information-Bottleneck-Framework"
+      }
+    ]
+  },
+  {
+    "title": "PIB: Prioritized Information Bottleneck Framework for Collaborative Edge Video Analytics",
+    "authors": "Zhengru Fang, Senkang Hu, Liyan Yang, Yiqin Deng, Xianhao Chen, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE Global Communications Conference, Cape Town, South Africa, December 2024",
+    "tags": [
+      {
+        "text": "GLOBECOM'24",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2408.17047"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/fangzr/PIB-Prioritized-Information-Bottleneck-Framework"
+      }
+    ]
+  },
+  {
+    "title": "Adaptive Communications in Collaborative Perception with Domain Alignment for Autonomous Driving",
+    "authors": "Senkang Hu, Zhengru Fang, Haonan An, Guowen Xu, Yuan Zhou, Xianhao Chen, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE Global Communications Conference, Cape Town, South Africa, December 2024",
+    "tags": [
+      {
+        "text": "GLOBECOM'24",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2310.00013"
+      }
+    ]
+  },
+  {
+    "title": "AoIT-Empowered Associated Network Slicing: Resource Orchestration for Joint Monitoring",
+    "authors": "Xiaojing Wen, Cailian Chen, Xinping Guan, Cheng Ren, Yehan Ma, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE Transactions on Wireless Communications",
+    "tags": [
+      {
+        "text": "TWC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10661233"
+      }
+    ]
+  },
+  {
+    "title": "Decentralized Multi-Client Functional Encryption for Inner Product with Applications to Federated Learning",
+    "authors": "Xinyuan Qian, Hongwei Li, Meng Hao, Guowen Xu, Haoyong Wang, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE Transactions on Dependable and Secure Computing",
+    "tags": [
+      {
+        "text": "TDSC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10494860"
+      }
+    ]
+  },
+  {
+    "title": "UAV-Assisted MEC with an Expandable Computing Resource Pool: Rethinking the UAV Deployment",
+    "authors": "Yiqin Deng, Haixia Zhang, Xianhao Chen, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE Wireless Communications Magazine",
+    "tags": [
+      {
+        "text": "WCM",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10536071"
+      }
+    ]
+  },
+  {
+    "title": "Resources on the Move for Smart City: A Disruptive Perspective on the Grand Convergence of Sensing, Communications, Computing, Storage, and Intelligence",
+    "authors": "Yuguang Fang, Yiqin Deng, Xianhao Chen",
+    "year": "2024",
+    "venue": "IEEE Communications Magazine",
+    "tags": [
+      {
+        "text": "COMMAG",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10697414"
+      }
+    ]
+  },
+  {
+    "title": "PACP: Priority-Aware Collaborative Perception for Connected and Autonomous Vehicles",
+    "authors": "Zhengru Fang, Senkang Hu, Haonan An, Yuang Zhang, Jingjing Wang, Hangcheng Cao, Xianhao Chen, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10646529"
+      }
+    ]
+  },
+  {
+    "title": "UAV-assisted Multi-access Edge Computing with Altitude-dependent Computing Power",
+    "authors": "Yiqin Deng, Haixia Zhang, Xianhao Chen, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE Transactions on Wireless Communications",
+    "tags": [
+      {
+        "text": "TWC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://doi.org/10.1109/TWC.2024.3362375"
+      }
+    ]
+  },
+  {
+    "title": "Vehicle as a Service (VaaS): Leverage Vehicles to Build Service Networks and Capabilities for Smart Cities",
+    "authors": "Xianhao Chen, Yiqin Deng, Haichuan Ding, Guanqiao Qu, Haixia Zhang, Pan Li, Yuguang Fang",
+    "year": "2024",
+    "venue": "IEEE Communications Surveys & Tutorials",
+    "tags": [
+      {
+        "text": "COMST",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10449899"
+      }
+    ]
+  },
+  {
+    "title": "Privacy-Preserving Data Evaluation via Functional Encryption, Revisited",
+    "authors": "Xinyuan Qian, Hongwei Li, Guowen Xu, Haoyong Wang, Tianwei Zhang, Xianhao Chen, Yuguang Fang",
+    "year": "2024",
+    "venue": "2024 IEEE Conference on Computer Communications",
+    "tags": [
+      {
+        "text": "INFOCOM'24",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10621262"
+      }
+    ]
+  },
+  {
+    "title": "SmartCooper: Vehicular Collaborative Perception with Adaptive Fusion and Judger Mechanism",
+    "authors": "Yuang Zhang, Haonan An, Zhengru Fang, Guowen Xu, Yuan Zhou, Xianhao Chen, Yuguang Fang",
+    "year": "2024",
+    "venue": "2024 IEEE International Conference on Robotics and Automation",
+    "tags": [
+      {
+        "text": "ICRA'24",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/document/10610199"
+      }
+    ]
+  }
+]
