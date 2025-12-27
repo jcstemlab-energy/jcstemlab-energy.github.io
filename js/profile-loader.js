@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
  * @returns {string|null} 成员ID或null（如果未找到）
  */
 function getMemberIdFromUrl() {
-    // 从URL获取查询参数
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('id');
 }
@@ -25,7 +24,7 @@ function loadMemberProfile() {
     const memberId = getMemberIdFromUrl();
     
     if (!memberId) {
-        showError('No member ID specified. Please go back to the team page and select a member.');
+        showError('No member ID specified. Please return to homepage.');
         return;
     }
     
@@ -54,7 +53,6 @@ function loadMemberProfile() {
  * @returns {Object|null} 成员对象或null（如果未找到）
  */
 function findMemberById(data, memberId) {
-    // 遍历所有类别和子类别
     for (const category of data.categories) {
         for (const subcategory of category.subcategories) {
             const member = subcategory.members.find(m => m.id === memberId);
@@ -63,7 +61,6 @@ function findMemberById(data, memberId) {
             }
         }
     }
-    
     return null;
 }
 
@@ -80,27 +77,20 @@ function renderMemberProfile(member) {
     contentContainer.style.display = 'block';
     
     // 更新页面标题
-    document.title = `${member.title} - JC STEM Lab of Smart City`;
-    
-    // 更新导航菜单
-    document.getElementById('member-nav-name').textContent = member.title.split(',')[0];
-    
-    // 处理标题，检测是否包含中文
-    let titleDisplay = member.title;
-    if (containsChinese(member.title)) {
-        titleDisplay = `<span class="chinese-text">${member.title}</span>`;
-    }
+    document.title = `${member.title} | JC STEM Lab of Future Energy Systems`;
     
     // 创建档案内容
     let html = `
         <div class="profile-header">
-            <img src="../../${member.avatar}" alt="${member.title}" class="profile-avatar">
-            <div class="profile-info">
+            <div class="profile-avatar-container">
+                <img src="../../${member.avatar}" alt="${member.title}" class="profile-avatar">
+                ${renderSocialLinks(member.socialLinks)}
+            </div>
+            <div class="profile-main-info">
                 <h1>${processChinese(member.title)}</h1>
                 <div class="profile-role">
                     ${renderRoles(member.role)}
                 </div>
-                ${renderSocialLinks(member.socialLinks)}
             </div>
         </div>
     `;
@@ -109,15 +99,11 @@ function renderMemberProfile(member) {
     if (member.interests && member.interests.length > 0) {
         html += `
             <div class="profile-section">
-                <h2>Research Interests</h2>
-                <div class="interests-list">
-                    ${member.interests.map(interest => {
-                        if (containsChinese(interest)) {
-                            return `<span class="interest-tag chinese-text">${interest}</span>`;
-                        } else {
-                            return `<span class="interest-tag">${interest}</span>`;
-                        }
-                    }).join('')}
+                <h2><i class="fas fa-lightbulb"></i> Research Interests</h2>
+                <div class="interests-grid">
+                    ${member.interests.map(interest => 
+                        `<span class="interest-badge">${processChinese(interest)}</span>`
+                    ).join('')}
                 </div>
             </div>
         `;
@@ -127,8 +113,8 @@ function renderMemberProfile(member) {
     if (member.education && member.education.length > 0) {
         html += `
             <div class="profile-section">
-                <h2>Education</h2>
-                <div class="education-list">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="education-timeline">
                     ${renderEducation(member.education)}
                 </div>
             </div>
@@ -139,14 +125,13 @@ function renderMemberProfile(member) {
     if (member.biography) {
         html += `
             <div class="profile-section">
-                <h2>Biography</h2>
-                ${formatBiography(member.biography)}
+                <h2><i class="fas fa-user"></i> Biography</h2>
+                <div class="biography-content">
+                    ${formatBiography(member.biography)}
+                </div>
             </div>
         `;
     }
-    
-    // 返回按钮
-    html += `<a href="../../pages/team.html" class="back-link"><i class="fas fa-users"></i> Back to Team</a>`;
     
     // 设置HTML内容
     contentContainer.innerHTML = html;
@@ -160,21 +145,14 @@ function renderMemberProfile(member) {
 function renderRoles(roles) {
     if (!roles || roles.length === 0) return '';
     
-    let html = '';
-    
-    roles.forEach((role, index) => {
+    return roles.map(role => {
         const processedText = processChinese(role.text);
-        
         if (role.highlighted) {
-            // 突出显示的角色（如实验室主任）使用蓝色
-            html += `<p><b style="color:#1565C0;">${processedText}</b></p>`;
+            return `<p><b>${processedText}</b></p>`;
         } else {
-            // 其他角色使用正常加粗
-            html += `<p><b>${processedText}</b></p>`;
+            return `<p>${processedText}</p>`;
         }
-    });
-    
-    return html;
+    }).join('');
 }
 
 /**
@@ -185,18 +163,12 @@ function renderRoles(roles) {
 function renderSocialLinks(links) {
     if (!links || links.length === 0) return '';
     
-    let html = '<div class="profile-contacts">';
+    const linksHtml = links.map(link => {
+        const target = link.url.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
+        return `<a href="${link.url}" title="${link.title}"${target}><i class="${link.icon}"></i></a>`;
+    }).join('');
     
-    links.forEach(link => {
-        let href = link.url;
-        let target = href.startsWith('http') ? ' target="_blank"' : '';
-        
-        html += `<a href="${href}" title="${link.title}"${target}><i class="${link.icon}"></i></a>`;
-    });
-    
-    html += '</div>';
-    
-    return html;
+    return `<div class="profile-social-links">${linksHtml}</div>`;
 }
 
 /**
@@ -205,36 +177,13 @@ function renderSocialLinks(links) {
  * @returns {string} HTML字符串
  */
 function renderEducation(education) {
-    let html = '';
-    
-    education.forEach(edu => {
-        // 检测学位、学校名称是否包含中文
-        let degreeDisplay = edu.degree;
-        let institutionDisplay = edu.institution;
-        let yearDisplay = edu.year;
-        
-        if (containsChinese(edu.degree)) {
-            degreeDisplay = `<span class="chinese-text">${edu.degree}</span>`;
-        }
-        
-        if (containsChinese(edu.institution)) {
-            institutionDisplay = `<span class="chinese-text">${edu.institution}</span>`;
-        }
-        
-        if (containsChinese(edu.year)) {
-            yearDisplay = `<span class="chinese-text">${edu.year}</span>`;
-        }
-        
-        html += `
-            <div class="education-item">
-                <h3>${degreeDisplay}</h3>
-                <p>${institutionDisplay}</p>
-                <p>${yearDisplay}</p>
-            </div>
-        `;
-    });
-    
-    return html;
+    return education.map(edu => `
+        <div class="education-item">
+            <h3>${processChinese(edu.degree)}</h3>
+            <p>${processChinese(edu.institution)}</p>
+            <p>${processChinese(edu.year)}</p>
+        </div>
+    `).join('');
 }
 
 /**
@@ -244,8 +193,7 @@ function renderEducation(education) {
  */
 function containsChinese(text) {
     if (!text) return false;
-    const pattern = /[\u4e00-\u9fa5]+/; // 匹配中文字符
-    return pattern.test(text);
+    return /[\u4e00-\u9fa5]+/.test(text);
 }
 
 /**
@@ -255,41 +203,34 @@ function containsChinese(text) {
  */
 function processChinese(text) {
     if (!text || !containsChinese(text)) return text;
-    
-    // 使用正则表达式匹配连续的中文字符
     return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
 }
 
 /**
- * 格式化传记文本，处理Markdown格式并转换为HTML
- * @param {string} biography - 传记文本(Markdown格式)
+ * 格式化传记文本
+ * @param {string} biography - 传记文本
  * @returns {string} 格式化的HTML
  */
 function formatBiography(biography) {
     if (!biography) return '';
     
-    // 处理段落
-    let html = biography.split(/\n\n|\n/).filter(p => p.trim().length > 0)
+    // 分段处理
+    let html = biography
+        .split(/\n\n+/)
+        .filter(p => p.trim().length > 0)
         .map(p => `<p>${processChinese(p.trim())}</p>`)
-        .join('\n');
+        .join('');
     
-    // 处理Markdown链接格式: [text](url)
-    html = html.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
-    
-    // 处理HTML链接格式: <a href="...">text</a>
-    // 这种格式已经是HTML，所以不需要转换，但我们确保链接在新窗口中打开
-    html = html.replace(/<a\s+href="([^"]+)"([^>]*)>(.*?)<\/a>/g, function(match, url, attrs, text) {
-        // 检查是否已经有target属性
+    // 处理 HTML 链接
+    html = html.replace(/<a\s+href="([^"]+)"([^>]*)>(.*?)<\/a>/g, (match, url, attrs, text) => {
         if (attrs.indexOf('target=') === -1) {
             return `<a href="${url}" target="_blank"${attrs}>${text}</a>`;
         }
-        return match; // 已有target属性，保持不变
+        return match;
     });
     
-    // 处理强调 (** ** 或 __ __)
+    // 处理强调
     html = html.replace(/(\*\*|__)(.*?)\1/g, '<strong>$2</strong>');
-    
-    // 处理斜体 (* * 或 _ _)
     html = html.replace(/(\*|_)(.*?)\1/g, '<em>$2</em>');
     
     return html;
@@ -300,19 +241,20 @@ function formatBiography(biography) {
  * @param {string} message - 错误消息
  */
 function showError(message) {
-    // 隐藏加载动画
     document.getElementById('loading').style.display = 'none';
     
-    // 显示内容容器
     const contentContainer = document.getElementById('profile-content');
     contentContainer.style.display = 'block';
     
-    // 显示错误消息
     contentContainer.innerHTML = `
         <div class="error-message">
             <h2>Error</h2>
             <p>${message}</p>
-            <a href="../../pages/team.html" class="back-link"><i class="fas fa-users"></i> Back to Team</a>
+            <p style="margin-top: 1.5rem;">
+                <a href="../../index.html" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Back to Homepage
+                </a>
+            </p>
         </div>
     `;
-} 
+}
