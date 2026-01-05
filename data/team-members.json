@@ -8,8 +8,12 @@
           "members": [
             {
               "id": "faculty-zydong",
-              "title": "Prof. DONG, Zhaoyang",
+              "title": "Prof. DONG, Zhao Yang",
               "role": [
+                {
+                  "text": "Lab Director",
+                  "highlighted": true
+                },
                 {
                   "text": "Chair Professor and Head",
                   "highlighted": true
@@ -32,6 +36,12 @@
                   "url": "https://scholar.google.com/citations?user=7FORgWsAAAAJ&hl=en",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
+                },
+                {
+                  "type": "home",
+                  "url": "https://www.cityu.edu.hk/stfprofile/zydong.htm",
+                  "icon": "fas fa-home",
+                  "title": "Homepage"
                 }
               ],
               "interests": [
@@ -41,33 +51,6 @@
                 "smart cities"
               ],
               "biography": "Prof Z.Y. Dong is a Chair Professor and Head of Department of Electrical Engineering at City University of Hong Kong. His previous roles include Singapore Power Group Endowed Professor and Co-Director of SPG-NTU Joint Lab at Nanyang Technological University, Singapore; SHARP Professor of Energy System and Inaugrial Director of UNSW Digital Grid Futures Institute, the University of NSW, Australia; Director of ARC Research Hub for Integrated Energy Storage Systems; Head of School of Electrical & Information Engineering, The University of Sydney; and Ausgrid Chair Professor and Director of Ausgrid Centre for Intelligent Electricity Networks provided R&D support for the Smart Grid, Smart City national demonstration project of Australia. He also worked with industry as manager for power system planning with the transmission network service provider of TAS in Australia. Prof Dong's research interests include power system planning and stability, smart grid/micro grid, smart cities, renewable energy systems, energy storage systems, and energy market. He is a Fellow of IEEE and has held editorial roles for several IEEE Transactions and IET Journals.",
-              "education": [
-                {
-                  "degree": "Chair Professor and Head",
-                  "institution": "City University of Hong Kong",
-                  "year": "2024 - Now"
-                },
-                {
-                  "degree": "SP Group Endowed Professor",
-                  "institution": "Nanyang Technological University",
-                  "year": "2021 - 2024"
-                },
-                {
-                  "degree": "SHARP Professor and Director",
-                  "institution": "The University of NSW, Sydney",
-                  "year": "2017 - 2021"
-                },
-                {
-                  "degree": "Head of School",
-                  "institution": "The University of Sydney",
-                  "year": "2013 - 2017"
-                },
-                {
-                  "degree": "Ausgrid Chair Professor and Director",
-                  "institution": "Univ of Newcastle and Ausgrid Centre for Intelligent Electricity Networks",
-                  "year": "2011 - 2013"
-                }
-              ],
               "last_name": "dong"
             },
             {
