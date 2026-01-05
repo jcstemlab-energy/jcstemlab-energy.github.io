@@ -135,16 +135,16 @@ function createMemberCard(member) {
         member.role.forEach((roleItem, index) => {
             const roleElement = document.createElement('p');
 
-            // 判断是否为Prof. Fang的第一个角色项
-            const isProfFangLabDirector = member.id === 'prof-fang' && index === 0;
+            // 判断是否为 Lab Director 角色项
+            const isLabDirector = roleItem.text === 'Lab Director';
 
             const processedRoleText = processChinese(roleItem.text);
 
             if (roleItem.highlighted) {
                 // 高亮项始终加粗
-                if (isProfFangLabDirector) {
-                    // 仅Prof. Fang的第一个角色项保持蓝色高亮
-                    roleElement.innerHTML = `<b style="color:#1565C0;">${processedRoleText}</b>`;
+                if (isLabDirector) {
+                    // Lab Director 保持蓝色高亮
+                    roleElement.innerHTML = `<b style="color: var(--primary, #2563EB);">${processedRoleText}</b>`;
                 } else {
                     // 其他成员的高亮项加粗但无特殊颜色
                     roleElement.innerHTML = `<b>${processedRoleText}</b>`;

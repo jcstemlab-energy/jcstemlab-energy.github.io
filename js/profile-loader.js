@@ -147,7 +147,11 @@ function renderRoles(roles) {
     
     return roles.map(role => {
         const processedText = processChinese(role.text);
+        const isLabDirector = role.text === 'Lab Director';
         if (role.highlighted) {
+            if (isLabDirector) {
+                return `<p><b style="color: var(--primary, #2563EB);">${processedText}</b></p>`;
+            }
             return `<p><b>${processedText}</b></p>`;
         } else {
             return `<p>${processedText}</p>`;

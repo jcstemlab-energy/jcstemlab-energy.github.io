@@ -195,8 +195,14 @@
                     member.role.forEach((roleItem) => {
                         const roleElement = document.createElement('p');
                         const processedRoleText = processChinese(roleItem.text);
+                        const isLabDirector = roleItem.text === 'Lab Director';
+                        
                         if (roleItem.highlighted) {
-                            roleElement.innerHTML = `<b>${processedRoleText}</b>`;
+                            if (isLabDirector) {
+                                roleElement.innerHTML = `<b style="color: var(--primary);">${processedRoleText}</b>`;
+                            } else {
+                                roleElement.innerHTML = `<b>${processedRoleText}</b>`;
+                            }
                         } else {
                             roleElement.innerHTML = processedRoleText;
                         }
