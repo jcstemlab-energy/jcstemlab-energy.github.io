@@ -1,9 +1,5 @@
 {
-  "System Stability & Reliability": {},
-  "System Planning & Operations": {},
-  "Microgrid / Smart Grid": {},
-  "Load Modeling": {},
-  "Wind/PV/BESS & GPS": {},
-  "Electric Vehicles & VPP": {},
-  "Energy Market": {}
+  "Renewable energy systems grid connection": {},
+  "Smart grid and smart cities": {},
+  "Computational methods for power system operations and planning": {}
 }
