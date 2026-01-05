@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC STEM Lab of Smart City</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <nav id="main-nav">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="#about" class="logo-link">
+                    <span class="logo-text">JC STEM Lab of Future Energy Systems</span>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#latest-news">News</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-slides">
+                <div class="hero-slide active">
+                    <div class="slide-bg" style="background-image: url('assets/slides/Prof-2.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">JC STEM Lab of Future Energy System</h1>
+                            <p class="hero-subtitle">Leading innovation in power systems and smart grids for a
+                                sustainable future.</p>
+                            <div class="hero-actions">
+                                <a href="#about" class="btn btn-primary">Learn More</a>
+                                <a href="#research" class="btn btn-outline">Our Research</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-slide">
+                    <div class="slide-bg" style="background-image: url('assets/slides/Prof-1.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">Shaping the Future of Smart Cities</h1>
+                            <p class="hero-subtitle">Advanced research in System Stability, Reliability, and Energy
+                                Market dynamics.</p>
+                            <div class="hero-actions">
+                                <a href="#team" class="btn btn-primary">Meet Our Team</a>
+                                <a href="#publications" class="btn btn-outline">Publications</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="hero-prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></button>
+
+            <div class="hero-controls">
+                <div class="hero-dots">
+                    <span class="hero-dot active" onclick="currentSlide(1)"></span>
+                    <span class="hero-dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-text">
+                    <h2 class="section-title">About</h2>
+                    <p class="about-lead">Led by <a href="https://www.cityu.edu.hk/stfprofile/zydong.htm">Prof. DONG, Zhao Yang</a>, the <b>JC STEM Lab of Future Energy System</b> was established in November 2024 with generous support from the Hong Kong Jockey Club Charities Trust. The Lab serves as a dynamic hub for graduate students, postdoctoral researchers, and visiting scholars.</p>
+                    <p>Its research is centered on Power Systems and Smart Grids, with key areas of focus including System Stability & Reliability, System Planning & Operations, Microgrid / Smart Grid Development, Load Modeling, Integration of Wind/PV/BESS & GPS, Electric Vehicles & Virtual Power Plants (VPP), and Energy Market dynamics. The laboratory has delivered research outputs for multiple government departments and enterprises, and is dedicated to making significant contributions to urban energy conservation, cost reduction, and efficiency enhancement.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Research Thrusts</h2>
+                    <p class="section-subtitle">Our interdisciplinary research focuses on the next generation of smart city energy solutions.</p>
+                </div>
+                <div class="research-grid" id="research-areas-container">
+                    <!-- Research areas will be dynamically loaded from research.json -->
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Load research data from JSON with modern card design
+            document.addEventListener('DOMContentLoaded', function () {
+                fetch('data/research.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const container = document.getElementById('research-areas-container');
+
+                        const iconMap = {
+                            "System Stability & Reliability": "fas fa-shield-halved",
+                            "System Planning & Operations": "fas fa-network-wired",
+                            "Microgrid / Smart Grid": "fas fa-bolt",
+                            "Load Modeling": "fas fa-chart-line",
+                            "Wind/PV/BESS & GPS": "fas fa-solar-panel",
+                            "Electric Vehicles & VPP": "fas fa-car-battery",
+                            "Energy Market": "fas fa-chart-pie"
+                        };
+
+                        const descriptions = {
+                            "System Stability & Reliability": "Transient, Small Signal and Frequency Stability, Cascading Failure and Blackout, False Data Injection.",
+                            "System Planning & Operations": "Unit Commitment and Economic Dispatch, Optimal Power Flow, Transmission Expansion Planning.",
+                            "Microgrid / Smart Grid": "P2P Energy Trading, Microgrid Energy Management, Distribution System Optimization.",
+                            "Load Modeling": "Composite Load Model, Demand Response, Aggregated Load Modeling.",
+                            "Wind/PV/BESS & GPS": "Renewable Energy Forecasting, Battery Storage System Optimization, Grid-scale Energy Storage.",
+                            "Electric Vehicles & VPP": "EV Charging Strategy, Virtual Power Plant Control, V2G Optimization.",
+                            "Energy Market": "Electricity Market Design, Price Forecasting, Market Operation Strategies."
+                        };
+
+                        Object.entries(data).forEach(([category, subcategories]) => {
+                            const icon = iconMap[category] || 'fas fa-flask';
+                            const description = descriptions[category] || '';
+                            const card = document.createElement('div');
+                            card.className = 'research-card';
+
+                            card.innerHTML = `
+                                <div class="card-icon-circle">
+                                    <i class="${icon}"></i>
+                                </div>
+                                <h3 class="card-title">${category}</h3>
+                                <p class="card-description">${description}</p>
+                            `;
+
+                            container.appendChild(card);
+                        });
+                    })
+                    .catch(err => console.error('Error loading research:', err));
+            });
+        </script>
+
+        <section id="team" class="section">
+            <div class="container">
+                <div class="team-info">
+                    <h2 class="section-title">Our Team</h2>
+                </div>
+                <div id="team-members-container">
+                    <!-- Team members will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Helper function to process Chinese text
+            function processChinese(text) {
+                if (!text) return text;
+                return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
+            }
+            
+            // Create team member card
+            function createTeamMemberCard(member) {
+                const memberCard = document.createElement('div');
+                memberCard.className = 'team-member-card';
+                const profileHref = `data/people/profile.html?id=${encodeURIComponent(member.id)}`;
+                
+                // Avatar
+                const avatarLink = document.createElement('a');
+                avatarLink.href = profileHref;
+                avatarLink.setAttribute('aria-label', `View profile: ${member.title}`);
+                const avatar = document.createElement('img');
+                avatar.src = member.avatar;
+                avatar.alt = member.title;
+                avatar.loading = 'lazy';
+                avatarLink.appendChild(avatar);
+                memberCard.appendChild(avatarLink);
+                
+                // Content container
+                const contentContainer = document.createElement('div');
+                contentContainer.className = 'team-member-content';
+                
+                // Name
+                const nameElement = document.createElement('h4');
+                const processedTitle = processChinese(member.title);
+                nameElement.innerHTML = `<a href="${profileHref}">${processedTitle}</a>`;
+                contentContainer.appendChild(nameElement);
+                
+                // Role information
+                if (member.role && member.role.length > 0) {
+                    member.role.forEach((roleItem) => {
+                        const roleElement = document.createElement('p');
+                        const processedRoleText = processChinese(roleItem.text);
+                        if (roleItem.highlighted) {
+                            roleElement.innerHTML = `<b>${processedRoleText}</b>`;
+                        } else {
+                            roleElement.innerHTML = processedRoleText;
+                        }
+                        contentContainer.appendChild(roleElement);
+                    });
+                }
+                
+                // Social links
+                if (member.socialLinks && member.socialLinks.length > 0) {
+                    const linksContainer = document.createElement('div');
+                    linksContainer.className = 'member-links';
+                    
+                    member.socialLinks.forEach(link => {
+                        const linkElement = document.createElement('a');
+                        linkElement.href = link.url;
+                        linkElement.title = link.title;
+                        linkElement.innerHTML = `<i class="${link.icon}"></i>`;
+                        
+                        if (link.url.startsWith('http')) {
+                            linkElement.target = '_blank';
+                            linkElement.rel = 'noopener noreferrer';
+                        }
+                        
+                        linksContainer.appendChild(linkElement);
+                    });
+                    
+                    contentContainer.appendChild(linksContainer);
+                }
+                
+                memberCard.appendChild(contentContainer);
+
+                // Make the whole card clickable (but don't hijack social icon clicks)
+                memberCard.addEventListener('click', (e) => {
+                    const socialLink = e.target && e.target.closest ? e.target.closest('.member-links a') : null;
+                    const nameLink = e.target && e.target.closest ? e.target.closest('h4 a') : null;
+                    const avatarA = e.target && e.target.closest ? e.target.closest('a') : null;
+                    if (socialLink || nameLink || avatarA) return;
+                    window.location.href = profileHref;
+                });
+
+                return memberCard;
+            }
+            
+            // Load team members for homepage
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('data/team-members.json')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Unable to load team members data');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        const container = document.getElementById('team-members-container');
+                        if (!container) return;
+                        container.innerHTML = '';
+
+                        // Only show these 7 people on homepage (grouped by subcategory)
+                        const allowedIds = new Set([
+                            'phd25-wanghaosheng',
+                            'phd25-zhouyujie',
+                            'phd26-duanjuntao',
+                            'phd25-huangzuliang',
+                            'phd24-litong',
+                            'phd25-zhangyuchi',
+                            'ra24-zhengzuqing'
+                        ]);
+                        const allowedSubcategories = new Set([
+                            'Current PhD Students',
+                            'Research Assistant'
+                        ]);
+                        
+                        const meetOurTeam = (data.categories || []).find(c => c && c.name === 'Meet Our Team');
+                        const subcategories = (meetOurTeam && meetOurTeam.subcategories) ? meetOurTeam.subcategories : [];
+
+                        subcategories.forEach(subcategory => {
+                            if (!subcategory || !allowedSubcategories.has(subcategory.name)) return;
+                            const members = Array.isArray(subcategory.members) ? subcategory.members : [];
+                            const filtered = members.filter(m => m && allowedIds.has(m.id));
+                            if (filtered.length === 0) return;
+
+                            // Sort by enrollment year (earlier year comes first: phd24 before phd25, etc.)
+                            filtered.sort((a, b) => {
+                                const getYear = (id) => {
+                                    const match = id.match(/\d+/);
+                                    return match ? parseInt(match[0]) : 999;
+                                };
+                                return getYear(a.id) - getYear(b.id);
+                            });
+
+                            // Create category title
+                            const categoryTitle = document.createElement('h3');
+                            categoryTitle.className = 'team-category-title';
+                            categoryTitle.textContent = subcategory.name;
+                            container.appendChild(categoryTitle);
+
+                            // Create members grid for this category
+                            const membersGrid = document.createElement('div');
+                            membersGrid.className = 'team-members-grid';
+
+                            filtered.forEach(member => {
+                                membersGrid.appendChild(createTeamMemberCard(member));
+                            });
+
+                            container.appendChild(membersGrid);
+                        });
+
+                        if (container.children.length === 0) {
+                            container.innerHTML = '<p style="color: var(--text-secondary); text-align: center;">No team members to display.</p>';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error loading team members:', error);
+                    });
+            });
+        </script>
+
+        <section id="latest-news" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Updates</h2>
+                </div>
+                <div id="news-container" class="news-modern-list">
+                    <!-- News items will be dynamically loaded here from news.json -->
+                </div>
+                <div class="view-all-news text-center mt-4">
+                    <a href="pages/all-news.html" class="btn btn-outline-dark">View All News</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container publication-summary text-center">
+                <h2 class="section-title">Publications</h2>
+                <div class="pub-brief">
+                    <p>Check Prof. Dong's <a href="https://scholar.google.com/citations?user=7FORgWsAAAAJ&hl=en"
+                            target="_blank">Google Scholar</a> to obtain the full list of publications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="funding" class="section">
+            <div class="container text-center">
+                <p class="funding-label">Generously Funded by</p>
+                <div class="funding-logos">
+                    <img src="assets/JC.png" alt="Hong Kong Jockey Club" class="funding-logo">
+                </div>
+            </div>
+        </section>
+
+        <section id="visitors" class="section">
+            <div class="container">
+                <div class="globe-container shadow rounded">
+                    <script type="text/javascript" id="clstr_globe"
+                        src="//clustrmaps.com/globe.js?d=HpSbav9lXBG3sLnfRtwdw0R3n9GyHPV-KBoGVoMnwsE"></script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>JC STEM Lab of Future Energy Systems</h3>
+            </div>
+            <p class="copyright">&copy; <span id="copyright-year"></span> JC STEM Lab of Future Energy System. All
+                rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set copyright year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+    <script>
+        // 增强平滑滚动效果
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // 计算导航栏高度，以便滚动到正确位置
+                    const navHeight = document.querySelector('nav').offsetHeight;
+
+                    // 获取目标元素的位置
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+
+                    // 滚动到目标位置，减去导航栏高度和小偏移量来优化显示
+                    window.scrollTo({
+                        top: targetPosition - navHeight - 20,
+                        behavior: 'smooth'
+                    });
+
+                    // 更新URL中的锚点(可选)
+                    history.pushState(null, null, targetId);
+                }
+            });
+        });
+
+        // Mobile navigation horizontal scroll handling
+        document.addEventListener('DOMContentLoaded', function () {
+            // Make all links open in a new tab
+            document.querySelectorAll('a').forEach(link => {
+                // Skip navigation links that are meant for scrolling within the page
+                // Also skip the "View All News" link
+                const href = link.getAttribute('href');
+                if (href && (href.startsWith('#') || href === 'pages/all-news.html' || link.textContent.trim() === 'View All News')) {
+                    // For these specific links, ensure they open in the same tab
+                    link.setAttribute('target', '_self');
+                } else {
+                    link.setAttribute('target', '_blank');
+                    link.setAttribute('rel', 'noopener noreferrer');
+                }
+            });
+
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks) {
+                // Check if scrollable
+                const checkScrollable = () => {
+                    const isScrollable = navLinks.scrollWidth > navLinks.clientWidth;
+                    document.querySelector('nav .container').classList.toggle('has-scroll', isScrollable);
+                };
+
+                // Check on load and resize
+                checkScrollable();
+                window.addEventListener('resize', checkScrollable);
+
+                // Scroll to active link
+                const activeLink = navLinks.querySelector('a.active');
+                if (activeLink) {
+                    const activeLi = activeLink.closest('li');
+                    if (activeLi) {
+                        setTimeout(() => {
+                            // Center the active link
+                            const scrollPos = activeLi.offsetLeft - (navLinks.clientWidth / 2) + (activeLi.offsetWidth / 2);
+                            navLinks.scrollLeft = Math.max(0, scrollPos);
+                        }, 100);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

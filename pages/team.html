@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team | JC STEM Lab of Smart City</title>
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .team-member h4 a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .team-member h4 a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+        
+        /* 修改头像容器为1:1 */
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            height: 100%; /* 确保所有卡片等高 */
+        }
+
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.06) 0%, transparent 100%);
+            border-radius: 20px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 1;
+        }
+
+        .team-member:hover::before {
+            opacity: 1;
+        }
+
+        .team-member:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(var(--primary-rgb), 0.22);
+        }
+
+        .team-member img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            height: auto;
+            transition: transform 0.4s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .team-member:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* 修改卡片内容区域样式 */
+        .team-member-content {
+            padding: 1.5rem 0.25rem 1.5rem 0.25rem;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
+            backdrop-filter: blur(10px);
+            position: relative;
+            z-index: 3;
+            border-top: 1px solid rgba(var(--primary-rgb), 0.10);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .team-member h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            color: var(--text-color);
+            line-height: 1.3;
+        }
+
+        .team-member p {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin: 0 0 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        /* 修改social icon样式 */
+        .member-links {
+            display: flex;
+            gap: 8px;
+            margin-top: auto;
+            padding: 1rem 0 0 0;
+            justify-content: center;
+        }
+        
+        .member-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            background: linear-gradient(145deg, rgba(var(--primary-rgb), 0.08) 0%, rgba(var(--primary-rgb), 0.12) 100%);
+            width: auto;
+            min-width: 48px;
+            height: 36px;
+            padding: 0 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-links a::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: radial-gradient(circle, rgba(var(--primary-rgb), 0.18) 0%, transparent 70%);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.4s ease;
+        }
+
+        .member-links i {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            position: relative;
+            z-index: 2;
+            transition: color 0.3s ease;
+        }
+
+        .member-links a:hover {
+            background: var(--button-gradient);
+            transform: translateY(-4px) scale(1.1);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(var(--primary-rgb), 0.28);
+        }
+
+        .member-links a:hover::before {
+            width: 120%;
+            height: 120%;
+        }
+
+        .member-links a:hover i {
+            color: #fff;
+        }
+        
+        /* 修改间距样式 */
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 0rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        
+        .team-container {
+            margin-bottom: 60px;  /* 增加底部间距 */
+        }
+        
+        .team-category {
+            margin-bottom: 20px;  /* 增加底部间距 */
+        }
+        
+        
+        .team-category h3 {
+            font-size: 1.6rem;
+            margin-bottom: 30px;
+            margin-top: 60px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--background-color);
+            color: var(--primary-color);
+        }
+        
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2.5rem;  /* 增加成员卡片之间的间距 */
+            align-items: stretch; /* 让所有卡片拉伸到相同高度 */
+        }
+        
+        .empty-category-note {
+            color: var(--muted);
+            font-style: italic;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* 加载动画 */
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            flex-direction: column;
+        }
+
+        .loading-spinner {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--primary-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Override Prof. Fang's role highlight color */
+        b[style*="color:#1565C0"] {
+            color: var(--primary-color) !important;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-info">
+                    <!-- Profile info will be loaded from JSON -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html#about">Home</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+            </ul>
+            <div class="nav-logo">
+                <img src="../assets/logo.png" alt="JC STEM Lab Logo">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 加载动画 -->
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+            <p>Loading team information...</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="copyright-year"></span> JC STEM Lab of Smart City. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 加载脚本 -->
+    <script>
+        // 加载网站头部信息
+        fetch('../data/profile-info.json')
+            .then(response => response.json())
+            .then(data => {
+                const profileInfo = document.querySelector('.profile-info');
+                
+                // 创建并设置名称
+                const name = document.createElement('h1');
+                name.innerHTML = data.name;
+                profileInfo.appendChild(name);
+                
+                // 创建并设置副标题
+                const subtitle = document.createElement('p');
+                subtitle.className = 'subtitle';
+                subtitle.innerHTML = processChinese(data.subtitle);
+                profileInfo.appendChild(subtitle);
+                
+                // 创建联系信息容器
+                const contactInfo = document.createElement('div');
+                contactInfo.className = 'contact-info';
+                
+                // 添加社交链接
+                data.socialLinks.forEach(link => {
+                    const a = document.createElement('a');
+                    a.href = link.url;
+                    a.innerHTML = link.icon;
+                    if (link.target) {
+                        a.target = link.target;
+                    }
+                    contactInfo.appendChild(a);
+                });
+                
+                profileInfo.appendChild(contactInfo);
+            })
+            .catch(error => console.error('Error loading profile info:', error));
+        // 包裹中文字符为chinese-text
+        function processChinese(text) {
+            if (!text) return text;
+            return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
+        }
+    </script>
+    <!-- 加载团队成员数据 -->
+    <script src="../js/team-loader.js"></script>
+</body>
+</html> 

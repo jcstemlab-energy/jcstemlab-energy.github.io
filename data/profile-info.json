@@ -1,0 +1,25 @@
+{
+  "name": "JC STEM Lab of Future Energy Systems",
+  "subtitle": "<span class=\"chinese-lab-name\">賽馬會未來能源系統創科實驗室</span><br>Department of Electrical Engineering<br>City University of Hong Kong",
+  "email": "eehead@cityu.edu.hk",
+  "phone": "34427838",
+  "office": "G6309 YEUNG",
+  "socialLinks": [
+    {
+      "type": "email",
+      "url": "mailto:eehead@cityu.edu.hk",
+      "icon": "<i class=\"fas fa-envelope\"></i>"
+    },
+    {
+      "type": "phone",
+      "url": "tel:+852-34427838",
+      "icon": "<i class=\"fas fa-phone\"></i>"
+    },
+    {
+      "type": "googleScholar",
+      "url": "https://scholar.google.com/citations?user=7FORgWsAAAAJ&hl=en",
+      "icon": "<i class=\"fas fa-graduation-cap\"></i>",
+      "target": "_blank"
+    }
+  ]
+}
