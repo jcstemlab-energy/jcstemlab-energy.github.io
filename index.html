@@ -254,8 +254,15 @@
                         if (!container) return;
                         container.innerHTML = '';
 
-                        // Only show these 7 people on homepage (grouped by subcategory)
+                        // Show Faculty, Postdocs, and selected PhD/RA members on homepage
                         const allowedIds = new Set([
+                            'faculty-chjiang',
+                            'faculty-hlli',
+                            'faculty-qunsong',
+                            'faculty-yuezhu',
+                            'faculty-yuechtao',
+                            'postdoc-sunhuang',
+                            'postdoc-zhijun-zhang',
                             'phd25-wanghaosheng',
                             'phd25-zhouyujie',
                             'phd26-duanjuntao',
@@ -265,6 +272,8 @@
                             'ra24-zhengzuqing'
                         ]);
                         const allowedSubcategories = new Set([
+                            'Faculty',
+                            'Postdoctoral Researchers',
                             'Current PhD Students',
                             'Research Assistant'
                         ]);
