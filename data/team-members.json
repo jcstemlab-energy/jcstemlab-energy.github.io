@@ -8,7 +8,7 @@
           "members": [
             {
               "id": "faculty-chjiang",
-              "title": "Prof. CHAOQIANG, Jiang",
+              "title": "Prof. JIANG, Chaoqiang",
               "role": [
                 {
                   "text": "Associate Professor",
@@ -69,7 +69,7 @@
             },
             {
               "id": "faculty-hlli",
-              "title": "Prof. HAOLIANG, Li",
+              "title": "Prof. LI, Haoliang",
               "role": [
                 {
                   "text": "Assistant Professor",
@@ -123,7 +123,7 @@
             },
             {
               "id": "faculty-qunsong",
-              "title": "Prof. QUN, Song",
+              "title": "Prof. SONG, Qun",
               "role": [
                 {
                   "text": "Assistant Professor",
@@ -178,7 +178,7 @@
             },
             {
               "id": "faculty-yuezhu",
-              "title": "Dr. YUE, Zhu",
+              "title": "Dr. ZHU, Yue",
               "role": [
                 {
                   "text": "Assistant Professor",
@@ -237,7 +237,7 @@
             },
             {
               "id": "faculty-yuechtao",
-              "title": "Dr. YUECHUAN, Tao",
+              "title": "Dr. TAO, Yuechuan",
               "role": [
                 {
                   "text": "Research Assistant Professor",
@@ -289,7 +289,7 @@
           "members": [
             {
               "id": "postdoc-sunhuang",
-              "title": "Dr. SUNHUA, Huang",
+              "title": "Dr. HUANG, Sunhua",
               "role": [
                 {
                   "text": "Postdoctoral Researcher",
@@ -332,7 +332,7 @@
             },
             {
               "id": "postdoc-zhijun-zhang",
-              "title": "Dr. ZHIJUN, Zhang",
+              "title": "Dr. ZHANG, Zhijun",
               "role": [
                 {
                   "text": "Postdoctoral Fellow",
