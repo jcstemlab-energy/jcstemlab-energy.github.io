@@ -178,7 +178,7 @@
             },
             {
               "id": "faculty-yuezhu",
-              "title": "Dr. ZHU, Yue",
+              "title": "Prof. ZHU, Yue",
               "role": [
                 {
                   "text": "Assistant Professor",
@@ -237,7 +237,7 @@
             },
             {
               "id": "faculty-yuechtao",
-              "title": "Dr. TAO, Yuechuan",
+              "title": "Prof. TAO, Yuechuan",
               "role": [
                 {
                   "text": "Research Assistant Professor",
@@ -258,9 +258,15 @@
                 },
                 {
                   "type": "google-scholar",
-                  "url": "https://docs.google.com/spreadsheets/d/1V8qKtK0808ArUxiv1K2ZUNtvbBym5e8CQkE-pm_n-OI/edit?usp=sharing",
+                  "url": "https://scholar.google.com/citations?user=pAg12UQAAAAJ&hl=en",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
+                },
+                {
+                  "type": "home",
+                  "url": "https://scholars.cityu.edu.hk/en/persons/yuechtao/",
+                  "icon": "fas fa-home",
+                  "title": "Homepage"
                 }
               ],
               "interests": [
@@ -289,7 +295,7 @@
           "members": [
             {
               "id": "postdoc-sunhuang",
-              "title": "Dr. HUANG, Sunhua",
+              "title": "Prof. HUANG, Sunhua",
               "role": [
                 {
                   "text": "Postdoctoral Researcher",
@@ -332,7 +338,7 @@
             },
             {
               "id": "postdoc-zhijun-zhang",
-              "title": "Dr. ZHANG, Zhijun",
+              "title": "Prof. ZHANG, Zhijun",
               "role": [
                 {
                   "text": "Postdoctoral Fellow",
