@@ -198,6 +198,29 @@
             align-items: stretch; /* 让所有卡片拉伸到相同高度 */
         }
         
+        /* Lab Director 特殊样式 - 居中显示 */
+        .team-members.lab-director-members {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 2.5rem;
+        }
+        
+        .team-members.lab-director-members .team-member {
+            max-width: 350px; /* 限制最大宽度 */
+        }
+        
+        /* Navbar logo 样式 */
+        .nav-logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-logo img {
+            height: 40px;
+            width: auto;
+        }
+        
         .empty-category-note {
             color: var(--muted);
             font-style: italic;
@@ -248,15 +271,22 @@
         </div>
     </header>
 
-    <nav>
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="../index.html#about">Home</a></li>
-                <li><a href="team.html" class="active">Team</a></li>
-            </ul>
-            <div class="nav-logo">
-                <img src="../assets/logo.png" alt="JC STEM Lab Logo">
+    <nav id="main-nav">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <a href="../index.html#about" class="logo-link">
+                    <img src="../assets/logo.png" alt="JC STEM Lab Logo" class="nav-logo-img">
+                </a>
             </div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="../index.html#about">Home</a></li>
+                    <li><a href="team.html" class="active">Team</a></li>
+                </ul>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 

@@ -75,10 +75,20 @@ function renderTeamStructure(data) {
             const subcategoryElement = document.createElement('div');
             subcategoryElement.className = 'team-category';
             
+            // 为 Lab Director 添加特殊类名
+            if (subcategory.name === 'Lab Director') {
+                subcategoryElement.classList.add('lab-director-category');
+            }
+            
             subcategoryElement.innerHTML = `<h3>${subcategory.name}</h3>`;
             
             const membersContainer = document.createElement('div');
             membersContainer.className = 'team-members';
+            
+            // 为 Lab Director 的成员容器添加特殊类名
+            if (subcategory.name === 'Lab Director') {
+                membersContainer.classList.add('lab-director-members');
+            }
             
             // 检查是否有成员
             if (subcategory.members && subcategory.members.length > 0) {

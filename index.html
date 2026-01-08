@@ -18,7 +18,7 @@
         <div class="container nav-container">
             <div class="nav-brand">
                 <a href="#about" class="logo-link">
-                    <span class="logo-text">JC STEM Lab of Future Energy Systems</span>
+                    <img src="assets/logo.png" alt="JC STEM Lab Logo" class="nav-logo-img">
                 </a>
             </div>
             <div class="nav-menu">
@@ -28,8 +28,8 @@
                     <li><a href="#team">Team</a></li>
                     <li><a href="#latest-news">News</a></li>
                     <li><a href="#publications">Publications</a></li>
-                    <li><a href="#sponsors">Sponsors</a></li>
                     <li><a href="#join-us">Join Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <button class="mobile-toggle" aria-label="Toggle Navigation">
@@ -90,9 +90,6 @@
                     <h2 class="section-title">About</h2>
                     <p class="about-lead">Led by <a href="https://www.cityu.edu.hk/stfprofile/zydong.htm">Prof. DONG, Zhao Yang</a>, the <b>JC STEM Lab of Future Energy System</b> was established in November 2024 with generous support from the Hong Kong Jockey Club Charities Trust. The Lab serves as a dynamic hub for graduate students, postdoctoral researchers, and visiting scholars.</p>
                     <p>Its research is centered on Power Systems and Smart Grids, with key areas of focus including 1. Renewable energy systems grid connection, 2. Smart grid and smart cities, 3. Computational methods for power system operations and planning. The laboratory has delivered research outputs for multiple government departments and enterprises, and is dedicated to making significant contributions to urban energy conservation, cost reduction, and efficiency enhancement.</p>
-                    <div class="about-logo" style="text-align: center; margin-top: 2rem;">
-                        <img src="assets/logo.png" alt="JC STEM Lab of Future Energy Systems Logo" style="max-width: 60%; height: auto;">
-                    </div>
                 </div>
             </div>
         </section>
@@ -265,42 +262,30 @@
                         if (!container) return;
                         container.innerHTML = '';
 
-                        // Show Faculty, Postdocs, and selected PhD/RA members on homepage
-                        const allowedIds = new Set([
-                            'faculty-zydong',
-                            'faculty-chjiang',
-                            'faculty-hlli',
-                            'faculty-qunsong',
-                            'faculty-yuezhu',
-                            'faculty-yuechtao',
-                            'postdoc-sunhuang',
-                            'postdoc-zhijun-zhang',
-                            'phd25-wanghaosheng',
-                            'phd25-zhouyujie',
-                            'phd26-duanjuntao',
-                            'phd25-huangzuliang',
-                            'phd24-litong',
-                            'phd25-zhangyuchi',
-                            'ra24-zhengzuqing'
-                        ]);
-                        const allowedSubcategories = new Set([
-                            'Faculty',
-                            'Postdoctoral Researchers',
-                            'Current PhD Students',
-                            'Research Assistant'
-                        ]);
-                        
                         const meetOurTeam = (data.categories || []).find(c => c && c.name === 'Meet Our Team');
-                        const subcategories = (meetOurTeam && meetOurTeam.subcategories) ? meetOurTeam.subcategories : [];
+                        let subcategories = (meetOurTeam && meetOurTeam.subcategories) ? meetOurTeam.subcategories : [];
+
+                        // Sort subcategories to put "Lab Director" first
+                        subcategories.sort((a, b) => {
+                            const order = {
+                                'Lab Director': 1,  // First position
+                                'Faculty': 2,
+                                'Postdoctoral Researchers': 3,
+                                'Current PhD Students': 4,
+                                'Research Assistant': 5
+                            };
+                            const orderA = order[a.name] || 999;
+                            const orderB = order[b.name] || 999;
+                            return orderA - orderB;
+                        });
 
                         subcategories.forEach(subcategory => {
-                            if (!subcategory || !allowedSubcategories.has(subcategory.name)) return;
+                            if (!subcategory) return;
                             const members = Array.isArray(subcategory.members) ? subcategory.members : [];
-                            const filtered = members.filter(m => m && allowedIds.has(m.id));
-                            if (filtered.length === 0) return;
+                            if (members.length === 0) return;
 
                             // Sort by enrollment year (earlier year comes first: phd24 before phd25, etc.)
-                            filtered.sort((a, b) => {
+                            members.sort((a, b) => {
                                 const getYear = (id) => {
                                     const match = id.match(/\d+/);
                                     return match ? parseInt(match[0]) : 999;
@@ -317,9 +302,16 @@
                             // Create members grid for this category
                             const membersGrid = document.createElement('div');
                             membersGrid.className = 'team-members-grid';
+                            
+                            // If Lab Director with single member, center it
+                            if (subcategory.name === 'Lab Director' && members.length === 1) {
+                                membersGrid.classList.add('lab-director-grid');
+                            }
 
-                            filtered.forEach(member => {
-                                membersGrid.appendChild(createTeamMemberCard(member));
+                            members.forEach(member => {
+                                if (member) {
+                                    membersGrid.appendChild(createTeamMemberCard(member));
+                                }
                             });
 
                             container.appendChild(membersGrid);
@@ -359,6 +351,18 @@
             </div>
         </section>
 
+        <section id="join-us" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Join Us</h2>
+                <p style="font-size: 1.125rem; color: var(--text-primary); text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                    We are always looking for talented and motivated researchers to join our lab. We have openings for PhD students, postdoctoral researchers, undergraduate students, and visiting researchers.
+                </p>
+                <div style="text-align: center;">
+                    <a href="#" class="btn btn-primary">View Open Positions</a>
+                </div>
+            </div>
+        </section>
+
         <section id="sponsors" class="section bg-light">
             <div class="container">
                 <h2 class="section-title">Sponsors</h2>
@@ -369,14 +373,34 @@
             </div>
         </section>
 
-        <section id="join-us" class="section bg-light">
+        <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title">Join Us</h2>
-                <p style="font-size: 1.125rem; color: var(--text-primary); text-align: center; max-width: 800px; margin: 0 auto 2rem;">
-                    We are always looking for talented and motivated researchers to join our lab. We have openings for PhD students, postdoctoral researchers, undergraduate students, and visiting researchers.
-                </p>
-                <div style="text-align: center;">
-                    <a href="#" class="btn btn-primary">View Open Positions</a>
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-section">
+                        <h3><i class="fas fa-map-marker-alt"></i> Visit Our Lab</h3>
+                        <p>
+                            Room G7761, Green Zone,<br>
+                            Yeung Kin Man Academic Building,<br>
+                            City University of Hong Kong<br>
+                            Kowloon Tong, Kowloon<br>
+                            Hong Kong
+                        </p>
+                    </div>
+                    <div class="contact-section">
+                        <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                        <p>
+                            Monday - Friday (HK Working days):<br>
+                            9:30 AM - 5:30 PM
+                        </p>
+                    </div>
+                    <div class="contact-section">
+                        <h3><i class="fas fa-envelope"></i> Connect With Us</h3>
+                        <p>
+                            <a href="mailto:shelley.liu@cityu.edu.hk">shelley.liu@cityu.edu.hk</a><br>
+                            Tel: <a href="tel:+85234427718">3442 7718</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
