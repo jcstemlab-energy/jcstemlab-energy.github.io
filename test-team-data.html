@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Team Data</title>
+</head>
+<body>
+    <h1>Team Data Test</h1>
+    <div id="output"></div>
+
+    <script>
+        fetch('../data/team-members.json')
+            .then(response => response.json())
+            .then(data => {
+                const output = document.getElementById('output');
+                const subcategories = data.categories[0].subcategories;
+                
+                let html = '<h2>Subcategories:</h2>';
+                subcategories.forEach((cat, index) => {
+                    html += `<h3>${index + 1}. ${cat.name} (${cat.members.length} members)</h3>`;
+                    html += '<ul>';
+                    cat.members.forEach(member => {
+                        html += `<li>${member.title}</li>`;
+                    });
+                    html += '</ul>';
+                });
+                
+                output.innerHTML = html;
+                console.log('Data loaded successfully:', data);
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                document.getElementById('output').innerHTML = `<p style="color: red;">Error: ${error.message}</p>`;
+            });
+    </script>
+</body>
+</html>

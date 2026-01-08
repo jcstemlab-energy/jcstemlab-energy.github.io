@@ -56,6 +56,9 @@ function renderTeamStructure(data) {
     
     // 遍历主要类别
     data.categories.forEach(category => {
+        console.log('Processing category:', category.name);
+        console.log('Subcategories:', category.subcategories.map(s => s.name));
+        
         // 如果是主要类别，不添加分隔标题
         
             containerElement.innerHTML += `<h2 class="section-title">${category.name}</h2>`;
@@ -67,6 +70,8 @@ function renderTeamStructure(data) {
         
         // 渲染子类别
         category.subcategories.forEach(subcategory => {
+            console.log('Processing subcategory:', subcategory.name, 'with', subcategory.members.length, 'members');
+            
             const subcategoryElement = document.createElement('div');
             subcategoryElement.className = 'team-category';
             
@@ -79,6 +84,7 @@ function renderTeamStructure(data) {
             if (subcategory.members && subcategory.members.length > 0) {
                 // 渲染成员卡片
                 subcategory.members.forEach(member => {
+                    console.log('Creating card for:', member.title);
                     membersContainer.appendChild(createMemberCard(member));
                 });
             } else {

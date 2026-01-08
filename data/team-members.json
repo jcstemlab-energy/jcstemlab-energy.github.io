@@ -4,7 +4,7 @@
       "name": "Meet Our Team",
       "subcategories": [
         {
-          "name": "Faculty",
+          "name": "Lab Director",
           "members": [
             {
               "id": "faculty-zydong",
@@ -52,7 +52,12 @@
               ],
               "biography": "Prof Z.Y. Dong is a Chair Professor and Head of Department of Electrical Engineering at City University of Hong Kong. His previous roles include Singapore Power Group Endowed Professor and Co-Director of SPG-NTU Joint Lab at Nanyang Technological University, Singapore; SHARP Professor of Energy System and Inaugrial Director of UNSW Digital Grid Futures Institute, the University of NSW, Australia; Director of ARC Research Hub for Integrated Energy Storage Systems; Head of School of Electrical & Information Engineering, The University of Sydney; and Ausgrid Chair Professor and Director of Ausgrid Centre for Intelligent Electricity Networks provided R&D support for the Smart Grid, Smart City national demonstration project of Australia. He also worked with industry as manager for power system planning with the transmission network service provider of TAS in Australia. Prof Dong's research interests include power system planning and stability, smart grid/micro grid, smart cities, renewable energy systems, energy storage systems, and energy market. He is a Fellow of IEEE and has held editorial roles for several IEEE Transactions and IET Journals.",
               "last_name": "dong"
-            },
+            }
+          ]
+        },
+        {
+          "name": "Faculty",
+          "members": [
             {
               "id": "faculty-chjiang",
               "title": "Prof. JIANG, Chaoqiang",
@@ -434,6 +439,47 @@
                 }
               ],
               "last_name": "zhang"
+            },
+            {
+              "id": "postdoc-tianjing-wang",
+              "title": "Dr. WANG, Tianjing",
+              "role": [
+                {
+                  "text": "Postdoctoral Research Fellow",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/wangtianjing.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:tianjing.wang@cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=DVHZsDcAAAAJ&hl=en",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Physics-guided AI for energy storage and power system"
+              ],
+              "biography": "Tianjing Wang (Member, IEEE) received a Ph. D. degree from China Electric Power Research Institute, Beijing, China, in 2022. She is currently a postdoctoral research fellow at the Department of Electrical Engineering, City University of Hong Kong, Hong Kong, China. From 2021 to 2024, she was successively an exchange student and research fellow at the school of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. Her research interests include physic guided machine learning applications in energy prediction, power system control, battery health estimation and energy storage control.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "China Electric Power Research Institute",
+                  "year": "2018-2022"
+                }
+              ],
+              "last_name": "wang"
             }
           ]
         },
