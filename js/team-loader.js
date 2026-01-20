@@ -209,6 +209,7 @@ function createMemberCard(member) {
 function getEmptyNoteForCategory(categoryName) {
     const messages = {
         "Postdoctoral Researchers": "Currently no postdoctoral researchers in the team.",
+        "Lab Manager": "Currently no lab manager in the team.",
         "Visiting Students": "Currently no visiting students in the team.",
         "Former Visiting Students": "No former visiting students data available.",
         "Graduated PhD Students": "Graduated PhD students data will be added soon.",
