@@ -953,41 +953,6 @@
               "last_name": "zhengzuqing"
             }
           ]
-        },
-        {
-          "name": "Lab Manager",
-          "members": [
-            {
-              "id": "lab-manager-dummy",
-              "title": "Lab Manager (TBD)",
-              "role": [
-                {
-                  "text": "Lab Manager",
-                  "highlighted": true
-                },
-                {
-                  "text": "Department of Electrical Engineering",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "assets/logo.png",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:contact@cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                }
-              ],
-              "interests": [
-                "Lab Operations",
-                "Team Coordination"
-              ],
-              "biography": "This is a placeholder for the Lab Manager position. The details will be updated once the position is filled.",
-              "education": [],
-              "last_name": "manager"
-            }
-          ]
         }
       ]
     }
