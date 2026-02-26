@@ -1,5 +1,13 @@
 [
   {
+    "date": "Feb. 26, 2026",
+    "title": "Prof. Zhao Yang Dong to speak at Hong Kong Future Grid Summit 2026",
+    "content": "Prof. Zhao Yang Dong has been invited as a guest speaker at the upcoming Hong Kong Future Grid Summit 2026, powered by OSA Group. The summit will take place on March 30 at the Charles K. Kao Auditorium, Hong Kong Science Park. Discussions will cover renewable generators, energy demand research, and operability challenges with data centre load.",
+    "images": [
+      "assets/news/future-grid-summit-2026.jpg"
+    ]
+  },
+  {
     "date": "Dec. 9, 2025",
     "title": "The First News",
     "content": "This is the first news of the lab."
@@ -19,4 +27,4 @@
     "title": "The First News",
     "content": "This is the first news of the lab."
   }
-] 
+]
