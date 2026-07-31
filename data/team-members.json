@@ -124,7 +124,7 @@
               "title": "Prof. LI, Haoliang",
               "role": [
                 {
-                  "text": "Assistant Professor",
+                  "text": "Associate Professor",
                   "highlighted": true
                 },
                 {
@@ -158,7 +158,7 @@
                 "multimedia forensics",
                 "machine learning"
               ],
-              "biography": "Haoliang Li is an assistant professor at Department of Electrical Engineering, City University of Hong Kong. Before that, he was a Wallenberg-NTU Presidential Postdoc Fellow in the Rapid-Rich Object Search Lab of Nanyang Technological University. He obtained his Ph.D. degree from NTU Singapore. He is currently serving as an Associate Editor for IEEE Transactions on Information Forensics and Security, and IEEE Transactions on Circuits and Systems for Video Technology, as well as an Action editor for Transactions on Machine Learning Research. Meanwhile, He is serving as Area Chair for some conferences such as NeurIPS, ICLR, ICML, CVPR, ICASSP.",
+              "biography": "Haoliang Li is an associate professor at Department of Electrical Engineering, City University of Hong Kong. Before that, he was a Wallenberg-NTU Presidential Postdoc Fellow in the Rapid-Rich Object Search Lab of Nanyang Technological University. He obtained his Ph.D. degree from NTU Singapore. He is currently serving as an Associate Editor for IEEE Transactions on Information Forensics and Security, and IEEE Transactions on Circuits and Systems for Video Technology, as well as an Action editor for Transactions on Machine Learning Research. Meanwhile, He is serving as Area Chair for some conferences such as NeurIPS, ICLR, ICML, CVPR, ICASSP.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Electronic Engineering",
@@ -881,6 +881,113 @@
               ],
               "detailPage": "data/people/PhD25_ZhangYuchi/index.html",
               "last_name": "zhangyuchi"
+            },
+            {
+              "id": "phd26-wangbo",
+              "title": "Mr. WANG, Bo",
+              "role": [
+                {
+                  "text": "PhD Student @ 26 Summer",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/wangbo.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:bowang96-c@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?hl=en&user=8bwFQJ8AAAAJ&view_op=list_works&sortby=title",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Intelligent Control",
+                "System Optimization",
+                "Industrial Automation",
+                "Industrial Internet"
+              ],
+              "biography": "My research focuses on motion control, embedded real-time control, industrial fieldbus and intelligent controllers. I led the R&D of CPAC and PAC product lines widely used in robotics, processing, packaging, textiles and intelligent greenhouses, filling domestic technical gaps.\n I have presided over key national, provincial and ministerial projects including the 863 Program and MIIT Major Project, with total funding over 40 million RMB. I built China’s first special robot intelligent factory, generating direct revenue of 21 million RMB and driving an industrial output of 400 million RMB. I hold 2 invention patents and 3 utility model patents, and received the Guangdong Science and Technology Progress Second Prize.\n I serve as IEEE Senior Member, Member of National Standardization Committee TC159, external expert at CAS Shenzhen Institutes of Advanced Technology, and postgraduate supervisor at Shenzhen University.\n Also I am Chair of IEEE P3979 Working Group (IES). I lead the development of the international standard for discrete logistics equipment control and safety framework, approved in Feb 2026.\n Currently, I am the PhD candidate in Department of Electrical Engineering, City University of Hong Kong.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "City University of Hong Kong",
+                  "year": "2026 - 2032"
+                },
+                {
+                  "degree": "MEng in Control Science and Engineering",
+                  "institution": "Harbin Institute of Technology",
+                  "year": "2006 - 2008"
+                },
+                {
+                  "degree": "BEng in Automation",
+                  "institution": "Harbin Engineering University",
+                  "year": "2002 - 2006"
+                }
+              ],
+              "last_name": "wangbo"
+            },
+            {
+              "id": "phd26-heyuzhe",
+              "title": "Mr. HE, Yuzhe",
+              "role": [
+                {
+                  "text": "PhD Student @ 26 Summer",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/heyuzhe.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:yuzhehe2-c@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "github",
+                  "url": "https://github.com/hrzzdhyz",
+                  "icon": "fab fa-github",
+                  "title": "GitHub"
+                }
+              ],
+              "interests": [
+                "AI for industry",
+                "AI Infra",
+                "Embodied Intelligence"
+              ],
+              "biography": "Yuzhe He received the Bachelor of Computing degree from Queen’s University, Kingston, Canada, and the Master of Data Science and Artificial Intelligence degree from the University of Waterloo, Waterloo, Canada. He is currently pursuing a Ph.D. degree in the Department of Electrical Engineering at the City University of Hong Kong.\n\nHis research interests include AI for Industry, power system control, AI infra and multimodal machine learning.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "City University of Hong Kong",
+                  "year": "2026 - Now"
+                },
+                {
+                  "degree": "Master of Data Science and Artificial Intelligence",
+                  "institution": "University of Waterloo",
+                  "year": "2023-2025"
+                },
+                {
+                  "degree": "Bachelor of Computing",
+                  "institution": "Queen’s University",
+                  "year": "2019-2023"
+                }
+              ],
+              "last_name": "heyuzhe"
             }
           ]
         },
