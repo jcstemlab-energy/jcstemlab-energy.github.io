@@ -31,3 +31,6 @@ JCLab-new
 
 .cursor
 .claude
+
+# Agent internal memory (not website content, keep out of public repo)
+.workbuddy/
