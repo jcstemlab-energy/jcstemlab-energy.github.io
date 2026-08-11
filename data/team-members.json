@@ -509,6 +509,71 @@
               ],
               "biography": "Dr. Yuk Sum Wong is a postdoctoral researcher in the Department of Electrical Engineering at the City University of Hong Kong.",
               "last_name": "wong"
+            },
+            {
+              "id": "ra24-zhengzuqing",
+              "title": "Mr. ZHENG, Zuqing",
+              "role": [
+                {
+                  "text": "Research Assistant",
+                  "highlighted": true
+                },
+                {
+                  "text": "MEng @ Southwest University",
+                  "highlighted": false
+                },
+                {
+                  "text": "BEng @ Hubei Normal University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/zhengzuqing.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:zuqzheng@cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=b4balCIAAAAJ&hl=zh-CN&oi=ao",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
+                  "type": "other",
+                  "url": "https://orcid.org/0000-0003-3957-7248c",
+                  "icon": "fas fa-link",
+                  "title": "ORCID"
+                }
+              ],
+              "interests": [
+                "Microgrid Modeling",
+                "Energy Management",
+                "Distributed Optimization",
+                "Game Theory"
+              ],
+              "biography": "Mr. Zuqing Zheng received his B.S. degree in Electrical Engineering and Automation from Hubei Normal University, Hubei, China, in 2018, and his M.E. degree in Signal and Information Processing from the School of Electronic and Information Engineering, Southwest University, Chongqing, China. He is currently pursuing a Ph.D. in Control Science and Engineering at the School of Automation, Central South University. Since July 2024, he has also been serving as a Research Assistant in the Department of Electrical Engineering at the City University of Hong Kong. His research interests focus on microgrid modeling, energy management, distributed optimization, and game-theoretic approaches in power systems.",
+              "education": [
+                {
+                  "degree": "PhD in Control Science and Engineering",
+                  "institution": "Central South University",
+                  "year": "2022-Now"
+                },
+                {
+                  "degree": "M.Eng in Signal and Information Processing",
+                  "institution": "Southwest University",
+                  "year": "2019-2022"
+                },
+                {
+                  "degree": "B.Eng in Electrical Engineering and Automation",
+                  "institution": "Hubei Normal University",
+                  "year": "2014-2018"
+                }
+              ],
+              "detailPage": "data/people/RA24_ZhengZuqing/index.html",
+              "last_name": "zhengzuqing"
             }
           ]
         },
@@ -988,76 +1053,6 @@
                 }
               ],
               "last_name": "heyuzhe"
-            }
-          ]
-        },
-        {
-          "name": "Research Assistant",
-          "members": [
-            {
-              "id": "ra24-zhengzuqing",
-              "title": "Mr. ZHENG, Zuqing",
-              "role": [
-                {
-                  "text": "Research Assistant",
-                  "highlighted": true
-                },
-                {
-                  "text": "MEng @ Southwest University",
-                  "highlighted": false
-                },
-                {
-                  "text": "BEng @ Hubei Normal University",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/zhengzuqing.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:zuqzheng@cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=b4balCIAAAAJ&hl=zh-CN&oi=ao",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                },
-                {
-                  "type": "other",
-                  "url": "https://orcid.org/0000-0003-3957-7248c",
-                  "icon": "fas fa-link",
-                  "title": "ORCID"
-                }
-              ],
-              "interests": [
-                "Microgrid Modeling",
-                "Energy Management",
-                "Distributed Optimization",
-                "Game Theory"
-              ],
-              "biography": "Mr. Zuqing Zheng received his B.S. degree in Electrical Engineering and Automation from Hubei Normal University, Hubei, China, in 2018, and his M.E. degree in Signal and Information Processing from the School of Electronic and Information Engineering, Southwest University, Chongqing, China. He is currently pursuing a Ph.D. in Control Science and Engineering at the School of Automation, Central South University. Since July 2024, he has also been serving as a Research Assistant in the Department of Electrical Engineering at the City University of Hong Kong. His research interests focus on microgrid modeling, energy management, distributed optimization, and game-theoretic approaches in power systems.",
-              "education": [
-                {
-                  "degree": "PhD in Control Science and Engineering",
-                  "institution": "Central South University",
-                  "year": "2022-Now"
-                },
-                {
-                  "degree": "M.Eng in Signal and Information Processing",
-                  "institution": "Southwest University",
-                  "year": "2019-2022"
-                },
-                {
-                  "degree": "B.Eng in Electrical Engineering and Automation",
-                  "institution": "Hubei Normal University",
-                  "year": "2014-2018"
-                }
-              ],
-              "detailPage": "data/people/RA24_ZhengZuqing/index.html",
-              "last_name": "zhengzuqing"
             }
           ]
         }
