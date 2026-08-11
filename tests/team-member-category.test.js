@@ -22,3 +22,14 @@ test('Mr. ZHENG, Zuqing is listed under Postdoctoral Researchers only', () => {
     assert.equal(researchAssistantMatches.length, 0);
     assert.equal(postdoctoralMatches[0].id, 'ra24-zhengzuqing');
 });
+
+test('Mr. ZHENG, Zuqing is described as a Postdoctoral Fellow', () => {
+    const member = membersIn('Postdoctoral Researchers').find(
+        item => item.title === 'Mr. ZHENG, Zuqing'
+    );
+
+    assert.deepEqual(member.role[0], {
+        text: 'Postdoctoral Fellow',
+        highlighted: true
+    });
+});
