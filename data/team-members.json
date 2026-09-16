@@ -1053,6 +1053,52 @@
                 }
               ],
               "last_name": "heyuzhe"
+            },
+            {
+              "id": "phd26-baijiayi",
+              "title": "Ms. BAI, Jiayi",
+              "role": [
+                {
+                  "text": "PhD Student @ 26 Fall",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/baijiayi.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:jiayibai3-c@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "interests": [
+                "Smart Grid",
+                "Condition Monitoring"
+              ],
+              "biography": "Ms. BAI Jiayi is currently pursuing the Ph.D. degree in the Department of Electrical Engineering at City University of Hong Kong. She received her Bachelor of Engineering in Digital Media Technology from Anhui University in 2024, and her Master of Science in Multimedia Information Technology from City University of Hong Kong in 2025.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "City University of Hong Kong",
+                  "year": "2026 - Now"
+                },
+                {
+                  "degree": "MEng in Multimedia Information Technology",
+                  "institution": "City University of Hong Kong",
+                  "year": "2024 - 2025"
+                },
+                {
+                  "degree": "BEng in Digital Media Technology",
+                  "institution": "Anhui University",
+                  "year": "2020 - 2024"
+                }
+              ],
+              "last_name": "baijiayi"
             }
           ]
         }
