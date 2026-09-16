@@ -78,12 +78,16 @@ function renderMemberProfile(member) {
     
     // 更新页面标题
     document.title = `${member.title} | JC STEM Lab of Future Energy Systems`;
+
+    const avatarPositionStyle = member.avatarPosition
+        ? ` style="object-position: ${member.avatarPosition};"`
+        : '';
     
     // 创建档案内容
     let html = `
         <div class="profile-header">
             <div class="profile-avatar-container">
-                <img src="../../${member.avatar}" alt="${member.title}" class="profile-avatar">
+                <img src="../../${member.avatar}" alt="${member.title}" class="profile-avatar"${avatarPositionStyle}>
                 ${renderSocialLinks(member.socialLinks)}
             </div>
             <div class="profile-main-info">

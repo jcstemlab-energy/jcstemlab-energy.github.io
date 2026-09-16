@@ -134,6 +134,9 @@ function createMemberCard(member) {
     const avatar = document.createElement('img');
     avatar.src = `../${member.avatar}`;
     avatar.alt = member.title;
+    if (member.avatarPosition) {
+        avatar.style.objectPosition = member.avatarPosition;
+    }
     memberCard.appendChild(avatar);
     
     // 创建内容容器
@@ -273,4 +276,4 @@ function processChinese(text) {
     
     // 使用正则表达式匹配连续的中文字符
     return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
-} 
+}

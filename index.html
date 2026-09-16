@@ -201,6 +201,9 @@
                 avatar.src = member.avatar;
                 avatar.alt = member.title;
                 avatar.loading = 'lazy';
+                if (member.avatarPosition) {
+                    avatar.style.objectPosition = member.avatarPosition;
+                }
                 avatarLink.appendChild(avatar);
                 memberCard.appendChild(avatarLink);
 

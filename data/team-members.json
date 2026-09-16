@@ -589,6 +589,7 @@
                 }
               ],
               "avatar": "data/people/chengyuheng.jpg",
+              "avatarPosition": "center center",
               "socialLinks": [
                 {
                   "type": "google-scholar",
@@ -635,6 +636,7 @@
                 }
               ],
               "avatar": "data/people/panchunyang.jpg",
+              "avatarPosition": "center center",
               "socialLinks": [
                 {
                   "type": "envelope",
@@ -1198,6 +1200,48 @@
                 }
               ],
               "last_name": "baijiayi"
+            },
+            {
+              "id": "phd26-taoyiying",
+              "title": "Ms. TAO, Yiying",
+              "role": [
+                {
+                  "text": "PhD Student @ 26 Fall",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/taoyiying.png",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:yiyingtao3-c@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "interests": [
+                "AI Data Center–Power System Integration",
+                "Smart Grid",
+                "Renewable Energy Integration"
+              ],
+              "biography": "Ms. TAO Yiying is currently pursuing the Ph.D. degree in the Department of Electrical Engineering at City University of Hong Kong, Hong Kong SAR, China. She received the B.Sc. degree in Computer Science and Technology from Beijing Normal-Hong Kong Baptist University in 2026. Her research interests include AI data center–power system integration, smart grids, and renewable energy integration.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "City University of Hong Kong",
+                  "year": "2026 - Now"
+                },
+                {
+                  "degree": "BSc in Computer Science and Technology",
+                  "institution": "Beijing Normal-Hong Kong Baptist University",
+                  "year": "2022 - 2026"
+                }
+              ],
+              "last_name": "taoyiying"
             }
           ]
         }
