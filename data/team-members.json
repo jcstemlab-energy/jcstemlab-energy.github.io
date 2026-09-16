@@ -512,7 +512,7 @@
             },
             {
               "id": "ra24-zhengzuqing",
-              "title": "Mr. ZHENG, Zuqing",
+              "title": "Dr. ZHENG, Zuqing",
               "role": [
                 {
                   "text": "Postdoctoral Fellow",
@@ -574,6 +574,105 @@
               ],
               "detailPage": "data/people/RA24_ZhengZuqing/index.html",
               "last_name": "zhengzuqing"
+            },
+            {
+              "id": "postdoc-yuheng-cheng",
+              "title": "Dr. CHENG, Yuheng",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/chengyuheng.jpg",
+              "socialLinks": [
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com.hk/citations?user=uvPKLGAAAAAJ",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "AI for Power and Energy Systems",
+                "Smart Energy Management"
+              ],
+              "biography": "Dr. Yuheng Cheng is a Postdoctoral Fellow in the Department of Electrical Engineering at City University of Hong Kong. He received his Ph.D. degree in Computer Information Engineering from The Chinese University of Hong Kong, Shenzhen. He received his M.Sc. degree in Information Technology from The Hong Kong University of Science and Technology and his B.Eng. degree in Software Engineering from the University of Electronic Science and Technology of China.\n\nHis research interests include artificial intelligence for power and energy systems, power system operation and dispatch, electricity markets, smart energy management. His recent research focuses on developing LLM-based and multi-agent approaches for power dispatch, electricity market modelling and simulation, reliable AI-assisted decision-making, and intelligent energy management.\n\nBefore pursuing his Ph.D., he worked as an NLP Algorithm Engineer at Tencent FinTech and as an NLP Researcher at SenseTime.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Information Engineering",
+                  "institution": "The Chinese University of Hong Kong, Shenzhen",
+                  "year": "2023 - 2026"
+                },
+                {
+                  "degree": "MSc in Information Technology",
+                  "institution": "The Hong Kong University of Science and Technology",
+                  "year": "2017 - 2018"
+                },
+                {
+                  "degree": "BEng in Software Engineering",
+                  "institution": "University of Electronic Science and Technology of China",
+                  "year": "2013 - 2017"
+                }
+              ],
+              "last_name": "chengyuheng"
+            },
+            {
+              "id": "postdoc-chunyang-pan",
+              "title": "Dr. PAN, Chunyang",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/panchunyang.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:chunypan@cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=F8QlHAcAAAAJ&hl=en",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Power System Planning and Operation",
+                "Renewable Energy System",
+                "Artificial Intelligence"
+              ],
+              "biography": "Chunyang Pan received the B.E. degree in electrical engineering from the Huazhong University of Science and Technology, Hubei, China, in 2019, and the M.S. degree in electrical and computer engineering from the State University of New York at Binghamton, Binghamton, NY, USA, in 2020. In 2026, he received the Ph.D. degree in electrical engineering with the School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China. His research interests include power system planning and operation, renewable energy system, and artificial intelligence.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "Shanghai Jiao Tong University",
+                  "year": "2021-2026"
+                },
+                {
+                  "degree": "MS in Electrical and Computer Engineering",
+                  "institution": "State University of New York at Binghamton",
+                  "year": "2019-2020"
+                },
+                {
+                  "degree": "BEng in Electrical Engineering",
+                  "institution": "Huazhong University of Science and Technology",
+                  "year": "2015-2019"
+                }
+              ],
+              "last_name": "panchunyang"
             }
           ]
         },

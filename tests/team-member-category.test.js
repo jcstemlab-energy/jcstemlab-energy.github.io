@@ -13,8 +13,8 @@ function membersIn(subcategoryName) {
     return subcategory ? subcategory.members : [];
 }
 
-test('Mr. ZHENG, Zuqing is listed under Postdoctoral Researchers only', () => {
-    const isZhengZuqing = member => member.title === 'Mr. ZHENG, Zuqing';
+test('Dr. ZHENG, Zuqing is listed under Postdoctoral Researchers only', () => {
+    const isZhengZuqing = member => member.title === 'Dr. ZHENG, Zuqing';
     const postdoctoralMatches = membersIn('Postdoctoral Researchers').filter(isZhengZuqing);
     const researchAssistantMatches = membersIn('Research Assistant').filter(isZhengZuqing);
 
@@ -23,9 +23,9 @@ test('Mr. ZHENG, Zuqing is listed under Postdoctoral Researchers only', () => {
     assert.equal(postdoctoralMatches[0].id, 'ra24-zhengzuqing');
 });
 
-test('Mr. ZHENG, Zuqing is described as a Postdoctoral Fellow', () => {
+test('Dr. ZHENG, Zuqing is described as a Postdoctoral Fellow', () => {
     const member = membersIn('Postdoctoral Researchers').find(
-        item => item.title === 'Mr. ZHENG, Zuqing'
+        item => item.title === 'Dr. ZHENG, Zuqing'
     );
 
     assert.deepEqual(member.role[0], {
