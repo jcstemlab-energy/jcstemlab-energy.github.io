@@ -511,6 +511,43 @@
               "last_name": "wong"
             },
             {
+              "id": "postdoc-zhihao-lin",
+              "title": "Dr. LIN, Zhihao",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/linzhihao.png",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:zhihao.lin@ieee.org",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "interests": [
+                "Power Converter Topologies and Control",
+                "Reliability-Oriented Multi-Objective Design",
+                "Condition Monitoring and Fault Diagnosis"
+              ],
+              "biography": "Zhihao Lin received his Ph.D. degree in energy technology from Aalborg University, Aalborg, Denmark, in 2025. He is currently a postdoctoral fellow in the Department of Electrical Engineering at the City University of Hong Kong. His research focuses on topologies and control, multi-objective design optimization, condition monitoring and fault diagnosis for power electronics.",
+              "education": [
+                {
+                  "degree": "PhD in Energy Technology",
+                  "institution": "Aalborg University",
+                  "year": "2021 - 2025"
+                }
+              ],
+              "last_name": "linzhihao"
+            },
+            {
               "id": "ra24-zhengzuqing",
               "title": "Dr. ZHENG, Zuqing",
               "role": [
