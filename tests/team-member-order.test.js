@@ -6,6 +6,7 @@ const test = require('node:test');
 const teamData = JSON.parse(
     fs.readFileSync(path.resolve(__dirname, '..', 'data', 'team-members.json'), 'utf8')
 );
+const indexHtml = fs.readFileSync(path.resolve(__dirname, '..', 'index.html'), 'utf8');
 const meetOurTeam = teamData.categories.find(category => category.name === 'Meet Our Team');
 
 function membersIn(subcategoryName) {
@@ -58,4 +59,8 @@ test('current PhD students are ordered by entry cohort and then surname', () => 
             'Ms. TAO, Yiying'
         ]
     );
+});
+
+test('homepage preserves the approved member order from team data', () => {
+    assert.doesNotMatch(indexHtml, /members\.sort\s*\(/);
 });

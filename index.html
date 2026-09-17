@@ -309,15 +309,6 @@
                             const members = Array.isArray(subcategory.members) ? subcategory.members : [];
                             if (members.length === 0) return;
 
-                            // Sort by enrollment year (earlier year comes first: phd24 before phd25, etc.)
-                            members.sort((a, b) => {
-                                const getYear = (id) => {
-                                    const match = id.match(/\d+/);
-                                    return match ? parseInt(match[0]) : 999;
-                                };
-                                return getYear(a.id) - getYear(b.id);
-                            });
-
                             // Create category title
                             const categoryTitle = document.createElement('h3');
                             categoryTitle.className = 'team-category-title';
