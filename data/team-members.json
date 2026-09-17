@@ -712,6 +712,58 @@
                 }
               ],
               "last_name": "panchunyang"
+            },
+            {
+              "id": "postdoc-yubin-jia",
+              "title": "Dr. JIA, Yubin",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/jiayubin.png",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:yubinjia@cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=MDzz750AAAAJ&hl=zh-CN",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Power System Control and Optimization",
+                "AI in Power Systems"
+              ],
+              "biography": "Yubin Jia received the B.Eng. and M.Eng. degrees from North China Electric Power University, Beijing, China, in 2012 and 2015, respectively, and the Ph.D. degree in Control Science and Engineering from the School of Automation, Southeast University, Nanjing, China, in December 2020.\n\nSince 2025, he has been a Postdoctoral Fellow with the Department of Electrical Engineering, City University of Hong Kong, Hong Kong SAR, China. From 2018 to 2020, he was a visiting Ph.D. student with the School of Electrical Engineering and Telecommunications, The University of New South Wales, Sydney, NSW, Australia. His research interests include model predictive control, power systems, distributed control, and data-driven control.",
+              "education": [
+                {
+                  "degree": "PhD in Control Science and Engineering",
+                  "institution": "Southeast University",
+                  "year": "2016.03 - 2020.12"
+                },
+                {
+                  "degree": "MEng in Control Theory and Control Engineering",
+                  "institution": "North China Electric Power University",
+                  "year": "2012 - 2015"
+                },
+                {
+                  "degree": "BEng in Automation",
+                  "institution": "North China Electric Power University",
+                  "year": "2008 - 2012"
+                }
+              ],
+              "last_name": "jiayubin"
             }
           ]
         },
