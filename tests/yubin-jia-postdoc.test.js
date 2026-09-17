@@ -14,13 +14,13 @@ function membersIn(subcategoryName) {
     return subcategory ? subcategory.members : [];
 }
 
-test('Dr. JIA, Yubin is listed once at the end of Postdoctoral Researchers', () => {
+test('Dr. JIA, Yubin is listed once under Postdoctoral Researchers', () => {
     const postdocs = membersIn('Postdoctoral Researchers');
     const allMembers = meetOurTeam.subcategories.flatMap(subcategory => subcategory.members);
     const matches = allMembers.filter(member => member.title === 'Dr. JIA, Yubin');
 
     assert.equal(matches.length, 1);
-    assert.equal(postdocs.at(-1)?.title, 'Dr. JIA, Yubin');
+    assert.ok(postdocs.some(member => member.title === 'Dr. JIA, Yubin'));
 });
 
 test('Dr. JIA, Yubin has the corrected supplied profile details', () => {

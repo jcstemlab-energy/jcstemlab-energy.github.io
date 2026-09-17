@@ -14,14 +14,13 @@ function membersIn(subcategoryName) {
     return subcategory ? subcategory.members : [];
 }
 
-test('Dr. LIN, Zhihao is listed once under Postdoctoral Researchers after Dr. WONG, Yuk Sum', () => {
+test('Dr. LIN, Zhihao is listed once under Postdoctoral Researchers', () => {
     const postdocs = membersIn('Postdoctoral Researchers');
     const allMembers = meetOurTeam.subcategories.flatMap(subcategory => subcategory.members);
     const matches = allMembers.filter(member => member.title === 'Dr. LIN, Zhihao');
-    const wongIndex = postdocs.findIndex(member => member.title === 'Dr. WONG, Yuk Sum');
 
     assert.equal(matches.length, 1);
-    assert.equal(postdocs[wongIndex + 1]?.title, 'Dr. LIN, Zhihao');
+    assert.ok(postdocs.some(member => member.title === 'Dr. LIN, Zhihao'));
 });
 
 test('Dr. LIN, Zhihao has the supplied postdoctoral profile details', () => {

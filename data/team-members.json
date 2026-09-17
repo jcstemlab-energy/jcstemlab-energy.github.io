@@ -346,47 +346,56 @@
           "name": "Postdoctoral Researchers",
           "members": [
             {
-              "id": "postdoc-sunhuang",
-              "title": "Dr. HUANG, Sunhua",
+              "id": "postdoc-yubin-jia",
+              "title": "Dr. JIA, Yubin",
               "role": [
                 {
                   "text": "Postdoctoral Fellow",
                   "highlighted": true
                 },
                 {
-                  "text": "PhD @ Shanghai Jiao Tong University",
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/huangsunhua.jpeg",
+              "avatar": "data/people/jiayubin.png",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:sunhuang@cityu.edu.hk",
+                  "url": "mailto:yubinjia@cityu.edu.hk",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 },
                 {
                   "type": "google-scholar",
-                  "url": "https://scholar.google.com.hk/citations?hl=zh-CN&user=94u3dzsAAAAJ&view_op=list_works",
+                  "url": "https://scholar.google.com/citations?user=MDzz750AAAAJ&hl=zh-CN",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
                 }
               ],
               "interests": [
-                "Power System Stability Analysis and Control",
-                "Grid-Forming Control",
-                "AC/DC Microgrid"
+                "Power System Control and Optimization",
+                "AI in Power Systems"
               ],
-              "biography": "Dr. Sunhua Huang received his Ph.D. degree in Electrical Engineering from Shanghai Jiao Tong University in 2022. He is currently a Postdoctoral Researcher in the Department of Electrical Engineering at the City University of Hong Kong. His research interests include power system stability analysis and control, grid-forming control, and AC/DC microgrids.",
+              "biography": "Yubin Jia received the B.Eng. and M.Eng. degrees from North China Electric Power University, Beijing, China, in 2012 and 2015, respectively, and the Ph.D. degree in Control Science and Engineering from the School of Automation, Southeast University, Nanjing, China, in December 2020.\n\nSince 2025, he has been a Postdoctoral Fellow with the Department of Electrical Engineering, City University of Hong Kong, Hong Kong SAR, China. From 2018 to 2020, he was a visiting Ph.D. student with the School of Electrical Engineering and Telecommunications, The University of New South Wales, Sydney, NSW, Australia. His research interests include model predictive control, power systems, distributed control, and data-driven control.",
               "education": [
                 {
-                  "degree": "PhD in Electrical Engineering",
-                  "institution": "Shanghai Jiao Tong University",
-                  "year": "2019-2022"
+                  "degree": "PhD in Control Science and Engineering",
+                  "institution": "Southeast University",
+                  "year": "2016.03 - 2020.12"
+                },
+                {
+                  "degree": "MEng in Control Theory and Control Engineering",
+                  "institution": "North China Electric Power University",
+                  "year": "2012 - 2015"
+                },
+                {
+                  "degree": "BEng in Automation",
+                  "institution": "North China Electric Power University",
+                  "year": "2008 - 2012"
                 }
               ],
-              "last_name": "huang"
+              "last_name": "jiayubin"
             },
             {
               "id": "postdoc-zhijun-zhang",
@@ -445,49 +454,51 @@
               "last_name": "zhang"
             },
             {
-              "id": "postdoc-tianjing-wang",
-              "title": "Dr. WANG, Tianjing",
+              "id": "postdoc-sunhuang",
+              "title": "Dr. HUANG, Sunhua",
               "role": [
                 {
                   "text": "Postdoctoral Fellow",
                   "highlighted": true
                 },
                 {
-                  "text": "PhD @ China Electric Power Research Institute",
+                  "text": "PhD @ Shanghai Jiao Tong University",
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/wangtianjing.jpg",
+              "avatar": "data/people/huangsunhua.jpeg",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:tianjing.wang@cityu.edu.hk",
+                  "url": "mailto:sunhuang@cityu.edu.hk",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 },
                 {
                   "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=DVHZsDcAAAAJ&hl=en",
+                  "url": "https://scholar.google.com.hk/citations?hl=zh-CN&user=94u3dzsAAAAJ&view_op=list_works",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
                 }
               ],
               "interests": [
-                "Physics-guided AI for energy storage and power system"
+                "Power System Stability Analysis and Control",
+                "Grid-Forming Control",
+                "AC/DC Microgrid"
               ],
-              "biography": "Tianjing Wang (Member, IEEE) received a Ph. D. degree from China Electric Power Research Institute, Beijing, China, in 2022. She is currently a postdoctoral research fellow at the Department of Electrical Engineering, City University of Hong Kong, Hong Kong, China. From 2021 to 2024, she was successively an exchange student and research fellow at the school of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. Her research interests include physic guided machine learning applications in energy prediction, power system control, battery health estimation and energy storage control.",
+              "biography": "Dr. Sunhua Huang received his Ph.D. degree in Electrical Engineering from Shanghai Jiao Tong University in 2022. He is currently a Postdoctoral Researcher in the Department of Electrical Engineering at the City University of Hong Kong. His research interests include power system stability analysis and control, grid-forming control, and AC/DC microgrids.",
               "education": [
                 {
                   "degree": "PhD in Electrical Engineering",
-                  "institution": "China Electric Power Research Institute",
-                  "year": "2018-2022"
+                  "institution": "Shanghai Jiao Tong University",
+                  "year": "2019-2022"
                 }
               ],
-              "last_name": "wang"
+              "last_name": "huang"
             },
             {
-              "id": "postdoc-yuk-sum-wong",
-              "title": "Dr. WONG, Yuk Sum",
+              "id": "postdoc-yuheng-cheng",
+              "title": "Dr. CHENG, Yuheng",
               "role": [
                 {
                   "text": "Postdoctoral Fellow",
@@ -498,17 +509,39 @@
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/samwang.jpg",
+              "avatar": "data/people/chengyuheng.jpg",
+              "avatarPosition": "center center",
               "socialLinks": [
                 {
-                  "type": "envelope",
-                  "url": "mailto:sam.wong@cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com.hk/citations?user=uvPKLGAAAAAJ",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
                 }
               ],
-              "biography": "Dr. Yuk Sum Wong is a postdoctoral researcher in the Department of Electrical Engineering at the City University of Hong Kong.",
-              "last_name": "wong"
+              "interests": [
+                "AI for Power and Energy Systems",
+                "Smart Energy Management"
+              ],
+              "biography": "Dr. Yuheng Cheng is a Postdoctoral Fellow in the Department of Electrical Engineering at City University of Hong Kong. He received his Ph.D. degree in Computer Information Engineering from The Chinese University of Hong Kong, Shenzhen. He received his M.Sc. degree in Information Technology from The Hong Kong University of Science and Technology and his B.Eng. degree in Software Engineering from the University of Electronic Science and Technology of China.\n\nHis research interests include artificial intelligence for power and energy systems, power system operation and dispatch, electricity markets, smart energy management. His recent research focuses on developing LLM-based and multi-agent approaches for power dispatch, electricity market modelling and simulation, reliable AI-assisted decision-making, and intelligent energy management.\n\nBefore pursuing his Ph.D., he worked as an NLP Algorithm Engineer at Tencent FinTech and as an NLP Researcher at SenseTime.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Information Engineering",
+                  "institution": "The Chinese University of Hong Kong, Shenzhen",
+                  "year": "2023 - 2026"
+                },
+                {
+                  "degree": "MSc in Information Technology",
+                  "institution": "The Hong Kong University of Science and Technology",
+                  "year": "2017 - 2018"
+                },
+                {
+                  "degree": "BEng in Software Engineering",
+                  "institution": "University of Electronic Science and Technology of China",
+                  "year": "2013 - 2017"
+                }
+              ],
+              "last_name": "chengyuheng"
             },
             {
               "id": "postdoc-zhihao-lin",
@@ -546,6 +579,60 @@
                 }
               ],
               "last_name": "linzhihao"
+            },
+            {
+              "id": "postdoc-chunyang-pan",
+              "title": "Dr. PAN, Chunyang",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/panchunyang.jpg",
+              "avatarPosition": "center center",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:chunypan@cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=F8QlHAcAAAAJ&hl=en",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Power System Planning and Operation",
+                "Renewable Energy System",
+                "Artificial Intelligence"
+              ],
+              "biography": "Chunyang Pan received the B.E. degree in electrical engineering from the Huazhong University of Science and Technology, Hubei, China, in 2019, and the M.S. degree in electrical and computer engineering from the State University of New York at Binghamton, Binghamton, NY, USA, in 2020. In 2026, he received the Ph.D. degree in electrical engineering with the School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China. His research interests include power system planning and operation, renewable energy system, and artificial intelligence.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "Shanghai Jiao Tong University",
+                  "year": "2021-2026"
+                },
+                {
+                  "degree": "MS in Electrical and Computer Engineering",
+                  "institution": "State University of New York at Binghamton",
+                  "year": "2019-2020"
+                },
+                {
+                  "degree": "BEng in Electrical Engineering",
+                  "institution": "Huazhong University of Science and Technology",
+                  "year": "2015-2019"
+                }
+              ],
+              "last_name": "panchunyang"
             },
             {
               "id": "ra24-zhengzuqing",
@@ -613,109 +700,49 @@
               "last_name": "zhengzuqing"
             },
             {
-              "id": "postdoc-yuheng-cheng",
-              "title": "Dr. CHENG, Yuheng",
+              "id": "postdoc-tianjing-wang",
+              "title": "Dr. WANG, Tianjing",
               "role": [
                 {
                   "text": "Postdoctoral Fellow",
                   "highlighted": true
                 },
                 {
-                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "text": "PhD @ China Electric Power Research Institute",
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/chengyuheng.jpg",
-              "avatarPosition": "center center",
-              "socialLinks": [
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com.hk/citations?user=uvPKLGAAAAAJ",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                }
-              ],
-              "interests": [
-                "AI for Power and Energy Systems",
-                "Smart Energy Management"
-              ],
-              "biography": "Dr. Yuheng Cheng is a Postdoctoral Fellow in the Department of Electrical Engineering at City University of Hong Kong. He received his Ph.D. degree in Computer Information Engineering from The Chinese University of Hong Kong, Shenzhen. He received his M.Sc. degree in Information Technology from The Hong Kong University of Science and Technology and his B.Eng. degree in Software Engineering from the University of Electronic Science and Technology of China.\n\nHis research interests include artificial intelligence for power and energy systems, power system operation and dispatch, electricity markets, smart energy management. His recent research focuses on developing LLM-based and multi-agent approaches for power dispatch, electricity market modelling and simulation, reliable AI-assisted decision-making, and intelligent energy management.\n\nBefore pursuing his Ph.D., he worked as an NLP Algorithm Engineer at Tencent FinTech and as an NLP Researcher at SenseTime.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Information Engineering",
-                  "institution": "The Chinese University of Hong Kong, Shenzhen",
-                  "year": "2023 - 2026"
-                },
-                {
-                  "degree": "MSc in Information Technology",
-                  "institution": "The Hong Kong University of Science and Technology",
-                  "year": "2017 - 2018"
-                },
-                {
-                  "degree": "BEng in Software Engineering",
-                  "institution": "University of Electronic Science and Technology of China",
-                  "year": "2013 - 2017"
-                }
-              ],
-              "last_name": "chengyuheng"
-            },
-            {
-              "id": "postdoc-chunyang-pan",
-              "title": "Dr. PAN, Chunyang",
-              "role": [
-                {
-                  "text": "Postdoctoral Fellow",
-                  "highlighted": true
-                },
-                {
-                  "text": "Department of Electrical Engineering, City University of Hong Kong",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/panchunyang.jpg",
-              "avatarPosition": "center center",
+              "avatar": "data/people/wangtianjing.jpg",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:chunypan@cityu.edu.hk",
+                  "url": "mailto:tianjing.wang@cityu.edu.hk",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 },
                 {
                   "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=F8QlHAcAAAAJ&hl=en",
+                  "url": "https://scholar.google.com/citations?user=DVHZsDcAAAAJ&hl=en",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
                 }
               ],
               "interests": [
-                "Power System Planning and Operation",
-                "Renewable Energy System",
-                "Artificial Intelligence"
+                "Physics-guided AI for energy storage and power system"
               ],
-              "biography": "Chunyang Pan received the B.E. degree in electrical engineering from the Huazhong University of Science and Technology, Hubei, China, in 2019, and the M.S. degree in electrical and computer engineering from the State University of New York at Binghamton, Binghamton, NY, USA, in 2020. In 2026, he received the Ph.D. degree in electrical engineering with the School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China. His research interests include power system planning and operation, renewable energy system, and artificial intelligence.",
+              "biography": "Tianjing Wang (Member, IEEE) received a Ph. D. degree from China Electric Power Research Institute, Beijing, China, in 2022. She is currently a postdoctoral research fellow at the Department of Electrical Engineering, City University of Hong Kong, Hong Kong, China. From 2021 to 2024, she was successively an exchange student and research fellow at the school of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. Her research interests include physic guided machine learning applications in energy prediction, power system control, battery health estimation and energy storage control.",
               "education": [
                 {
                   "degree": "PhD in Electrical Engineering",
-                  "institution": "Shanghai Jiao Tong University",
-                  "year": "2021-2026"
-                },
-                {
-                  "degree": "MS in Electrical and Computer Engineering",
-                  "institution": "State University of New York at Binghamton",
-                  "year": "2019-2020"
-                },
-                {
-                  "degree": "BEng in Electrical Engineering",
-                  "institution": "Huazhong University of Science and Technology",
-                  "year": "2015-2019"
+                  "institution": "China Electric Power Research Institute",
+                  "year": "2018-2022"
                 }
               ],
-              "last_name": "panchunyang"
+              "last_name": "wang"
             },
             {
-              "id": "postdoc-yubin-jia",
-              "title": "Dr. JIA, Yubin",
+              "id": "postdoc-yuk-sum-wong",
+              "title": "Dr. WONG, Yuk Sum",
               "role": [
                 {
                   "text": "Postdoctoral Fellow",
@@ -726,50 +753,126 @@
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/jiayubin.png",
+              "avatar": "data/people/samwang.jpg",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:yubinjia@cityu.edu.hk",
+                  "url": "mailto:sam.wong@cityu.edu.hk",
                   "icon": "fas fa-envelope",
                   "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=MDzz750AAAAJ&hl=zh-CN",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
                 }
               ],
-              "interests": [
-                "Power System Control and Optimization",
-                "AI in Power Systems"
-              ],
-              "biography": "Yubin Jia received the B.Eng. and M.Eng. degrees from North China Electric Power University, Beijing, China, in 2012 and 2015, respectively, and the Ph.D. degree in Control Science and Engineering from the School of Automation, Southeast University, Nanjing, China, in December 2020.\n\nSince 2025, he has been a Postdoctoral Fellow with the Department of Electrical Engineering, City University of Hong Kong, Hong Kong SAR, China. From 2018 to 2020, he was a visiting Ph.D. student with the School of Electrical Engineering and Telecommunications, The University of New South Wales, Sydney, NSW, Australia. His research interests include model predictive control, power systems, distributed control, and data-driven control.",
-              "education": [
-                {
-                  "degree": "PhD in Control Science and Engineering",
-                  "institution": "Southeast University",
-                  "year": "2016.03 - 2020.12"
-                },
-                {
-                  "degree": "MEng in Control Theory and Control Engineering",
-                  "institution": "North China Electric Power University",
-                  "year": "2012 - 2015"
-                },
-                {
-                  "degree": "BEng in Automation",
-                  "institution": "North China Electric Power University",
-                  "year": "2008 - 2012"
-                }
-              ],
-              "last_name": "jiayubin"
+              "biography": "Dr. Yuk Sum Wong is a postdoctoral researcher in the Department of Electrical Engineering at the City University of Hong Kong.",
+              "last_name": "wong"
             }
           ]
         },
         {
           "name": "Current PhD Students",
           "members": [
+            {
+              "id": "phd24-litong",
+              "title": "Ms. LI, Tong",
+              "role": [
+                {
+                  "text": "PhD Student @ 24 Fall",
+                  "highlighted": true
+                },
+                {
+                  "text": "BEng @ Southwest University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/litong.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:tong.li@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=DFY_qPEAAAAJ&hl=en",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Multi-energy system optimization",
+                "Electricity market",
+                "AI-driven solutions for power systems"
+              ],
+              "biography": "Ms. LI Tong is currently pursuing the Ph.D. degree in the Department of Electrical Engineering at City University of Hong Kong, Hong Kong SAR, China. She received the B.Eng. degree in Electrical Engineering and Automation from Southwest University, Chongqing, China, in 2024. Her research interests include multi-energy system optimization, electricity market, and AI-driven solutions for power systems.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "City University of Hong Kong",
+                  "year": "2024 - Now"
+                },
+                {
+                  "degree": "B.Eng in Electrical Engineering and Automation",
+                  "institution": "Southwest University",
+                  "year": "2020-2024"
+                }
+              ],
+              "detailPage": "data/people/PhD24_LiTong/index.html",
+              "last_name": "litong"
+            },
+            {
+              "id": "phd25-huangzuliang",
+              "title": "Mr. HUANG, Zuliang",
+              "role": [
+                {
+                  "text": "PhD Student @ 25 Spring",
+                  "highlighted": true
+                },
+                {
+                  "text": "MEng & BEng @ Central South University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/huangzuliang.png",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:zulihuang2-c@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=bYx192oAAAAJ&hl=en",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Virtual power plants",
+                "Electricity market",
+                "Microgrid"
+              ],
+              "biography": "Mr. HUANG Zuliang received the B.Eng. and M.Eng. degrees in electrical engineering from Central South University, Changsha, China, in 2021 and 2024, respectively. He is currently pursuing a Ph.D. degree in the Department of Electrical Engineering at the City University of Hong Kong. His research interests include optimization of virtual power plants, the electricity market, and distributed control of microgrids.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "City University of Hong Kong",
+                  "year": "2025 - Now"
+                },
+                {
+                  "degree": "M.Eng in Electrical Engineering",
+                  "institution": "Central South University",
+                  "year": "2021-2024"
+                },
+                {
+                  "degree": "B.Eng in Electrical Engineering",
+                  "institution": "Central South University",
+                  "year": "2017-2021"
+                }
+              ],
+              "detailPage": "data/people/PhD25_HuangZuliang/index.html",
+              "last_name": "huangzuliang"
+            },
             {
               "id": "phd25-wanghaosheng",
               "title": "Mr. WANG, Haosheng",
@@ -819,58 +922,65 @@
               "last_name": "wanghaosheng"
             },
             {
-              "id": "phd26-hujiaxiang",
-              "title": "Mr. HU, Jiaxiang",
+              "id": "phd25-zhangyuchi",
+              "title": "Mr. ZHANG, Yuchi",
               "role": [
                 {
-                  "text": "PhD Student @ 26 Spring",
+                  "text": "PhD Student @ 25 Fall",
                   "highlighted": true
                 },
                 {
-                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "text": "MSc @ Monash University",
+                  "highlighted": false
+                },
+                {
+                  "text": "MFin @ The University of Melbourne",
+                  "highlighted": false
+                },
+                {
+                  "text": "BEcon @ Zhengzhou University",
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/Jiaxiang HU.jpg",
+              "avatar": "data/people/zhangyuchi.jpg",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:jiaxianhu2-c@my.cityu.edu.hk",
+                  "url": "mailto:yzhang7522-c@my.cityu.edu.hk",
                   "icon": "fas fa-envelope",
                   "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com.hk/citations?user=Y09pzhQAAAAJ&hl=zh-CN&oi=ao",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
                 }
               ],
               "interests": [
-                "Distribution system state estimation",
-                "Wind power prediction",
-                "Machine learning",
-                "Power system"
+                "Energy Systems Modeling",
+                "Power System Economics",
+                "Electricity and Carbon Markets"
               ],
-              "biography": "Jiaxiang Hu received the B.Eng. and M.E. degrees from the University of Electronic Science and Technology of China, Chengdu, China, in 2021 and 2024, respectively. He is currently pursuing the Ph.D. degree with City University of Hong Kong. His research interests include distribution system state estimation, wind power prediction, and machine learning.",
+              "biography": "Mr. ZHANG Yuchi is currently a Ph.D. student in the Department of Electrical Engineering at City University of Hong Kong. He received his Bachelor of Economics degree in Finance from Zhengzhou University in 2019, the Master of Finance degree from the University of Melbourne in 2021, and the Master of Applied Econometrics degree from Monash University in 2024. His current research interests include energy systems modeling, power system economics, and electricity and carbon market mechanisms.",
               "education": [
                 {
-                  "degree": "PhD in Electrical and Electronic Engineering",
+                  "degree": "PhD in Electrical Engineering",
                   "institution": "City University of Hong Kong",
-                  "year": "2026 - Now"
+                  "year": "2025 - Now"
                 },
                 {
-                  "degree": "M. Eng. in Electrical Engineering",
-                  "institution": "University of Electronic Science and Technology of China",
-                  "year": "2021-2024"
+                  "degree": "Master of Applied Econometrics",
+                  "institution": "Monash University",
+                  "year": "2024"
                 },
                 {
-                  "degree": "B. Eng. in Electrical Engineering",
-                  "institution": "University of Electronic Science and Technology of China",
-                  "year": "2017-2021"
+                  "degree": "Master of Finance",
+                  "institution": "The University of Melbourne",
+                  "year": "2021"
+                },
+                {
+                  "degree": "BEcon in Finance",
+                  "institution": "Zhengzhou University",
+                  "year": "2019"
                 }
               ],
-              "last_name": "hu"
+              "detailPage": "data/people/PhD25_ZhangYuchi/index.html",
+              "last_name": "zhangyuchi"
             },
             {
               "id": "phd25-zhouyujie",
@@ -974,168 +1084,111 @@
               "last_name": "duanjuntao"
             },
             {
-              "id": "phd25-huangzuliang",
-              "title": "Mr. HUANG, Zuliang",
+              "id": "phd26-hujiaxiang",
+              "title": "Mr. HU, Jiaxiang",
               "role": [
                 {
-                  "text": "PhD Student @ 25 Fall",
+                  "text": "PhD Student @ 26 Spring",
                   "highlighted": true
                 },
                 {
-                  "text": "MEng & BEng @ Central South University",
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/huangzuliang.png",
+              "avatar": "data/people/Jiaxiang HU.jpg",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:zulihuang2-c@my.cityu.edu.hk",
+                  "url": "mailto:jiaxianhu2-c@my.cityu.edu.hk",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 },
                 {
                   "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=bYx192oAAAAJ&hl=en",
+                  "url": "https://scholar.google.com.hk/citations?user=Y09pzhQAAAAJ&hl=zh-CN&oi=ao",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
                 }
               ],
               "interests": [
-                "Virtual power plants",
-                "Electricity market",
-                "Microgrid"
+                "Distribution system state estimation",
+                "Wind power prediction",
+                "Machine learning",
+                "Power system"
               ],
-              "biography": "Mr. HUANG Zuliang received the B.Eng. and M.Eng. degrees in electrical engineering from Central South University, Changsha, China, in 2021 and 2024, respectively. He is currently pursuing a Ph.D. degree in the Department of Electrical Engineering at the City University of Hong Kong. His research interests include optimization of virtual power plants, the electricity market, and distributed control of microgrids.",
+              "biography": "Jiaxiang Hu received the B.Eng. and M.E. degrees from the University of Electronic Science and Technology of China, Chengdu, China, in 2021 and 2024, respectively. He is currently pursuing the Ph.D. degree with City University of Hong Kong. His research interests include distribution system state estimation, wind power prediction, and machine learning.",
               "education": [
                 {
-                  "degree": "PhD in Electrical Engineering",
+                  "degree": "PhD in Electrical and Electronic Engineering",
                   "institution": "City University of Hong Kong",
-                  "year": "2025 - Now"
+                  "year": "2026 - Now"
                 },
                 {
-                  "degree": "M.Eng in Electrical Engineering",
-                  "institution": "Central South University",
+                  "degree": "M. Eng. in Electrical Engineering",
+                  "institution": "University of Electronic Science and Technology of China",
                   "year": "2021-2024"
                 },
                 {
-                  "degree": "B.Eng in Electrical Engineering",
-                  "institution": "Central South University",
+                  "degree": "B. Eng. in Electrical Engineering",
+                  "institution": "University of Electronic Science and Technology of China",
                   "year": "2017-2021"
                 }
               ],
-              "detailPage": "data/people/PhD25_HuangZuliang/index.html",
-              "last_name": "huangzuliang"
+              "last_name": "hu"
             },
             {
-              "id": "phd24-litong",
-              "title": "Ms. LI, Tong",
+              "id": "phd26-heyuzhe",
+              "title": "Mr. HE, Yuzhe",
               "role": [
                 {
-                  "text": "PhD Student @ 24 Fall",
+                  "text": "PhD Student @ 26 Summer",
                   "highlighted": true
                 },
                 {
-                  "text": "BEng @ Southwest University",
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/litong.jpg",
+              "avatar": "data/people/heyuzhe.jpg",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:tong.li@my.cityu.edu.hk",
+                  "url": "mailto:yuzhehe2-c@my.cityu.edu.hk",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 },
                 {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=DFY_qPEAAAAJ&hl=en",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
+                  "type": "github",
+                  "url": "https://github.com/hrzzdhyz",
+                  "icon": "fab fa-github",
+                  "title": "GitHub"
                 }
               ],
               "interests": [
-                "Multi-energy system optimization",
-                "Electricity market",
-                "AI-driven solutions for power systems"
+                "AI for industry",
+                "AI Infra",
+                "Embodied Intelligence"
               ],
-              "biography": "Ms. LI Tong is currently pursuing the Ph.D. degree in the Department of Electrical Engineering at City University of Hong Kong, Hong Kong SAR, China. She received the B.Eng. degree in Electrical Engineering and Automation from Southwest University, Chongqing, China, in 2024. Her research interests include multi-energy system optimization, electricity market, and AI-driven solutions for power systems.",
+              "biography": "Yuzhe He received the Bachelor of Computing degree from Queen’s University, Kingston, Canada, and the Master of Data Science and Artificial Intelligence degree from the University of Waterloo, Waterloo, Canada. He is currently pursuing a Ph.D. degree in the Department of Electrical Engineering at the City University of Hong Kong.\n\nHis research interests include AI for Industry, power system control, AI infra and multimodal machine learning.",
               "education": [
                 {
                   "degree": "PhD in Electrical Engineering",
                   "institution": "City University of Hong Kong",
-                  "year": "2024 - Now"
+                  "year": "2026 - Now"
                 },
                 {
-                  "degree": "B.Eng in Electrical Engineering and Automation",
-                  "institution": "Southwest University",
-                  "year": "2020-2024"
+                  "degree": "Master of Data Science and Artificial Intelligence",
+                  "institution": "University of Waterloo",
+                  "year": "2023-2025"
+                },
+                {
+                  "degree": "Bachelor of Computing",
+                  "institution": "Queen’s University",
+                  "year": "2019-2023"
                 }
               ],
-              "detailPage": "data/people/PhD24_LiTong/index.html",
-              "last_name": "litong"
-            },
-            {
-              "id": "phd25-zhangyuchi",
-              "title": "Mr. ZHANG, Yuchi",
-              "role": [
-                {
-                  "text": "PhD Student @ 25 Fall",
-                  "highlighted": true
-                },
-                {
-                  "text": "MSc @ Monash University",
-                  "highlighted": false
-                },
-                {
-                  "text": "MFin @ The University of Melbourne",
-                  "highlighted": false
-                },
-                {
-                  "text": "BEcon @ Zhengzhou University",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/zhangyuchi.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:yzhang7522-c@my.cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                }
-              ],
-              "interests": [
-                "Energy Systems Modeling",
-                "Power System Economics",
-                "Electricity and Carbon Markets"
-              ],
-              "biography": "Mr. ZHANG Yuchi is currently a Ph.D. student in the Department of Electrical Engineering at City University of Hong Kong. He received his Bachelor of Economics degree in Finance from Zhengzhou University in 2019, the Master of Finance degree from the University of Melbourne in 2021, and the Master of Applied Econometrics degree from Monash University in 2024. His current research interests include energy systems modeling, power system economics, and electricity and carbon market mechanisms.",
-              "education": [
-                {
-                  "degree": "PhD in Electrical Engineering",
-                  "institution": "City University of Hong Kong",
-                  "year": "2025 - Now"
-                },
-                {
-                  "degree": "Master of Applied Econometrics",
-                  "institution": "Monash University",
-                  "year": "2024"
-                },
-                {
-                  "degree": "Master of Finance",
-                  "institution": "The University of Melbourne",
-                  "year": "2021"
-                },
-                {
-                  "degree": "BEcon in Finance",
-                  "institution": "Zhengzhou University",
-                  "year": "2019"
-                }
-              ],
-              "detailPage": "data/people/PhD25_ZhangYuchi/index.html",
-              "last_name": "zhangyuchi"
+              "last_name": "heyuzhe"
             },
             {
               "id": "phd26-wangbo",
@@ -1190,59 +1243,6 @@
                 }
               ],
               "last_name": "wangbo"
-            },
-            {
-              "id": "phd26-heyuzhe",
-              "title": "Mr. HE, Yuzhe",
-              "role": [
-                {
-                  "text": "PhD Student @ 26 Summer",
-                  "highlighted": true
-                },
-                {
-                  "text": "Department of Electrical Engineering, City University of Hong Kong",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/heyuzhe.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:yuzhehe2-c@my.cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "github",
-                  "url": "https://github.com/hrzzdhyz",
-                  "icon": "fab fa-github",
-                  "title": "GitHub"
-                }
-              ],
-              "interests": [
-                "AI for industry",
-                "AI Infra",
-                "Embodied Intelligence"
-              ],
-              "biography": "Yuzhe He received the Bachelor of Computing degree from Queen’s University, Kingston, Canada, and the Master of Data Science and Artificial Intelligence degree from the University of Waterloo, Waterloo, Canada. He is currently pursuing a Ph.D. degree in the Department of Electrical Engineering at the City University of Hong Kong.\n\nHis research interests include AI for Industry, power system control, AI infra and multimodal machine learning.",
-              "education": [
-                {
-                  "degree": "PhD in Electrical Engineering",
-                  "institution": "City University of Hong Kong",
-                  "year": "2026 - Now"
-                },
-                {
-                  "degree": "Master of Data Science and Artificial Intelligence",
-                  "institution": "University of Waterloo",
-                  "year": "2023-2025"
-                },
-                {
-                  "degree": "Bachelor of Computing",
-                  "institution": "Queen’s University",
-                  "year": "2019-2023"
-                }
-              ],
-              "last_name": "heyuzhe"
             },
             {
               "id": "phd26-baijiayi",
