@@ -33,3 +33,19 @@ test('Dr. ZHENG, Zuqing is described as a Postdoctoral Fellow', () => {
         highlighted: true
     });
 });
+
+test('Dr. ZHENG, Zuqing has a completed PhD and current postdoctoral biography', () => {
+    const member = membersIn('Postdoctoral Researchers').find(
+        item => item.title === 'Dr. ZHENG, Zuqing'
+    );
+    const phd = member.education.find(
+        item => item.degree === 'PhD in Control Science and Engineering'
+    );
+
+    assert.equal(phd.institution, 'Central South University');
+    assert.equal(phd.year, '2022 - 2026');
+    assert.match(member.biography, /received his Ph\.D\. degree.*in 2026/);
+    assert.match(member.biography, /In 2026, he joined.*as a Postdoctoral Fellow/);
+    assert.doesNotMatch(member.biography, /currently pursuing a Ph\.D\./);
+    assert.doesNotMatch(member.biography, /Research Assistant/);
+});
