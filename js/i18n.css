@@ -1,0 +1,54 @@
+.language-switch {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 2px;
+    padding: 3px;
+    margin-left: 0.5rem;
+    border: 1px solid var(--border-color, #dbe2ea);
+    border-radius: 999px;
+    background: var(--surface, #fff);
+}
+
+.language-switch button {
+    border: 0;
+    border-radius: 999px;
+    padding: 7px 10px;
+    min-height: 36px;
+    font: 600 0.8rem/1.2 Inter, "Microsoft YaHei", "PingFang TC", sans-serif;
+    background: transparent;
+    color: var(--text-secondary, #475569);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.language-switch button:hover { background: #eff6ff; }
+.language-switch button[aria-pressed="true"] { background: var(--primary, #2563eb); color: #fff; }
+.language-switch button:focus-visible { outline: 2px solid var(--primary, #2563eb); outline-offset: 2px; }
+.language-switch-floating { position: fixed; top: 12px; right: 12px; z-index: 1100; }
+html:lang(zh-Hans) body { font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif; }
+html:lang(zh-Hant) body { font-family: Inter, "PingFang TC", "Microsoft JhengHei", sans-serif; }
+html:lang(zh-Hans) .about-lead b > span,
+html:lang(zh-Hant) .about-lead b > span { display: none; }
+
+/* Keep the language control on the toolbar, outside the mobile navigation drawer. */
+.nav-container { gap: 0.75rem; }
+.nav-brand { min-width: 0; max-width: 350px; }
+.nav-brand .nav-logo-img { max-width: 100%; height: auto; max-height: 45px; }
+.nav-menu { margin-left: auto; }
+.nav-links { gap: clamp(0.75rem, 1.35vw, 1.5rem); }
+.nav-links a { white-space: nowrap; }
+@media (min-width: 769px) and (max-width: 1250px) {
+    .nav-links { gap: 1.25rem; }
+    .nav-brand .logo-text { max-width: 280px; white-space: normal; }
+}
+@media (max-width: 768px) {
+    .language-switch { margin-left: auto; }
+    .language-switch button { padding: 7px 8px; min-height: 36px; }
+    .nav-container { flex-wrap: wrap; }
+    .nav-menu .nav-links { flex-direction: column; gap: 1.25rem; }
+    .nav-brand { min-width: 0; max-width: calc(100% - 185px); }
+    .nav-brand .nav-logo-img { max-width: 100%; height: auto; max-height: 32px; }
+    .nav-brand .logo-text { white-space: normal; font-size: 0.8rem; line-height: 1.3; }
+    .mobile-toggle { flex-shrink: 0; }
+}
