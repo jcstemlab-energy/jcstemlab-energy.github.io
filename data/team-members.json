@@ -933,6 +933,7 @@
                 { "text": "Department of Electrical Engineering, City University of Hong Kong", "highlighted": false }
               ],
               "avatar": "data/people/luochenxiang.jpg",
+              "avatarPosition": "center top",
               "socialLinks": [
                 { "type": "envelope", "url": "mailto:chenxiluo8-c@my.cityu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
                 { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=cSoXTfwAAAAJ&hl=zh-CN", "icon": "fas fa-graduation-cap", "title": "Google Scholar" }
