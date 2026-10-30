@@ -368,6 +368,29 @@
               ],
               "biography": "Prof. Zhang is Professor and Head of the Department of Data Science, College of Computing, City University of Hong Kong, Hong Kong SAR, China. His research focuses on machine learning and computational intelligence with applications in renewable energy, facility energy management, and intelligent transportation domains. He serves as an editor of Journal of Intelligent Manufacturing as well as an associate editor of IEEE Transactions on Sustainable Energy, IEEE Power Engineering Letters, and INFORMS Journal on Data Science.",
               "last_name": "zhang"
+            },
+            {
+              "id": "faculty-xuzhao",
+              "title": "Prof. XU, Zhao",
+              "role": [
+                { "text": "Professor", "highlighted": true },
+                { "text": "Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University", "highlighted": false }
+              ],
+              "avatar": "data/people/xuzhao.png",
+              "avatarPosition": "center 25%",
+              "socialLinks": [
+                { "type": "envelope", "url": "mailto:zhao.xu@polyu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
+                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=6MgXqkkAAAAJ&hl=zh-CN&oi=ao", "icon": "fas fa-graduation-cap", "title": "Google Scholar" },
+                { "type": "home", "url": "https://www.polyu.edu.hk/eee/people/academic-staff-and-teaching-staff/prof-xu-zhao/", "icon": "fas fa-home", "title": "Homepage" }
+              ],
+              "interests": ["Smart Grid", "Power System Resilience", "Microgrid control and optimization"],
+              "education": [
+                { "degree": "PhD in Electrical Engineering", "institution": "The University of Queensland", "year": "2003-2006" },
+                { "degree": "Master of Engineering", "institution": "National University of Singapore", "year": "2001-2003" },
+                { "degree": "BEng in Electrical Engineering", "institution": "Zhejiang University", "year": "1992-1996" }
+              ],
+              "biography": "Dr. Zhao Xu is a Professor at The Hong Kong Polytechnic University (PolyU), Director of the Power Systems and Smart Microgrids Laboratory, and Deputy Director of the PolyU–China Southern Power Grid Joint Research Institute. He also serves as Chair of the IEEE PES Joint Chapter and a Visiting Researcher at the Centre for Electric Technology, Technical University of Denmark. His research focuses on power system operation and control, electricity markets, and artificial intelligence. He has led one Key Program project and two General Program projects funded by the National Natural Science Foundation of China, two Hong Kong RGC Theme-based Research Scheme projects, and multiple RGC General Research Fund projects. His honours include the Ministry of Education’s First Prize in Science and Technology Progress (2017), Guangdong Province’s Second Prize in Natural Science (2024), the Chinese Society for Electrical Engineering’s Second Prize in Electric Power Science and Technology Progress (2022), and Gold (2023) and Bronze (2022) Medals at the International Exhibition of Inventions Geneva. His publications have received over 19,000 Google Scholar citations, with an h-index of 71.",
+              "last_name": "xu"
             }
           ]
         },
@@ -903,6 +926,26 @@
               "last_name": "huangzuliang"
             },
             {
+              "id": "phd25-luochenxiang",
+              "title": "Mr. LUO, Chenxiang",
+              "role": [
+                { "text": "PhD Student @ 25 Fall", "highlighted": true },
+                { "text": "Department of Electrical Engineering, City University of Hong Kong", "highlighted": false }
+              ],
+              "avatar": "data/people/luochenxiang.jpg",
+              "socialLinks": [
+                { "type": "envelope", "url": "mailto:chenxiluo8-c@my.cityu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
+                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=cSoXTfwAAAAJ&hl=zh-CN", "icon": "fas fa-graduation-cap", "title": "Google Scholar" }
+              ],
+              "interests": ["Cyber System in Autonomous Driving", "Cyber Security", "Embodied AI"],
+              "education": [
+                { "degree": "PhD in Electrical Engineering", "institution": "City University of Hong Kong", "year": "2025 - Now" },
+                { "degree": "BEng in Cyber Security", "institution": "Sichuan University", "year": "2020-2024" }
+              ],
+              "biography": "",
+              "last_name": "luo"
+            },
+            {
               "id": "phd25-wanghaosheng",
               "title": "Mr. WANG, Haosheng",
               "role": [
@@ -1320,6 +1363,26 @@
               "last_name": "baijiayi"
             },
             {
+              "id": "phd26-liuyuheng",
+              "title": "Mr. LIU, Yuheng",
+              "role": [
+                { "text": "PhD Student @ 26 Fall", "highlighted": true },
+                { "text": "Department of Electrical Engineering, City University of Hong Kong", "highlighted": false }
+              ],
+              "avatar": "data/people/liuyuheng.jpg",
+              "socialLinks": [
+                { "type": "envelope", "url": "mailto:liuyh.357@my.cityu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
+                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=53YwGHsAAAAJ&hl=en", "icon": "fas fa-graduation-cap", "title": "Google Scholar" }
+              ],
+              "interests": ["Cyber Physical System"],
+              "education": [
+                { "degree": "PhD in Electrical Engineering", "institution": "City University of Hong Kong", "year": "2026 - Now" },
+                { "degree": "BEng in Artificial Intelligence", "institution": "Sun Yat-sen University", "year": "2022-2026" }
+              ],
+              "biography": "",
+              "last_name": "liu"
+            },
+            {
               "id": "phd26-taoyiying",
               "title": "Ms. TAO, Yiying",
               "role": [
@@ -1360,6 +1423,52 @@
                 }
               ],
               "last_name": "taoyiying"
+            },
+            {
+              "id": "phd27-leijiale",
+              "title": "Mr. LEI, Jiale",
+              "role": [
+                { "text": "PhD Student @ 27 Spring", "highlighted": true },
+                { "text": "Department of Electrical Engineering, City University of Hong Kong", "highlighted": false }
+              ],
+              "avatar": "data/people/leijiale.jpg",
+              "socialLinks": [],
+              "interests": [],
+              "education": [
+                { "degree": "PhD in Electrical Engineering", "institution": "City University of Hong Kong", "year": "2027 - Now" },
+                { "degree": "BSc in Electrical Engineering", "institution": "University of California, Davis", "year": "2021-2026" }
+              ],
+              "biography": "Mr. LEI Jiale is currently pursuing the Ph.D. degree in the Department of Electrical Engineering at City University of Hong Kong, Hong Kong, China. He received his Bachelor of Science with a major in Electrical Engineering from the University of California, Davis, USA, in 2026.",
+              "last_name": "lei"
+            }
+          ]
+        },
+        {
+          "name": "Visitors",
+          "members": [
+            {
+              "id": "visitor-zhangzhenyu",
+              "title": "Dr. ZHANG, Zhenyu",
+              "role": [
+                { "text": "Visiting Fellow", "highlighted": true },
+                { "text": "Beijing Institute of Technology, Zhuhai", "highlighted": false },
+                { "text": "Department of Electrical Engineering, City University of Hong Kong", "highlighted": false }
+              ],
+              "avatar": "data/people/zhangzhenyu.png",
+              "avatarPosition": "center top",
+              "socialLinks": [
+                { "type": "envelope", "url": "mailto:zhangzhenyu@bitzh.edu.cn", "icon": "fas fa-envelope", "title": "Email" },
+                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=Mp1DKkYAAAAJ&hl=zh-CN", "icon": "fas fa-graduation-cap", "title": "Google Scholar" },
+                { "type": "home", "url": "https://etd.bitzh.edu.cn/szdw/jsml/cnlyrhjsyjzxjsml/7dc48f7f7e4e4c03a02c9cbb7ab84c13.htm", "icon": "fas fa-home", "title": "Homepage" }
+              ],
+              "interests": ["Autonomous Driving", "Energy Management", "Intelligent Transportation Systems"],
+              "education": [
+                { "degree": "PhD in Transportation Engineering", "institution": "Tongji University", "year": "2017-2020" },
+                { "degree": "MEng in Transportation Engineering", "institution": "Beijing Jiaotong University", "year": "2013-2016" },
+                { "degree": "BEng in Transportation Engineering", "institution": "Beijing Jiaotong University", "year": "2009-2013" }
+              ],
+              "biography": "Dr. ZHANG Zhenyu received the B.E. and M.E. degrees from Beijing Jiaotong University in 2013 and 2016, respectively, and the Ph.D. degree from Tongji University, in 2020. He is currently an Associate Professor with Beijing Institute of Technology, China. His research interests include autonomous driving, fault diagnosis, energy management, and intelligent transportation systems.",
+              "last_name": "zhang"
             }
           ]
         }

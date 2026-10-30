@@ -3,6 +3,39 @@
     'use strict';
     const content = {
         strings: [
+            // Verified names: CityUHK Scholars (chenxiluo8, qunsong), BIT Zhuhai and PolyU/UGC profiles.
+            ['Mr. LUO, Chenxiang', '罗沉香先生', '羅沉香先生'],
+            ['Mr. LIU, Yuheng', '刘予桁先生', '劉予桁先生'],
+            ['Dr. ZHANG, Zhenyu', '张振宇博士', '張振宇博士'],
+            ['Prof. XU, Zhao', '许昭教授', '許昭教授'],
+            ['Visitors', '访问学者', '訪問學者'],
+            ['Visiting Fellow', '访问研究员', '訪問研究員'],
+            ['Professor', '教授', '教授'],
+            ['Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University', '香港理工大学电机及电子工程学系', '香港理工大學電機及電子工程學系'],
+            ['Beijing Institute of Technology, Zhuhai', '北京理工大学（珠海）', '北京理工大學（珠海）'],
+            ['Cyber System in Autonomous Driving', '自动驾驶中的信息系统', '自動駕駛中的資訊系統'],
+            ['Cyber Security', '网络安全', '網絡安全'],
+            ['Embodied AI', '具身人工智能', '具身人工智能'],
+            ['Cyber Physical System', '信息物理系统', '資訊物理系統'],
+            ['Autonomous Driving', '自动驾驶', '自動駕駛'],
+            ['Energy Management', '能源管理', '能源管理'],
+            ['Intelligent Transportation Systems', '智能交通系统', '智能交通系統'],
+            ['Microgrid control and optimization', '微电网控制与优化', '微電網控制與優化'],
+            ['BEng in Cyber Security', '网络安全工学学士', '網絡安全工學學士'],
+            ['BEng in Artificial Intelligence', '人工智能工学学士', '人工智能工學學士'],
+            ['BSc in Electrical Engineering', '电气工程理学学士', '電氣工程理學學士'],
+            ['PhD in Transportation Engineering', '交通运输工程博士', '交通運輸工程博士'],
+            ['MEng in Transportation Engineering', '交通运输工程工学硕士', '交通運輸工程工學碩士'],
+            ['BEng in Transportation Engineering', '交通运输工程工学学士', '交通運輸工程工學學士'],
+            ['Master of Engineering', '工学硕士', '工學碩士'],
+            ['BEng in Electrical Engineering', '电气工程工学学士', '電氣工程工學學士'],
+            ['Sichuan University', '四川大学', '四川大學'],
+            ['Sun Yat-sen University', '中山大学', '中山大學'],
+            ['University of California, Davis', '加利福尼亚大学戴维斯分校', '加利福尼亞大學戴維斯分校'],
+            ['Tongji University', '同济大学', '同濟大學'],
+            ['Beijing Jiaotong University', '北京交通大学', '北京交通大學'],
+            ['The University of Queensland', '昆士兰大学', '昆士蘭大學'],
+            ['National University of Singapore', '新加坡国立大学', '新加坡國立大學'],
             // Name verified against https://scholars.cityu.edu.hk/en/persons/zijzhang/ (2026-10-30).
             ['Prof. ZHANG, Zijun', '张子钧教授', '張子鈞教授'],
             ['Professor and Head', '教授兼系主任', '教授兼系主任'],
@@ -277,6 +310,23 @@
             ['Error', '错误', '錯誤']
         ],
         biographies: {
+            'phd25-luochenxiang': { fingerprint: '811c9dc5', 'zh-Hans': [], 'zh-Hant': [] },
+            'phd26-liuyuheng': { fingerprint: '811c9dc5', 'zh-Hans': [], 'zh-Hant': [] },
+            'phd27-leijiale': {
+                fingerprint: '332f32d3',
+                'zh-Hans': ['Mr. LEI Jiale 目前在中国香港的香港城市大学电机工程学系攻读博士学位。他于2026年取得美国加利福尼亚大学戴维斯分校电气工程理学学士学位。'],
+                'zh-Hant': ['Mr. LEI Jiale 目前在中國香港的香港城市大學電機工程學系攻讀博士學位。他於2026年取得美國加利福尼亞大學戴維斯分校電氣工程理學學士學位。']
+            },
+            'visitor-zhangzhenyu': {
+                fingerprint: '1760a381',
+                'zh-Hans': ['张振宇博士分别于2013年和2016年取得北京交通大学工学学士及硕士学位，并于2020年取得同济大学博士学位。他现任中国北京理工大学副教授，研究兴趣包括自动驾驶、故障诊断、能源管理及智能交通系统。'],
+                'zh-Hant': ['張振宇博士分別於2013年和2016年取得北京交通大學工學學士及碩士學位，並於2020年取得同濟大學博士學位。他現任中國北京理工大學副教授，研究興趣包括自動駕駛、故障診斷、能源管理及智能交通系統。']
+            },
+            'faculty-xuzhao': {
+                fingerprint: 'a56c2255',
+                'zh-Hans': ['许昭博士现任香港理工大学教授、电力系统与智能微电网实验室主任，以及香港理工大学－中国南方电网联合研究院副院长。他亦担任 IEEE PES 联合分会主席及丹麦技术大学电力技术中心访问研究员。他的研究聚焦于电力系统运行与控制、电力市场及人工智能。他曾主持国家自然科学基金重点项目1项、面上项目2项，香港研究资助局主题研究计划项目2项，以及多项优配研究金项目。他曾获教育部科学技术进步一等奖（2017年）、广东省自然科学二等奖（2024年）、中国电机工程学会电力科学技术进步二等奖（2022年），以及日内瓦国际发明展金奖（2023年）和铜奖（2022年）。其论文在 Google Scholar 上获得超过19,000次引用，h指数为71。'],
+                'zh-Hant': ['許昭博士現任香港理工大學教授、電力系統與智能微電網實驗室主任，以及香港理工大學－中國南方電網聯合研究院副院長。他亦擔任 IEEE PES 聯合分會主席及丹麥技術大學電力技術中心訪問研究員。他的研究聚焦於電力系統運行與控制、電力市場及人工智能。他曾主持國家自然科學基金重點項目1項、面上項目2項，香港研究資助局主題研究計劃項目2項，以及多項優配研究金項目。他曾獲教育部科學技術進步一等獎（2017年）、廣東省自然科學二等獎（2024年）、中國電機工程學會電力科學技術進步二等獎（2022年），以及日內瓦國際發明展金獎（2023年）和銅獎（2022年）。其論文在 Google Scholar 上獲得超過19,000次引用，h指數為71。']
+            },
             'faculty-zijunzhang': {
                 fingerprint: '5c0e3a4c',
                 'zh-Hans': ['张子钧教授现任中国香港特别行政区香港城市大学计算学院数据科学系教授兼系主任。他的研究聚焦于机器学习与计算智能，并将其应用于可再生能源、设施能源管理及智能交通领域。他担任 Journal of Intelligent Manufacturing 编辑，以及 IEEE Transactions on Sustainable Energy、IEEE Power Engineering Letters 和 INFORMS Journal on Data Science 副编辑。'],

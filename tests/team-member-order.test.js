@@ -48,6 +48,7 @@ test('current PhD students are ordered by entry cohort and then surname', () => 
         [
             'Ms. LI, Tong',
             'Mr. HUANG, Zuliang',
+            'Mr. LUO, Chenxiang',
             'Mr. WANG, Haosheng',
             'Mr. ZHANG, Yuchi',
             'Mr. ZHOU, Yujie',
@@ -56,7 +57,9 @@ test('current PhD students are ordered by entry cohort and then surname', () => 
             'Mr. HE, Yuzhe',
             'Mr. WANG, Bo',
             'Ms. BAI, Jiayi',
-            'Ms. TAO, Yiying'
+            'Mr. LIU, Yuheng',
+            'Ms. TAO, Yiying',
+            'Mr. LEI, Jiale'
         ]
     );
 });
