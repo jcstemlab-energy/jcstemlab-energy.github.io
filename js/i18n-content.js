@@ -3,6 +3,19 @@
     'use strict';
     const content = {
         strings: [
+            // Name verified against https://scholars.cityu.edu.hk/en/persons/zijzhang/ (2026-10-30).
+            ['Prof. ZHANG, Zijun', '张子钧教授', '張子鈞教授'],
+            ['Professor and Head', '教授兼系主任', '教授兼系主任'],
+            ['Department of Data Science', '数据科学系', '數據科學系'],
+            ['Renewable Energy Systems', '可再生能源系统', '可再生能源系統'],
+            ['Data-driven Methods', '数据驱动方法', '數據驅動方法'],
+            ['Forecasting Methods', '预测方法', '預測方法'],
+            ['Fault Diagnosis', '故障诊断', '故障診斷'],
+            ['PhD in Industrial Engineering', '工业工程博士', '工業工程博士'],
+            ['MS in Industrial Engineering', '工业工程理学硕士', '工業工程理學碩士'],
+            ['The University of Iowa', '爱荷华大学', '愛荷華大學'],
+            ['BEng in Systems Engineering and Engineering Management', '系统工程与工程管理工学学士', '系統工程與工程管理工學學士'],
+            ['Chinese University of Hong Kong', '香港中文大学', '香港中文大學'],
             ['About', '关于我们', '關於我們'],
             ['Research', '研究', '研究'],
             ['Publications', '学术成果', '學術成果'],
@@ -264,6 +277,11 @@
             ['Error', '错误', '錯誤']
         ],
         biographies: {
+            'faculty-zijunzhang': {
+                fingerprint: '5c0e3a4c',
+                'zh-Hans': ['张子钧教授现任中国香港特别行政区香港城市大学计算学院数据科学系教授兼系主任。他的研究聚焦于机器学习与计算智能，并将其应用于可再生能源、设施能源管理及智能交通领域。他担任 Journal of Intelligent Manufacturing 编辑，以及 IEEE Transactions on Sustainable Energy、IEEE Power Engineering Letters 和 INFORMS Journal on Data Science 副编辑。'],
+                'zh-Hant': ['張子鈞教授現任中國香港特別行政區香港城市大學計算學院數據科學系教授兼系主任。他的研究聚焦於機器學習與計算智能，並將其應用於可再生能源、設施能源管理及智能交通領域。他擔任 Journal of Intelligent Manufacturing 編輯，以及 IEEE Transactions on Sustainable Energy、IEEE Power Engineering Letters 和 INFORMS Journal on Data Science 副編輯。']
+            },
             'faculty-zydong': {
                 fingerprint: '19b20496',
                 'zh-Hans': ['Prof. Z.Y. Dong 现任香港城市大学电机工程学系讲座教授兼系主任。他曾任新加坡南洋理工大学新加坡能源集团冠名教授及 SPG–NTU 联合实验室联合主任；澳大利亚新南威尔士大学能源系统 SHARP 教授及数字电网未来研究所创始主任；澳大利亚研究理事会（ARC）综合储能系统研究中心主任；悉尼大学电气与信息工程学院院长；以及 Ausgrid 讲座教授和智能电网中心主任，为澳大利亚“智能电网、智慧城市”国家示范项目提供研发支持。他亦曾在澳大利亚塔斯马尼亚输电网络服务企业担任电力系统规划经理。研究兴趣包括电力系统规划与稳定性、智能电网／微电网、智慧城市、可再生能源系统、储能系统及能源市场。他是 IEEE 会士，曾担任多种 IEEE Transactions 及 IET 期刊的编辑。'],

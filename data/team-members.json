@@ -339,6 +339,35 @@
                 }
               ],
               "last_name": "tao"
+            },
+            {
+              "id": "faculty-zijunzhang",
+              "title": "Prof. ZHANG, Zijun",
+              "role": [
+                { "text": "Professor and Head", "highlighted": true },
+                { "text": "Department of Data Science", "highlighted": false }
+              ],
+              "avatar": "data/people/zhangzijun.jpg",
+              "socialLinks": [
+                { "type": "envelope", "url": "mailto:zijzhang@cityu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
+                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=B3LrwQsAAAAJ&hl=en", "icon": "fas fa-graduation-cap", "title": "Google Scholar" },
+                { "type": "home", "url": "https://www.cityu.edu.hk/stfprofile/00308048.htm", "icon": "fas fa-home", "title": "Homepage" }
+              ],
+              "interests": [
+                "Renewable Energy Systems",
+                "Artificial Intelligence",
+                "Data-driven Methods",
+                "Forecasting Methods",
+                "Condition Monitoring",
+                "Fault Diagnosis"
+              ],
+              "education": [
+                { "degree": "PhD in Industrial Engineering", "institution": "The University of Iowa", "year": "2010-2012" },
+                { "degree": "MS in Industrial Engineering", "institution": "The University of Iowa", "year": "2008-2009" },
+                { "degree": "BEng in Systems Engineering and Engineering Management", "institution": "Chinese University of Hong Kong", "year": "2004-2008" }
+              ],
+              "biography": "Prof. Zhang is Professor and Head of the Department of Data Science, College of Computing, City University of Hong Kong, Hong Kong SAR, China. His research focuses on machine learning and computational intelligence with applications in renewable energy, facility energy management, and intelligent transportation domains. He serves as an editor of Journal of Intelligent Manufacturing as well as an associate editor of IEEE Transactions on Sustainable Energy, IEEE Power Engineering Letters, and INFORMS Journal on Data Science.",
+              "last_name": "zhang"
             }
           ]
         },
