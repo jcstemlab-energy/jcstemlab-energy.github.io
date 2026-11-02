@@ -59,6 +59,58 @@
           "name": "Faculty",
           "members": [
             {
+              "id": "faculty-zijunzhang",
+              "title": "Prof. ZHANG, Zijun",
+              "role": [
+                { "text": "Professor and Head", "highlighted": true },
+                { "text": "Department of Data Science", "highlighted": false }
+              ],
+              "avatar": "data/people/zhangzijun.jpg",
+              "socialLinks": [
+                { "type": "envelope", "url": "mailto:zijzhang@cityu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
+                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=B3LrwQsAAAAJ&hl=en", "icon": "fas fa-graduation-cap", "title": "Google Scholar" },
+                { "type": "home", "url": "https://www.cityu.edu.hk/stfprofile/00308048.htm", "icon": "fas fa-home", "title": "Homepage" }
+              ],
+              "interests": [
+                "Renewable Energy Systems",
+                "Artificial Intelligence",
+                "Data-driven Methods",
+                "Forecasting Methods",
+                "Condition Monitoring",
+                "Fault Diagnosis"
+              ],
+              "education": [
+                { "degree": "PhD in Industrial Engineering", "institution": "The University of Iowa", "year": "2010-2012" },
+                { "degree": "MS in Industrial Engineering", "institution": "The University of Iowa", "year": "2008-2009" },
+                { "degree": "BEng in Systems Engineering and Engineering Management", "institution": "Chinese University of Hong Kong", "year": "2004-2008" }
+              ],
+              "biography": "Prof. Zhang is Professor and Head of the Department of Data Science, College of Computing, City University of Hong Kong, Hong Kong SAR, China. His research focuses on machine learning and computational intelligence with applications in renewable energy, facility energy management, and intelligent transportation domains. He serves as an editor of Journal of Intelligent Manufacturing as well as an associate editor of IEEE Transactions on Sustainable Energy, IEEE Power Engineering Letters, and INFORMS Journal on Data Science.",
+              "last_name": "zhang"
+            },
+            {
+              "id": "faculty-xuzhao",
+              "title": "Prof. XU, Zhao",
+              "role": [
+                { "text": "Professor", "highlighted": true },
+                { "text": "Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University", "highlighted": false }
+              ],
+              "avatar": "data/people/xuzhao.png",
+              "avatarPosition": "center 25%",
+              "socialLinks": [
+                { "type": "envelope", "url": "mailto:zhao.xu@polyu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
+                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=6MgXqkkAAAAJ&hl=zh-CN&oi=ao", "icon": "fas fa-graduation-cap", "title": "Google Scholar" },
+                { "type": "home", "url": "https://www.polyu.edu.hk/eee/people/academic-staff-and-teaching-staff/prof-xu-zhao/", "icon": "fas fa-home", "title": "Homepage" }
+              ],
+              "interests": ["Smart Grid", "Power System Resilience", "Microgrid control and optimization"],
+              "education": [
+                { "degree": "PhD in Electrical Engineering", "institution": "The University of Queensland", "year": "2003-2006" },
+                { "degree": "Master of Engineering", "institution": "National University of Singapore", "year": "2001-2003" },
+                { "degree": "BEng in Electrical Engineering", "institution": "Zhejiang University", "year": "1992-1996" }
+              ],
+              "biography": "Dr. Zhao Xu is a Professor at The Hong Kong Polytechnic University (PolyU), Director of the Power Systems and Smart Microgrids Laboratory, and Deputy Director of the PolyU–China Southern Power Grid Joint Research Institute. He also serves as Chair of the IEEE PES Joint Chapter and a Visiting Researcher at the Centre for Electric Technology, Technical University of Denmark. His research focuses on power system operation and control, electricity markets, and artificial intelligence. He has led one Key Program project and two General Program projects funded by the National Natural Science Foundation of China, two Hong Kong RGC Theme-based Research Scheme projects, and multiple RGC General Research Fund projects. His honours include the Ministry of Education’s First Prize in Science and Technology Progress (2017), Guangdong Province’s Second Prize in Natural Science (2024), the Chinese Society for Electrical Engineering’s Second Prize in Electric Power Science and Technology Progress (2022), and Gold (2023) and Bronze (2022) Medals at the International Exhibition of Inventions Geneva. His publications have received over 19,000 Google Scholar citations, with an h-index of 71.",
+              "last_name": "xu"
+            },
+            {
               "id": "faculty-chjiang",
               "title": "Prof. JIANG, Chaoqiang",
               "role": [
@@ -339,58 +391,6 @@
                 }
               ],
               "last_name": "tao"
-            },
-            {
-              "id": "faculty-zijunzhang",
-              "title": "Prof. ZHANG, Zijun",
-              "role": [
-                { "text": "Professor and Head", "highlighted": true },
-                { "text": "Department of Data Science", "highlighted": false }
-              ],
-              "avatar": "data/people/zhangzijun.jpg",
-              "socialLinks": [
-                { "type": "envelope", "url": "mailto:zijzhang@cityu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
-                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=B3LrwQsAAAAJ&hl=en", "icon": "fas fa-graduation-cap", "title": "Google Scholar" },
-                { "type": "home", "url": "https://www.cityu.edu.hk/stfprofile/00308048.htm", "icon": "fas fa-home", "title": "Homepage" }
-              ],
-              "interests": [
-                "Renewable Energy Systems",
-                "Artificial Intelligence",
-                "Data-driven Methods",
-                "Forecasting Methods",
-                "Condition Monitoring",
-                "Fault Diagnosis"
-              ],
-              "education": [
-                { "degree": "PhD in Industrial Engineering", "institution": "The University of Iowa", "year": "2010-2012" },
-                { "degree": "MS in Industrial Engineering", "institution": "The University of Iowa", "year": "2008-2009" },
-                { "degree": "BEng in Systems Engineering and Engineering Management", "institution": "Chinese University of Hong Kong", "year": "2004-2008" }
-              ],
-              "biography": "Prof. Zhang is Professor and Head of the Department of Data Science, College of Computing, City University of Hong Kong, Hong Kong SAR, China. His research focuses on machine learning and computational intelligence with applications in renewable energy, facility energy management, and intelligent transportation domains. He serves as an editor of Journal of Intelligent Manufacturing as well as an associate editor of IEEE Transactions on Sustainable Energy, IEEE Power Engineering Letters, and INFORMS Journal on Data Science.",
-              "last_name": "zhang"
-            },
-            {
-              "id": "faculty-xuzhao",
-              "title": "Prof. XU, Zhao",
-              "role": [
-                { "text": "Professor", "highlighted": true },
-                { "text": "Department of Electrical and Electronic Engineering, The Hong Kong Polytechnic University", "highlighted": false }
-              ],
-              "avatar": "data/people/xuzhao.png",
-              "avatarPosition": "center 25%",
-              "socialLinks": [
-                { "type": "envelope", "url": "mailto:zhao.xu@polyu.edu.hk", "icon": "fas fa-envelope", "title": "Email" },
-                { "type": "google-scholar", "url": "https://scholar.google.com/citations?user=6MgXqkkAAAAJ&hl=zh-CN&oi=ao", "icon": "fas fa-graduation-cap", "title": "Google Scholar" },
-                { "type": "home", "url": "https://www.polyu.edu.hk/eee/people/academic-staff-and-teaching-staff/prof-xu-zhao/", "icon": "fas fa-home", "title": "Homepage" }
-              ],
-              "interests": ["Smart Grid", "Power System Resilience", "Microgrid control and optimization"],
-              "education": [
-                { "degree": "PhD in Electrical Engineering", "institution": "The University of Queensland", "year": "2003-2006" },
-                { "degree": "Master of Engineering", "institution": "National University of Singapore", "year": "2001-2003" },
-                { "degree": "BEng in Electrical Engineering", "institution": "Zhejiang University", "year": "1992-1996" }
-              ],
-              "biography": "Dr. Zhao Xu is a Professor at The Hong Kong Polytechnic University (PolyU), Director of the Power Systems and Smart Microgrids Laboratory, and Deputy Director of the PolyU–China Southern Power Grid Joint Research Institute. He also serves as Chair of the IEEE PES Joint Chapter and a Visiting Researcher at the Centre for Electric Technology, Technical University of Denmark. His research focuses on power system operation and control, electricity markets, and artificial intelligence. He has led one Key Program project and two General Program projects funded by the National Natural Science Foundation of China, two Hong Kong RGC Theme-based Research Scheme projects, and multiple RGC General Research Fund projects. His honours include the Ministry of Education’s First Prize in Science and Technology Progress (2017), Guangdong Province’s Second Prize in Natural Science (2024), the Chinese Society for Electrical Engineering’s Second Prize in Electric Power Science and Technology Progress (2022), and Gold (2023) and Bronze (2022) Medals at the International Exhibition of Inventions Geneva. His publications have received over 19,000 Google Scholar citations, with an h-index of 71.",
-              "last_name": "xu"
             }
           ]
         },
