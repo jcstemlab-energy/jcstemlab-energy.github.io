@@ -481,7 +481,7 @@ function generateGalleryHTML(images) {
         // First image doesn't need margin-left
         if (index === 0) {
             galleryHtml += `
-                <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="z-index: ${zIndex};">
+                <a href="${imgSrc}" aria-haspopup="dialog" class="news-gallery-item" style="z-index: ${zIndex};">
                     <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
                 </a>
             `;
@@ -490,7 +490,7 @@ function generateGalleryHTML(images) {
             // This ensures images don't overflow while maintaining overlap on wider screens
             const dynamicMargin = `min(-60px, calc((100% - ${totalWidth}px) / ${gaps}))`;
             galleryHtml += `
-                <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="margin-left: ${dynamicMargin}; z-index: ${zIndex};">
+                <a href="${imgSrc}" aria-haspopup="dialog" class="news-gallery-item" style="margin-left: ${dynamicMargin}; z-index: ${zIndex};">
                     <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
                 </a>
             `;
@@ -500,6 +500,33 @@ function generateGalleryHTML(images) {
     galleryHtml += '</div>';
     return galleryHtml;
 }
+
+// Both news lists use the same viewer. Native dialog handles Escape and focus trapping.
+document.addEventListener('click', event => {
+    const link = event.target.closest('.news-gallery-item');
+    if (!link || !link.closest('.news-gallery')) return;
+    const viewer = document.createElement('dialog');
+    if (typeof viewer.showModal !== 'function') return;
+    event.preventDefault();
+    viewer.className = 'news-photo-viewer';
+    viewer.setAttribute('aria-label', 'News Photo');
+    const closeButton = document.createElement('button');
+    closeButton.type = 'button';
+    closeButton.textContent = 'Close photo';
+    const photo = document.createElement('img');
+    photo.alt = 'News Photo';
+    photo.src = link.href;
+    viewer.append(closeButton, photo);
+    document.body.append(viewer);
+    closeButton.onclick = () => viewer.close();
+    viewer.onclick = e => { if (e.target === viewer) viewer.close(); };
+    viewer.addEventListener('close', () => {
+        viewer.remove();
+        link.focus({preventScroll: true});
+    }, {once: true});
+    viewer.showModal();
+    closeButton.focus({preventScroll: true});
+});
 
 // Function to render news items
 function renderNewsItems(newsData, containerId, limit = 8) {
@@ -590,4 +617,4 @@ function renderNewsItems(newsData, containerId, limit = 8) {
         // Add the news item to the container
         container.appendChild(newsElement);
     });
-} 
+}

@@ -152,6 +152,7 @@
             ['Homepage', '个人主页', '個人主頁'],
             ['Toggle Navigation', '切换导航菜单', '切換導覽選單'],
             ['News Photo', '新闻图片', '新聞圖片'],
+            ['Close photo', '关闭照片', '關閉照片'],
             ['Hong Kong Jockey Club', '香港赛马会', '香港賽馬會'],
             ['Lab Director', '实验室主任', '實驗室主任'],
             ['Chair Professor and Head', '讲座教授兼系主任', '講座教授兼系主任'],

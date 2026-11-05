@@ -775,6 +775,42 @@ nav.scrolled {
     object-fit: cover;
 }
 
+.news-photo-viewer {
+    box-sizing: border-box;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    border: 0;
+    padding: 4rem 1rem 1rem;
+    background: transparent;
+}
+.news-photo-viewer[open] { display: grid; place-items: center; }
+.news-photo-viewer::backdrop { background: rgba(10, 12, 16, .88); }
+.news-photo-viewer img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100dvh - 5rem);
+    object-fit: contain;
+    color: white;
+}
+.news-photo-viewer button {
+    position: absolute;
+    top: .6rem;
+    right: 1rem;
+    min-height: 44px;
+    padding: 0 1rem;
+    border: 0;
+    border-radius: .5rem;
+    background: white;
+    color: #171717;
+    cursor: pointer;
+}
+html:has(.news-photo-viewer[open]) { overflow: hidden; }
+
 /* Publications Section */
 .publication-summary {
     display: flex;
