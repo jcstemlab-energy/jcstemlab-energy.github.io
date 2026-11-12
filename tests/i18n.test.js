@@ -29,7 +29,7 @@ test('cohorts, qualifications, date ranges and profile titles switch in both Chi
 test('all confirmed member names switch in Chinese while English and WONG remain unchanged', () => {
     const { translate } = createTranslator(content);
     const members = team.categories.flatMap(category => category.subcategories.flatMap(group => group.members));
-    assert.equal(members.length, 32);
+    assert.equal(members.length, 31);
     for (const member of members) {
         assert.equal(translate(member.title, 'en'), member.title);
         for (const language of ['zh-Hans', 'zh-Hant']) {

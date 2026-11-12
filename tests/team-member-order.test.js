@@ -20,7 +20,6 @@ test('postdoctoral researchers follow the approved order', () => {
         [
             'Dr. JIA, Yubin',
             'Dr. ZHANG, Zhijun',
-            'Dr. HUANG, Sunhua',
             'Dr. CHENG, Yuheng',
             'Dr. LIN, Zhihao',
             'Dr. PAN, Chunyang',

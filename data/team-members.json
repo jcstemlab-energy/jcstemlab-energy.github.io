@@ -506,49 +506,6 @@
               "last_name": "zhang"
             },
             {
-              "id": "postdoc-sunhuang",
-              "title": "Dr. HUANG, Sunhua",
-              "role": [
-                {
-                  "text": "Postdoctoral Fellow",
-                  "highlighted": true
-                },
-                {
-                  "text": "PhD @ Shanghai Jiao Tong University",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/huangsunhua.jpeg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:sunhuang@cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com.hk/citations?hl=zh-CN&user=94u3dzsAAAAJ&view_op=list_works",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                }
-              ],
-              "interests": [
-                "Power System Stability Analysis and Control",
-                "Grid-Forming Control",
-                "AC/DC Microgrid"
-              ],
-              "biography": "Dr. Sunhua Huang received his Ph.D. degree in Electrical Engineering from Shanghai Jiao Tong University in 2022. He is currently a Postdoctoral Researcher in the Department of Electrical Engineering at the City University of Hong Kong. His research interests include power system stability analysis and control, grid-forming control, and AC/DC microgrids.",
-              "education": [
-                {
-                  "degree": "PhD in Electrical Engineering",
-                  "institution": "Shanghai Jiao Tong University",
-                  "year": "2019-2022"
-                }
-              ],
-              "last_name": "huang"
-            },
-            {
               "id": "postdoc-yuheng-cheng",
               "title": "Dr. CHENG, Yuheng",
               "role": [
