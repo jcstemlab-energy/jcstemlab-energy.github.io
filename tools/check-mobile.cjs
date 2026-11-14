@@ -10,6 +10,30 @@ const labels = {
     'zh-Hant': ['首頁', '團隊', '關閉照片']
 };
 
+async function checkMembers(page, cards) {
+    const names = page.locator(cards + ' h4 a');
+    await names.first().waitFor({state: 'attached'});
+    const count = await names.count();
+    assert.ok(count > 0);
+    for (const index of new Set([0, Math.floor(count / 2), count - 1])) {
+        const name = names.nth(index);
+        await name.evaluate(el => el.scrollIntoView({block: 'center', behavior: 'instant'}));
+        await page.waitForFunction(({cards, index}) => {
+            const el = document.querySelectorAll(cards + ' h4 a')[index];
+            const box = el.getBoundingClientRect();
+            if (!el.textContent.trim() || box.width <= 0 || box.height <= 0 ||
+                box.bottom <= 0 || box.top >= innerHeight) return false;
+            for (let p = el; p; p = p.parentElement) {
+                const style = getComputedStyle(p);
+                if (+style.opacity < 0.95 || style.visibility !== 'visible') return false;
+            }
+            return true;
+        }, {cards, index}, {timeout: 3500}).catch(error => {
+            throw new Error('Member ' + (index + 1) + ' of ' + count + ' is not visible: ' + error.message);
+        });
+    }
+}
+
 (async () => {
     const browser = await chromium.launch({ channel: 'msedge', chromiumSandbox: true });
     try {
@@ -30,6 +54,8 @@ const labels = {
                 for (const [lang, [home, team, close]] of Object.entries(labels)) {
                     await page.locator('[data-language="' + lang + '"]').click();
                     await page.waitForFunction(l => document.documentElement.lang === l, lang);
+                    if (path.includes('team')) await checkMembers(page, '.team-member');
+                    if (path === 'index.html') await checkMembers(page, '#team .team-member-card');
                     if (path.includes('team')) {
                         const button = page.locator('.mobile-toggle');
                         await button.tap();

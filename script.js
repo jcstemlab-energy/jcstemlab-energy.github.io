@@ -196,7 +196,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Scroll Reveal Animation
-    const revealElements = document.querySelectorAll('.section, .research-card, .news-item');
+    // The full roster can be many viewports tall; it must not wait for a reveal threshold.
+    const revealElements = document.querySelectorAll('.section:not(#team), .research-card, .news-item');
     revealElements.forEach(el => el.classList.add('reveal-on-scroll'));
 
     const revealObserver = new IntersectionObserver((entries) => {
