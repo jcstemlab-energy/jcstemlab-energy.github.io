@@ -281,14 +281,17 @@
                     <img src="../assets/logo.png" alt="JC STEM Lab Logo" class="nav-logo-img">
                 </a>
             </div>
-            <div class="nav-menu">
+            <div class="nav-menu" id="team-menu">
                 <ul class="nav-links">
                     <li><a href="../index.html#about">Home</a></li>
                     <li><a href="team.html" class="active">Team</a></li>
                 </ul>
             </div>
-            <button class="mobile-toggle" aria-label="Toggle Navigation">
-                <i class="fas fa-bars"></i>
+            <button type="button" class="mobile-toggle team-menu-toggle" aria-label="Toggle Navigation" aria-controls="team-menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path class="menu-open-icon" d="M3 6h18M3 12h18M3 18h18"/>
+                    <path class="menu-close-icon" d="m5 5 14 14M19 5 5 19"/>
+                </svg>
             </button>
         </div>
     </nav>

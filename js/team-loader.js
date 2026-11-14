@@ -11,6 +11,23 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // 处理导航栏水平滚动
     handleNavScrolling();
+    const toggle = document.querySelector('.team-menu-toggle');
+    const menu = document.getElementById('team-menu');
+    function setMenu(open) {
+        menu.classList.toggle('active', open);
+        toggle.setAttribute('aria-expanded', String(open));
+    }
+    toggle.addEventListener('click', () => setMenu(!menu.classList.contains('active')));
+    menu.addEventListener('click', event => {
+        if (event.target.closest('a')) setMenu(false);
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && menu.classList.contains('active')) {
+            setMenu(false);
+            toggle.focus();
+        }
+    });
+    matchMedia('(max-width: 768px)').addEventListener('change', () => setMenu(false));
 });
 
 /**
