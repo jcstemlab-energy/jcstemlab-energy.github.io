@@ -23,11 +23,18 @@ test('postdoctoral researchers follow the approved order', () => {
             'Dr. CHENG, Yuheng',
             'Dr. LIN, Zhihao',
             'Dr. PAN, Chunyang',
-            'Dr. ZHENG, Zuqing',
-            'Dr. WANG, Tianjing',
-            'Dr. WONG, Yuk Sum'
+            'Dr. ZHENG, Zuqing'
         ]
     );
+});
+
+test('Wang and Wong are listed only among former postdoctoral researchers', () => {
+    for (const id of ['postdoc-tianjing-wang', 'postdoc-yuk-sum-wong']) {
+        const categories = meetOurTeam.subcategories.flatMap(({name, members}) =>
+            members.filter(member => member.id === id).map(() => name)
+        );
+        assert.deepEqual(categories, ['Former Postdoctoral Researchers'], id);
+    }
 });
 
 test('Mr. HUANG, Zuliang belongs to the 25 Spring cohort', () => {

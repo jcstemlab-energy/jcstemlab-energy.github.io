@@ -707,72 +707,6 @@
               ],
               "detailPage": "data/people/RA24_ZhengZuqing/index.html",
               "last_name": "zhengzuqing"
-            },
-            {
-              "id": "postdoc-tianjing-wang",
-              "title": "Dr. WANG, Tianjing",
-              "role": [
-                {
-                  "text": "Postdoctoral Fellow",
-                  "highlighted": true
-                },
-                {
-                  "text": "PhD @ China Electric Power Research Institute",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/wangtianjing.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:tianjing.wang@cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=DVHZsDcAAAAJ&hl=en",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                }
-              ],
-              "interests": [
-                "Physics-guided AI for energy storage and power system"
-              ],
-              "biography": "Tianjing Wang (Member, IEEE) received a Ph. D. degree from China Electric Power Research Institute, Beijing, China, in 2022. She is currently a postdoctoral research fellow at the Department of Electrical Engineering, City University of Hong Kong, Hong Kong, China. From 2021 to 2024, she was successively an exchange student and research fellow at the school of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. Her research interests include physic guided machine learning applications in energy prediction, power system control, battery health estimation and energy storage control.",
-              "education": [
-                {
-                  "degree": "PhD in Electrical Engineering",
-                  "institution": "China Electric Power Research Institute",
-                  "year": "2018-2022"
-                }
-              ],
-              "last_name": "wang"
-            },
-            {
-              "id": "postdoc-yuk-sum-wong",
-              "title": "Dr. WONG, Yuk Sum",
-              "role": [
-                {
-                  "text": "Postdoctoral Fellow",
-                  "highlighted": true
-                },
-                {
-                  "text": "Department of Electrical Engineering, City University of Hong Kong",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/samwang.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:sam.wong@cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                }
-              ],
-              "biography": "Dr. Yuk Sum Wong is a postdoctoral researcher in the Department of Electrical Engineering at the City University of Hong Kong.",
-              "last_name": "wong"
             }
           ]
         },
@@ -1427,6 +1361,77 @@
               ],
               "biography": "Dr. ZHANG Zhenyu received the B.E. and M.E. degrees from Beijing Jiaotong University in 2013 and 2016, respectively, and the Ph.D. degree from Tongji University, in 2020. He is currently an Associate Professor with Beijing Institute of Technology, China. His research interests include autonomous driving, fault diagnosis, energy management, and intelligent transportation systems.",
               "last_name": "zhang"
+            }
+          ]
+        },
+        {
+          "name": "Former Postdoctoral Researchers",
+          "members": [
+            {
+              "id": "postdoc-tianjing-wang",
+              "title": "Dr. WANG, Tianjing",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow",
+                  "highlighted": true
+                },
+                {
+                  "text": "PhD @ China Electric Power Research Institute",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/wangtianjing.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:tianjing.wang@cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=DVHZsDcAAAAJ&hl=en",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Physics-guided AI for energy storage and power system"
+              ],
+              "biography": "Tianjing Wang (Member, IEEE) received a Ph. D. degree from China Electric Power Research Institute, Beijing, China, in 2022. She is currently a postdoctoral research fellow at the Department of Electrical Engineering, City University of Hong Kong, Hong Kong, China. From 2021 to 2024, she was successively an exchange student and research fellow at the school of Electrical and Electronic Engineering, Nanyang Technological University, Singapore. Her research interests include physic guided machine learning applications in energy prediction, power system control, battery health estimation and energy storage control.",
+              "education": [
+                {
+                  "degree": "PhD in Electrical Engineering",
+                  "institution": "China Electric Power Research Institute",
+                  "year": "2018-2022"
+                }
+              ],
+              "last_name": "wang"
+            },
+            {
+              "id": "postdoc-yuk-sum-wong",
+              "title": "Dr. WONG, Yuk Sum",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Electrical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/samwang.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:sam.wong@cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "biography": "Dr. Yuk Sum Wong is a postdoctoral researcher in the Department of Electrical Engineering at the City University of Hong Kong.",
+              "last_name": "wong"
             }
           ]
         }
