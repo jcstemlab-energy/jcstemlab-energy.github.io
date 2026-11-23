@@ -465,22 +465,23 @@ function renderPublications(publications, container) {
 }
 
 // Function to generate gallery HTML
-function generateGalleryHTML(images) {
+function generateGalleryHTML(images, layout) {
     if (!images || images.length === 0) return '';
 
     const imageWidth = 280; // Fixed image width in pixels
     const totalWidth = images.length * imageWidth;
     const gaps = images.length - 1; // Number of gaps between images
 
-    let galleryHtml = '<div class="news-gallery">';
+    const spaced = layout === 'spaced';
+    let galleryHtml = `<div class="news-gallery${spaced ? ' news-gallery--spaced' : ''}">`;
 
     images.forEach((imgSrc, index) => {
         // Calculate z-index: first image has highest z-index, last image has lowest
         // z-index decreases from images.length (first) to 1 (last)
         const zIndex = images.length - index;
 
-        // First image doesn't need margin-left
-        if (index === 0) {
+        // Only the default gallery overlaps its later thumbnails.
+        if (spaced || index === 0) {
             galleryHtml += `
                 <a href="${imgSrc}" aria-haspopup="dialog" class="news-gallery-item" style="z-index: ${zIndex};">
                     <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
@@ -607,7 +608,7 @@ function renderNewsItems(newsData, containerId, limit = 8) {
         // Append Gallery if images exist
         if (newsItem.images && newsItem.images.length > 0) {
             const galleryContainer = document.createElement('div');
-            galleryContainer.innerHTML = generateGalleryHTML(newsItem.images);
+            galleryContainer.innerHTML = generateGalleryHTML(newsItem.images, newsItem.galleryLayout);
             contentElement.appendChild(galleryContainer);
         }
 

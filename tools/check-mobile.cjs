@@ -64,9 +64,27 @@ async function checkMembers(page, cards) {
                         await button.tap();
                         await page.waitForFunction(() => document.querySelector('.nav-menu').getBoundingClientRect().left >= innerWidth, null, {timeout: 2500});
                     } else {
-                        const gallery = page.locator('.news-gallery').filter({has: page.locator('a:nth-child(3)')}).first();
+                        // These two stories intentionally use different photo layouts.
+                        const gallery = page.locator('.news-gallery').filter({has: page.locator('a[href$="2026-11-04-crrc-qingdao-1-enhanced.jpg"]')});
                         const photos = gallery.locator('a');
                         await photos.first().waitFor();
+                        const ceremonyPhotos = page.locator('.news-gallery').filter({has: page.locator('a[href$="2026-11-hkae-dong-presentation.jpg"]')}).locator('a');
+                        assert.equal(await ceremonyPhotos.count(), 3);
+                        for (const width of [320, 390, 768, 769, 1280]) {
+                            await page.setViewportSize({width, height: 844});
+                            const cards = await ceremonyPhotos.evaluateAll(links => links.map(a => a.getBoundingClientRect().toJSON()));
+                            for (const [index, card] of cards.entries()) {
+                                assert.ok(card.width > 0 && card.height > 0 && card.left >= 0 && card.right <= width + 1, 'every photo stays on the page at ' + width);
+                                assert.ok(Math.abs(card.width - cards[0].width) < 1, 'equal-width photos');
+                                if (!index) continue;
+                                const prev = cards[index - 1];
+                                if (width <= 768) {
+                                    assert.ok(Math.abs(card.left - prev.left) < 1 && card.top >= prev.bottom + 19.9, 'single column with 20px clearance at ' + width);
+                                } else {
+                                    assert.ok(Math.abs(card.top - prev.top) < 1 && card.left >= prev.right + 23.9, 'one row with 24px clearance at ' + width);
+                                }
+                            }
+                        }
                         for (const width of [320, 390, 768, 1280]) {
                             await page.setViewportSize({width, height: 844});
                             const boxes = await photos.evaluateAll(links => links.map(a => a.getBoundingClientRect().toJSON()));

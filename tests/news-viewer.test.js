@@ -17,3 +17,16 @@ test('news viewer controls have both Chinese translations', () => {
     assert.equal(translate('Close photo', 'zh-Hans'), '关闭照片');
     assert.equal(translate('Close photo', 'zh-Hant'), '關閉照片');
 });
+
+test('the fellowship news links the three original photos in order without stacking them', () => {
+    const news = require('../data/news.json');
+    const story = news.find(item => item.title.includes('Fellow of the Hong Kong Academy of Engineering'));
+    const paths = ['presentation', 'certificate', 'signing'].map(name => '/assets/news/2026-11-hkae-dong-' + name + '.jpg');
+    assert.deepEqual(story.images, paths);
+    const page = {document: {addEventListener() {}}};
+    vm.runInNewContext(fs.readFileSync(require.resolve('../script.js'), 'utf8'), page);
+    const gallery = page.generateGalleryHTML(story.images, story.galleryLayout);
+    assert.doesNotMatch(gallery, /--gallery-overlap/);
+    assert.deepEqual(Array.from(gallery.matchAll(/<a href="([^"]+)"/g), m => m[1]), paths);
+    assert.match(page.generateGalleryHTML(paths), /--gallery-overlap/, 'default gallery keeps its desktop layout');
+});
