@@ -166,6 +166,7 @@
             ['Assistant Professor', '助理教授', '助理教授'],
             ['Research Assistant Professor', '研究助理教授', '研究助理教授'],
             ['Postdoctoral Researchers', '博士后研究人员', '博士後研究人員'],
+            ['Former Postdoctoral Researchers', '已离职博士后', '已離職博士後'],
             ['Postdoctoral Fellow', '博士后研究员', '博士後研究員'],
             ['Current PhD Students', '在读博士生', '在讀博士生'],
             ['Research Assistant', '研究助理', '研究助理'],
