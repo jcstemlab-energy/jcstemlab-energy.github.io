@@ -1380,7 +1380,8 @@
                   "highlighted": false
                 }
               ],
-              "avatar": "data/people/wangtianjing.jpg",
+              "avatar": "data/people/wangtianjing-hd.jpg",
+              "avatarPosition": "center 10%",
               "socialLinks": [
                 {
                   "type": "envelope",
